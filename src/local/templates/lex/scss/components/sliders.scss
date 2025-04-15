@@ -1,0 +1,316 @@
+.slider-btn-box{
+    display: flex;
+    gap: 10px;
+    .arrow-btn{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.our-team-slider{
+    .swiper-slide{
+        height: auto;
+    }
+    .worker-card{
+        height: 100%;
+    }
+}
+.slider-wr{
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback-slider{
+    .swiper-slide{
+        height: auto;
+    }
+    .feedback{
+        height: 100%;
+    }
+} 
+.cases-slider{
+    .swiper-slide{
+        height: auto;
+    }
+    .case-card{
+        height: 100%;
+    }
+}
+.article-slider{
+    .swiper-slide{
+        height: auto;
+    }
+    .article{
+        height: 100%;
+    }
+}
+.social-feedback-img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.gallery-item-img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center center;
+
+}
+.gallery-slider{
+    .lightgallery{
+        position: relative;
+        // padding-top: 70%;
+        border-radius: 10px;
+        overflow: hidden;
+        box-sizing: border-box;
+        .gallery-item-img{
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+            // width: 100%;
+            // height: 100%;
+            
+            display: block;
+            // max-height: 100%;
+            width: 100%;
+            height: auto;
+            max-width: 506px;
+            max-height: 355px;
+            object-fit: contain;
+            object-position: center center;
+            cursor: pointer; 
+        }
+    }
+}
+.gallery-slider--max-auto{
+    .swiper-slide{
+        width: auto !important;
+    } 
+}
+
+.certificates-slider{ 
+    .certificates-item-img{
+        display: block;
+        width: 100%;
+        max-width: 506px;
+        max-height: 355px;
+        height: auto;
+        cursor: pointer;
+    }
+} 
+.certificates-slider--max-auto{
+    .swiper-slide{
+        width: auto !important;
+    } 
+}
+
+.publications-slider{
+    .swiper-slide{
+        height: auto;
+    }
+    .publication{
+        height: 100%;
+    }
+}
+
+// ===============================================
+@media screen and (max-width: 2120px){
+    .our-team-slider{  
+        margin-right: -26%; 
+    }
+    .feedback-slider{
+        margin-right: -26%; 
+    }
+    .social-feedback-slider{
+        margin-right: -20.2%;
+    }
+    .feedback-letter-slider{
+        margin-right: -25.2%;
+    }
+    .cases-slider{
+        margin-right: -35%;
+    }
+    .news-slider{
+        margin-right: -25.4%;
+    }
+    .gallery-slider{
+        margin-right: -34%;
+    }
+    .certificates-slider{
+        margin-right: -10%;
+    }
+    .publications-slider{
+        margin-right: -34%;
+    }
+}
+@media screen and (max-width: 1470px){
+    .slider-btn-box{
+        .arrow-btn {
+            width: 64px;
+            height: 64px;
+            .arrow-btn__icon{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .gallery-slider{
+        .lightgallery{ 
+            .gallery-item-img{ 
+                max-width: 412px;
+                max-height: 289px; 
+            }
+        }
+    }
+    .certificates-slider{
+        .certificates-item-img{ 
+            max-width: 399px;
+            max-height: 280px; 
+        }
+    } 
+}
+@media screen and (max-width: 1335px){
+    .our-team-slider{  
+        margin-right: -24%; 
+    }
+    .social-feedback-slider{
+        margin-right: -19%;
+    }
+    .feedback-letter-slider{
+        margin-right: -15%;
+    } 
+    .news-slider {
+        margin-right: -24.4%;
+    }
+    .gallery-slider{
+        margin-right: -32.2%;
+    }
+    .publications-slider {
+        margin-right: -30%;
+    }
+}
+@media screen and (max-width: 1135px){
+    .our-team-slider{  
+        margin-right: -26%; 
+    }
+ 
+}
+@media screen and (max-width: 999px){
+    .slider-btn-box {
+        .arrow-btn {
+            width: 54px;
+            height: 54px;
+        }
+    }
+    .feedback-letter-slider{
+        margin-right: -35.2%;
+    }
+    .cases-slider{
+        margin-right: -50%;
+    }
+    .news-slider {
+        margin-right: -26.4%;
+    }
+    .gallery-slider {
+        margin-right: -45.2%;
+    }
+
+    .gallery-slider{
+        .lightgallery{ 
+            .gallery-item-img{ 
+                max-width: 322px;
+                max-height: 226px; 
+            }
+        }
+    }
+}
+@media screen and (max-width: 940px){
+    .news-slider {
+        margin-right: -42.4%;
+    }
+}
+@media screen and (max-width: 840px){
+    .our-team-slider{  
+        margin-right: -36%; 
+    }
+}
+@media screen and (max-width: 800px){
+    .feedback-slider{
+        margin-right: -36%; 
+    }
+}
+@media screen and (max-width: 744px){
+    .slider-btn-box {
+        display: none;
+    }
+} 
+@media screen and (max-width: 600px){
+    .feedback-slider{
+        margin-right: -75%; 
+    }
+    .social-feedback-slider{
+        margin-right: -35%;
+    }
+    .cases-slider {
+        margin-right: -85%;
+    }
+}
+@media screen and (max-width: 500px){
+    .gallery-slider {
+        margin-right: -64.2%;
+    }
+    .publications-slider{
+        margin-right: -80%;
+    }
+}
+@media screen and (max-width: 450px){
+    .our-team-slider{  
+        margin-right: -76%; 
+    }
+    .feedback-letter-slider{
+        margin-right: -75%;
+    }
+    .news-slider {
+        margin-right: -87%;
+    }
+    .gallery-slider{
+        .lightgallery{ 
+            .gallery-item-img{ 
+                max-width: 247px;
+                max-height: 173px; 
+            }
+        }
+    }
+    .certificates-slider{
+        .certificates-item-img{ 
+            max-width: 282px;
+            max-height: 198px; 
+        }
+    } 
+}
+ 
+@media screen and (max-width: 400px){
+    .social-feedback-slider{
+        margin-right: -90%;
+    }
+    
+}
+@media screen and (max-width: 365px){
+    .our-team-slider{  
+        margin-right: -96%; 
+    }
+    .feedback-slider{
+        margin-right: -90%; 
+    }
+    .cases-slider {
+        margin-right: -95%;
+    }
+    .news-slider {
+        margin-right: -99%;
+    }
+}

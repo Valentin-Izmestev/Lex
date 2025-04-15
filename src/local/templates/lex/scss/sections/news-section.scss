@@ -1,0 +1,50 @@
+.news-section{
+    padding: 100px 0;
+    .btn{
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        margin-top: 83px;
+        gap: 20px; 
+        font-weight: 500;
+    }
+}
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+
+// ====================================================
+@media screen and (max-width: 1470px){
+    .news-section{
+        padding: 80px 0;
+        .btn{ 
+            margin-top: 80px;
+            width: fit-content;
+            padding: 10px 30px;
+            max-width: 100%; 
+        }
+    }
+}
+@media screen and (max-width: 1230px){
+    .news-grid{ 
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+@media screen and (max-width: 850px){
+    .news-grid{ 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media screen and (max-width: 700px){
+    .news-grid{ 
+        grid-gap: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    .news-grid{ 
+        grid-template-columns: 1fr; 
+    }
+}

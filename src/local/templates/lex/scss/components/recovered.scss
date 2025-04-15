@@ -1,0 +1,131 @@
+.recovered{
+    display: flex;
+    gap: 20px;
+
+    .pd-list{
+        flex-grow: 1;
+        margin: 0;
+    }
+    .recovered__result-box{
+        width: 415px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+ 
+.recovered__result-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--light);
+    box-sizing: border-box;
+}
+.recovered-file-download{
+    .recovered-file-download__label{
+        padding-right: 120px;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    .recovered-file-download__link{
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--blue);
+    }
+}
+
+.recovered-result{
+    background-color: var(--blue);
+    color: var(--light);
+    font-size: 24px; 
+}
+
+// ========================================================
+@media screen and (max-width: 1470px){
+    .recovered{  
+        .recovered__result-box{
+            width: 333px; 
+        }
+    }
+    
+     
+    .recovered__result-item{ 
+        padding: 20px;
+        border-radius: 10px; 
+    }
+    .recovered-file-download{
+        .recovered-file-download__label{
+            padding-right: 80px;
+            font-size: 18px; 
+        }
+        .recovered-file-download__link{
+            font-size: 22px; 
+        }
+    }
+    
+    .recovered-result{ 
+        font-size: 22px; 
+    }   
+}
+
+@media screen and (max-width: 999px){
+    .recovered{  
+        flex-direction: column;
+        .recovered__result-box{
+            width: 100%; 
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+    }
+    
+     
+    .recovered__result-item{ 
+        padding: 20px; 
+    }
+    .recovered-file-download{
+        .recovered-file-download__label{
+            padding-right: 0;
+            font-size: 18px; 
+        }
+        .recovered-file-download__link{
+            font-size: 20px; 
+        }
+    }
+    
+    .recovered-result{ 
+        font-size: 20px; 
+    }    
+}
+@media screen and (max-width: 600px){
+    .recovered{  
+        flex-direction: column;
+        .recovered__result-box{ 
+            grid-template-columns: 1fr; 
+        }
+    }
+    
+     
+    .recovered__result-item{ 
+        padding: 15px; 
+        gap: 15px;
+    }
+    .recovered-file-download{
+        .recovered-file-download__label{ 
+            font-size: 16px; 
+        }
+        .recovered-file-download__link{
+            font-size: 16px; 
+        }
+    }
+    
+    .recovered-result{  
+        .recovered-result__value{
+            font-size: 22px;
+        }
+    }    
+}

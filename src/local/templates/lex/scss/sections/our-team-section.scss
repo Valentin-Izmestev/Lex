@@ -1,0 +1,64 @@
+.our-team-section{
+    margin-bottom: 158px;
+    .inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .section-title{
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+    .our-team-slider{
+        margin-top: 50px;
+    }
+    .slider-btn-box {
+        margin-left: 10px;
+    }
+}
+
+// =========================================================
+@media screen and (max-width: 1470px){
+    .our-team-section{
+        margin-bottom: 80px;  
+        .our-team-slider{
+            margin-top: 30px;
+        } 
+    }
+}
+@media screen and (max-width: 999px){
+    .our-team-section{
+        margin-bottom: 60px;  
+        .our-team-slider{
+            margin-top: 20px;
+        } 
+    }
+}
+@media screen and (max-width: 600px){
+    .our-team-section{
+        margin-bottom: 40px;
+        .inner{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;  
+        }
+        .btn--link{
+            order: 3;
+            margin-top: 30px;
+            width: 100%;
+        }
+        .section-title{
+            order: 1;
+            width: 100%;
+            margin-bottom: 0;
+            margin-right: auto;
+        }
+        .our-team-slider{
+            order: 2;
+            margin-top: 20px;
+        }
+        .slider-btn-box {
+            margin-left: 10px;
+        }
+    }
+}

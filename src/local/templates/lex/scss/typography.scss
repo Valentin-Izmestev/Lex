@@ -1,0 +1,165 @@
+h1, .h1{
+    display: block;
+    font-family: 'NotoSerif', sans-serif;
+    font-size: 70px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+h2, .h2{
+    display: block;
+    font-family: 'NotoSerif', sans-serif;
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+h3, .h3{
+    display: block;
+    font-family: 'NotoSerif', sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.checked-list{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+        position: relative;
+        padding-left: 35px;
+        box-sizing: border-box;
+        &::after{
+            content: ''; 
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            mask-image: url(../img/icons/checked-list-icon.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            background-color: var(--gold);
+        }
+    }
+}
+main{
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        li{
+            padding-left: 15px;
+            border-left: 2px solid var(--gold); 
+            box-sizing: border-box;
+            ol{
+                li{
+                    border-left: none;
+                }
+            }
+        }
+    }
+    ol { 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        counter-reset: num;
+        li{
+            position: relative;
+            padding-left: 43px;
+            box-sizing: border-box;
+            &::before{ 
+                content: counter(num) ;  
+                counter-increment: num;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                background-color: var(--gold);
+                font-size: 16px;
+                line-height: 16;
+                font-weight: 700;
+                color: var(--light);
+            }
+            ul{
+                li{
+                    padding-left: 15px;
+                    &::before{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+blockquote{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-style: italic;
+    p{
+        margin: 0;
+    }
+} 
+
+// ===========================================================
+@media screen and (max-width: 1470px) {
+    :root {
+        font-size: 18px; 
+    }
+    h1, .h1{ 
+        font-size: 55px; 
+    }
+    h2, .h2{ 
+        font-size: 40px; 
+    }
+    h3, .h3{ 
+        font-size: 30px; 
+    }
+    blockquote{ 
+        gap: 20px; 
+        font-size: 18px; 
+    } 
+}
+@media screen and (max-width: 999px) {
+    :root {
+        font-size: 16px; 
+    }
+    h1, .h1{ 
+        font-size: 45px; 
+    }
+    h2, .h2{ 
+        font-size: 30px; 
+    }
+    h3, .h3{ 
+        font-size: 25px; 
+    }
+}
+@media screen and (max-width: 500px) {
+    h1, .h1{ 
+        font-size: 35px; 
+        // font-size: 25px; по макету, но не красиво
+    }
+    h2, .h2{ 
+        font-size: 22px; 
+    }
+    h3, .h3{ 
+        font-size: 18px; 
+    }
+}

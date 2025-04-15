@@ -1,0 +1,223 @@
+.office-cell-box{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    max-width: 703px;
+    width: 50%;
+}
+.contact-section{
+    position: relative;
+    overflow: hidden;
+    .inner{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
+.office-cell{ 
+    .office-cell__caption{
+        display: block; 
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-family: 'NotoSerif', sans-serif;
+    }
+    .office-cell_address{
+        display: block;
+        margin-top: 20px;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    .office-contacts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 40px;
+        grid-template-areas: 'tel email'
+                             'schedule schedule';
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        li{
+            border: none;
+            padding: 0;
+        }
+
+    }
+    .office-contacts-item{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &--tel{
+            grid-area: tel;
+        }
+        &--email{
+            grid-area: email;
+        }
+        &--schedule{
+            grid-area: schedule;
+        }
+        .office-contacts-item__label{
+            font-size: 18px;
+            line-height: 1;
+            color: var(--dark-blue);
+        }
+        .office-contacts-item__value{
+            font-size: 24px;
+            line-height: 1.4;
+        }
+        a.office-contacts-item__value{
+            color: var(--blue);
+        }
+    }
+}
+
+
+
+.map-wr{
+    position: relative;
+    width: 50%;
+    height: 820px;
+
+}
+#map{
+    background: red;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: calc(100% + 100px);
+    height: 100%;
+}
+
+// ==================================================================================
+
+@media screen and (max-width: 1470px){
+    .office-cell-box{  
+        max-width: 629px;
+    }
+    .office-cell{ 
+        .office-cell__caption{ 
+            font-size: 35px; 
+        }
+        .office-cell_address{ 
+            font-size: 18px; 
+        }
+        .office-contacts{ 
+            grid-gap: 20px;  
+    
+        }
+        .office-contacts-item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            .office-contacts-item__label{
+                font-size: 16px; 
+            }
+            .office-contacts-item__value{
+                font-size: 20px; 
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 1335px){
+ 
+    #map{ 
+        top: -100px;
+        right: -80px;
+        width: calc(100% + 80px);
+        height: 100%;
+    }
+    
+}
+@media screen and (max-width: 1050px){
+    .contact-section{
+        .inner{
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+    .office-cell-box{ 
+        max-width:  100%;
+        width: 100%;
+    }
+    .map-wr{
+        position: relative;
+        width: 100%; 
+        padding-top: 57.45%;
+        height: 100%; 
+        border-radius: 20px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    #map{  
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 999px){
+    .office-cell{ 
+        .office-cell__caption{ 
+            font-size: 30px; 
+        }
+        .office-cell_address{ 
+            font-size: 18px; 
+        }
+        .office-contacts{ 
+            grid-gap: 20px;  
+    
+        }
+        .office-contacts-item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            .office-contacts-item__label{
+                font-size: 16px; 
+            }
+            .office-contacts-item__value{
+                font-size: 20px; 
+            } 
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .office-cell{ 
+        .office-cell__caption{ 
+            font-size: 22px; 
+        }
+        .office-cell_address{ 
+            margin-top: 16px;
+            font-size: 16px; 
+        }
+        .office-contacts{ 
+            margin-top: 16px;
+            grid-gap: 20px;  
+    
+        }
+        .office-contacts-item{
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            .office-contacts-item__label{
+                font-size: 16px; 
+            }
+            .office-contacts-item__value{
+                font-size: 20px; 
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .office-cell {
+        .office-contacts {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "tel"
+            "email"
+            "schedule";
+        }
+    }
+}

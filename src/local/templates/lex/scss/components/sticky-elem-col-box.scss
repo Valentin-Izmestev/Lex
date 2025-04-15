@@ -1,0 +1,35 @@
+.sticky-elem-col-box{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    .sticky-elem-col-box__main-content{
+        flex-grow: 1; 
+        width: 100%;
+    }
+    .floating-offer{
+        position: sticky;
+        top: 92px;
+        width: 560px;
+    }
+}
+
+// =================================================================
+
+@media screen and (max-width: 1600px){
+    .sticky-elem-col-box{ 
+        .floating-offer{ 
+            top: 92px;
+            width: 411px;
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    .sticky-elem-col-box{ 
+        flex-direction: column;
+        .floating-offer{ 
+            position: relative;
+            top: 0;
+            width: 100%;
+        }
+    }
+}

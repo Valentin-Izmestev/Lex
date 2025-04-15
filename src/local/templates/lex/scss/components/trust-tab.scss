@@ -1,0 +1,70 @@
+.trust-tab-controller{
+    position: relative;
+    display: flex; 
+    overflow: auto; 
+    box-sizing: border-box;
+}
+.trust-tab-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-bottom: 1px solid var(--border);
+    color: var(--dark);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    white-space: nowrap;
+    transition: var(--great-transition);
+    &.active{
+        color: var(--blue);
+        border-bottom: 1px solid var(--blue);
+    }
+}
+.trust-tab-body {
+    display: none;
+    &.active{
+        display: block;
+    }
+}
+
+ 
+
+// ============================================================
+
+@media screen and (max-width: 1470px){
+    .trust-tab-controller{ 
+        margin-right: -80px;
+        padding-right: 80px; 
+    }
+    .trust-tab-btn{ 
+        min-height: 65px;
+        padding: 10px 20px; 
+        font-size: 14px; 
+        &.active{
+            color: var(--blue);
+            border-bottom: 1px solid var(--blue);
+        }
+    }
+}
+@media screen and (max-width: 1335px){
+    .trust-tab-controller{ 
+        margin-right: -20px;
+        padding-right: 20px; 
+        padding-bottom: 6px;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .trust-tab-controller{ 
+        margin-right: -15px;
+        padding-right: 15px; 
+    }
+    .trust-tab-btn{  
+        padding: 10px;  
+    }
+}

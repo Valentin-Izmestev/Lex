@@ -1,0 +1,66 @@
+.cases-section{
+    position: relative;
+    padding: 100px 0;
+    background-color: var(--dark-blue);
+    color: var(--light);
+    overflow: hidden;
+    .inner{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section-title{
+        margin-bottom: 0;
+    }
+    .case-card{ 
+        border: 1px solid rgba(226, 233, 245, 0.502);
+    }
+    .btn{
+        color: var(--light);
+        &:hover{
+            border: 1px solid var(--gold);
+        }
+    }
+}
+
+// ==================================================================
+@media screen and (max-width: 1470px){
+    .cases-section{
+        padding: 80px 0;
+        .inner{
+            gap: 30px;
+        }
+    }
+}
+@media screen and (max-width: 999px){
+    .cases-section{
+        padding: 60px 0;
+        .inner{
+            gap: 20px;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .cases-section{
+        .section-title{
+            order: 1;
+        }
+        .cases-slider{
+            order: 2
+        }
+        .sl-control-box{
+            order: 3;
+            width: 100%;
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .cases-section{
+        padding: 30px 0; 
+    }
+}

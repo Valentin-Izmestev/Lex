@@ -1,0 +1,139 @@
+.telegram-icon{
+    display: block; 
+    width: 20px;
+    height: 20px;
+    mask-image: url(../img/icons/telegram-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.youtube-icon{
+    display: block; 
+    width: 20px;
+    height: 20px;
+    mask-image: url(../img/icons/youtube-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.vk-icon{
+    display: block; 
+    width: 22px;
+    height: 22px;
+    mask-image: url(../img/icons/vk-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.briefcase-icon{
+    display: block;  
+    mask-image: url(../img/icons/briefcase-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.arrow-down-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/arrow-down-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.arrow-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/arrow-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+    &--left{
+        transform: rotate(90deg);
+    }
+    &--right{
+        transform: rotate(-90deg);
+    }
+}
+.target-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/target-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.people-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/people-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.calendar-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/calendar-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+
+
+.watch-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/watch-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.eye-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/eye-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+
+.question-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/question-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.share-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/share-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--blue);
+}
+
+

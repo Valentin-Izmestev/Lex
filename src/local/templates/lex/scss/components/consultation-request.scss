@@ -1,0 +1,248 @@
+.penultimate-section{
+    // padding-bottom: 292px;
+}
+.consultation-request-section{
+    // height: 292px;
+    background-color: var(--bg-dark);
+    box-sizing: border-box;
+    .consultation-request-wr{
+        position: relative;  
+        .consultation-request{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.consultation-request{
+    position: relative; 
+    padding: 100px 145px;
+    border-radius: 40px;
+    background-color: var(--dark-blue);
+    color: var(--light);
+    box-sizing: border-box;
+    overflow: hidden;
+    .consultation-request__title{
+        position: relative;
+        max-width: 800px;
+        z-index: 1;
+    }
+    .consultation-request__text-box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 38px;
+        max-width: 680px;
+        font-size: 24px;
+        line-height: 1.4;
+        z-index: 1;
+        *{
+            margin: 0;
+        }
+    }
+    .consultation-request__warning{
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.4;      
+        z-index: 1;  
+    } 
+    .consultation-request-form{
+        position: relative;
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        z-index: 1;
+        
+        .form-elem{ 
+            .form-elem__field{
+                color: var(--ligth);
+                background-color: var(--dark-blue);
+                min-height: 76px;
+                padding: 16px 28px;
+                font-size: 20px;
+                &::-webkit-input-placeholder{color: var(--border);}
+                &::-moz-placeholder{color:var(--border);}
+                &:-moz-placeholder{color:var(--border);}
+                &:-ms-input-placeholder{color:var(--border);}
+            }
+        }
+
+    }
+    .btn{
+        padding: 10px;
+        width: 100%; 
+        font-size: 16px;
+    }
+    a{
+        color: inherit;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .consultation-request__decor {
+        position: absolute;
+    }
+    .consultation-request-circle{
+        display: block;
+        top: -268px;
+        right: -81px;
+        width: 962px;
+        height: auto;
+    }
+    .consultation-request-smartphone{
+        display: block;
+        top: 1px;
+        right: 63px;
+        width: 400px;
+        height: auto;
+    }
+}
+
+// ==============================================================================
+@media screen and (max-width: 1470px){
+    .consultation-request{ 
+        padding: 60px 80px;
+        border-radius: 30Px;  
+        .consultation-request__title{
+            position: relative;
+            max-width: 770px;
+            z-index: 1;
+        }
+        .consultation-request__text-box{
+            margin-top: 26px;
+            max-width: 640px;
+            font-size: 20px; 
+        } 
+        .consultation-request-form{ 
+            margin-top: 32px;  
+            .form-elem{
+                .form-elem__field{ 
+                    min-height: 64px; 
+                    font-size: 18px;
+                }
+            } 
+        }
+        .btn{
+            min-height: 64px;
+            width: 100%; 
+            font-size: 16px;
+        }  
+        .consultation-request-circle{ 
+            top: -273px;
+            right: -98px;
+            width: 800px;
+        }
+        .consultation-request-smartphone{ 
+            top: -20px;
+            right: 21px;
+            width: 333px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .consultation-request{ 
+        padding: 30px 40px; 
+    }
+}
+@media screen and (max-width: 999px){
+    .consultation-request{  
+        .consultation-request__title{ 
+            max-width: 543px; 
+        }
+        .consultation-request__text-box{
+            margin-top: 26px;
+            max-width: 520px;
+            font-size: 16px; 
+        }
+        .consultation-request__warning{ 
+            max-width: 395px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 20px;
+        } 
+        .consultation-request-form{ 
+            margin-top: 17px;  
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 'name tel'
+                                  'submit submit';
+            .form-elem{
+                .form-elem__field{ 
+                    padding: 16px 20px;
+                    min-height: 54px; 
+                    font-size: 16px;
+                }
+            } 
+            .crf-name{
+                grid-area: name;
+            }
+            .crf-tel{
+                grid-area: tel;
+            }
+            .crf-submit{
+                grid-area: submit;
+            }
+
+        }
+        .btn{
+            min-height: 54px; 
+            font-size: 14px;
+        }  
+        .consultation-request-circle{ 
+            top: -136px;
+            right: -59px;
+            width: 418px;
+        }
+        .consultation-request-smartphone{ 
+            top: -2px;
+            right: 4px;
+            width: 173px;
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    .consultation-request{   
+        .consultation-request-form{  
+            grid-template-columns: 1fr;
+            grid-template-areas: 'name '
+                                 'tel'
+                                 'submit'; 
+        } 
+    }
+}
+@media screen and (max-width: 500px){
+    .consultation-request{   
+        padding: 20px 16px;
+        border-radius: 15px;
+        .consultation-request__text-box{
+            margin-top: 13px; 
+            font-size: 15px;  
+        }
+        .consultation-request__warning{  
+            margin-top: 20px;
+        } 
+        .consultation-request-form{ 
+            margin-top: 20px;   
+
+        } 
+        .consultation-request-circle{ 
+            top: -77px;
+            right: -28px;
+            width: 250px;
+        }
+        .consultation-request-smartphone{ 
+            top: 4px;
+            right: 10px;
+            width: 103px;
+        }
+    }
+}

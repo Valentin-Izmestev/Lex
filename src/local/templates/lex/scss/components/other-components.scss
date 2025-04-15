@@ -1,0 +1,25 @@
+.decor-line{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dark-blue);
+}
+
+.section-title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+    .section-title {
+        margin-bottom: 0;
+    }
+}
+
+// ===============================================================================
+
+@media screen and (max-width: 1470px){
+    .section-title-box{ 
+        margin-bottom: 30px; 
+    }
+}

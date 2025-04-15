@@ -1,0 +1,45 @@
+.section-title{
+    margin-bottom: 50px;
+    sup{
+        font-size: 30px;
+        color: var(--blue);
+    }
+}
+.section-title-panel{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .section-title{
+        margin-bottom: 0;
+    }
+}
+
+// =====================================================
+@media screen and (max-width: 1470px){
+    .inner { 
+        padding: 0 80px; 
+    }
+    .section-title{
+        margin-bottom: 30px;
+        sup{
+            font-size: 20px; 
+        }
+    }
+    .section-title-panel{
+        margin-bottom: 30px;
+        .section-title{
+            margin-bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 1335px){
+    .inner { 
+        padding: 0 20px; 
+    }
+}
+@media screen and (max-width: 500px){
+    .inner { 
+        padding: 0 15px; 
+    }
+}

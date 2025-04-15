@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lex/css/style.min.css">
+	<noscript>
+		<style>
+			.content-wrapper {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body>
+
+	<header id="header" class="">
+    <div class="click-catcher"></div>
+    <div class="inner">
+        <a href="/" class="logo logo__img"></a>
+        <a href="/" class="logo-scroll"></a>
+        <div class="header__basic">
+            <div class="header__top">
+                <ul class="hader__contacts">
+                    <li>
+                        <span>Пн-Пт: 9:00 - 18:00</span>
+                    </li>
+                    <li>
+                        <a href="mailto:info@lex24.ru">info@lex24.ru</a>
+                    </li>
+                    <li>
+                        <a href="tel:+74956040475">+7 (495) 604 04 75</a>
+                    </li>
+                </ul>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            Телеграм
+                            <span class="telegram-icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Телеграм
+                            <span class="youtube-icon"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Телеграм
+                            <span class="vk-icon"></span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn--transparent-light btn-enter">
+                    <span class="btn__icon briefcase-icon"></span>
+                    <span class="btn__text">Вход</span> 
+                </a>
+            </div>
+            <div class="header__bottom">
+                <nav>
+                    <menu class="main-menu">
+                        <li>
+                            <div class="main-menu-item main-menu-item--parent active">
+                                <a href="#">О компании</a>
+                                <button class="main-menu-item__arrow arrow-down-icon"></button>
+                            </div>
+                            <div class="children-menu-wr">
+                                <div class="children-menu-wr__inner">
+                                    <menu class="children-menu">
+                                        <li>
+                                            <a href="#" class="children-menu-item">
+                                                <img src="./local/templates/lex/img/scales.svg" alt="" class="children-menu-item__icon">
+                                                О компании 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./team.html" class="children-menu-item">
+                                                <img src="./local/templates/lex/img/puzzles.svg" alt="" class="children-menu-item__icon">
+                                                Команда
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item">
+                                                <img src="./local/templates/lex/img/news.svg" alt="" class="children-menu-item__icon">
+                                                Новости
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item">
+                                                <img src="./local/templates/lex/img/cubes.svg" alt="" class="children-menu-item__icon">
+                                                Вопрос-Ответ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item">
+                                                <img src="./local/templates/lex/img/bow-tie.svg" alt="" class="children-menu-item__icon">
+                                                Партнёрам
+                                            </a>
+                                        </li>
+                                    </menu>
+                                </div>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="main-menu-item main-menu-item--parent">
+                                <a href="#">Услуги</a>
+                                <button class="main-menu-item__arrow arrow-down-icon"></button>
+                            </div>
+                            <div class="children-menu-wr">
+                                <div class="children-menu-wr__inner">
+                                    <menu class="children-menu">
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/arm.svg" alt="" class="children-menu-item__icon">
+                                                Взыскание компенсации за ремонт и неустойки по ДДУ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/brick-wall.svg" alt="" class="children-menu-item__icon">
+                                                Перепланировка и реконструкция под ключ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/papers.svg" alt="" class="children-menu-item__icon">
+                                                Юридическая и экспертная помощь  по договорам на ремонтные работы
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/fence.svg" alt="" class="children-menu-item__icon">
+                                                Решение споров по самовольным постройкам. Узаконивание самовольной постройки
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/wallet.svg" alt="" class="children-menu-item__icon">
+                                                Банкротство
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/calculator.svg" alt="" class="children-menu-item__icon">
+                                                Раздел имущества
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/crane.svg" alt="" class="children-menu-item__icon">
+                                                Юридическая помощь при заливах помещений
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/bricks.svg" alt="" class="children-menu-item__icon">
+                                                Взыскание денежных средство за недострой ИСЖ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/accounts.svg" alt="" class="children-menu-item__icon">
+                                                Оспаривание кадастровой стоимости недвижимости
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/home.svg" alt="" class="children-menu-item__icon">
+                                                Юридическая помощь по жилищным спорам
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="children-menu-item"> 
+                                                <img src="./local/templates/lex/img/chart.svg" alt="" class="children-menu-item__icon">
+                                                Повышение выкупной стоимости объекта
+                                            </a>
+                                        </li>
+                                    </menu>
+                                </div>
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="main-menu-item">
+                                <a href="./prices.html">Цены</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-menu-item">
+                                <a href="./reviews.html">Отзывы</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-menu-item">
+                                <a href="./cases.html">кейсы</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-menu-item">
+                                <a href="./articles.html">Статьи</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main-menu-item">
+                                <a href="./contacts.html">Контакты</a>
+                            </div>
+                        </li>
+                    </menu>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#">
+                                Телеграм
+                                <span class="telegram-icon"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Телеграм
+                                <span class="youtube-icon"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Телеграм
+                                <span class="vk-icon"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <a href="#" class="btn btn--transparent-light btn-enter">
+                    <span class="btn__icon briefcase-icon"></span>
+                    <span class="btn__text">Вход</span> 
+                </a>
+                <button class="btn btn-get-consultation">
+                    <span class="btn__text">получить консультацию</span>
+                </button>
+                <button class="burger-btn">
+                    <span class="burger-btn__text">Меню</span>
+                    <span class="burger-btn__icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+	<main class="main">
+		<section class="hall-page hall-page--article-page cover hall-page--shadow" style="background-image: url(./local/templates/lex/image/article-img.jpg);">
+			<div class="inner">
+				<div class="hall-page__content">
+					<ul class="breadcrumbs">
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">Статьи</a>
+						</li> 
+					</ul>
+					<h1 class="page-title">Признание прав собственности на самовольную постройку: когда можно, а когда нет</h1>
+                    <span class="article-parameters-box">
+                        <span class="article-parameter">
+                            <span class="calendar-icon"></span>
+                            02.06.2024
+                        </span>
+                        <span class="article-parameter">
+                            <span class="watch-icon"></span>
+                            5 минут
+                        </span>
+                        <span class="article-parameter">
+                            <span class="eye-icon"></span>
+                            74
+                        </span>
+                    </span>
+                    <div class="author-card">
+                        <img src="./local/templates/lex/image/article-author.jpg" alt="" class="author-card__photo">
+                        <div class="author-card__text-box">
+                            <span class="author-card__author">Автор статьи</span>
+                            <span class="author-card__name">Добрякова Анна</span>
+                            <span class="author-card__position">Главный юрист по претензионно-исковой  работе в Lex Group</span>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</section>
+        <div class="article-detail-section">
+            <div class="inner">
+				<div class="article-detail-section__left-col">
+					<div class="article-detail-content">
+						<div class="annotation">
+							<p>
+								Собственники новых объектов недвижимости вкладывают массу сил и денег в строительство, но не всегда уделяют внимание оформлению необходимой разрешительной документации. В результате постройка становится самостроем. Впрочем, иногда это происходит и не по воле владельца, а из-за путаницы в документах или ошибок местной администрации. Рассчитывать на то, что контролирующие органы не обнаружат самовольную постройку, не стоит. Новые технологии обеспечивают инспекторов всё более эффективными инструментами для мониторинга. Поэтому хозяину рекомендуется позаботиться о легализации такой недвижимости.
+							</p>
+						</div>
+						<h2 id="anchor1">
+							Что такое самострой?
+						</h2>
+						<p>
+							Согласно статье 263 ГК РФ, собственник земельного участка имеет право застраивать его, реконструировать или сносить уже возведённые здания и сооружения, а также разрешать такие действия другим лицам. Но это право нужно осуществлять с учётом правового режима участка, градостроительного законодательства и других обязательных норм и правил. В противном случае созданный или реконструированный объект недвижимости будет считаться самовольной постройкой.
+						</p>
+						<ul>
+							<li>
+								Возведение объекта на земельном участке, который не был предоставлен инициатору строительства в установленном порядке в собственность, аренду или на основании другого права. Причём нельзя не только строить недвижимость полностью на чужой земле, но и частично захватывать её в процессе работ.
+							</li>
+							<li>
+								Несоответствие вида разрешенного использования земельного участка и типа возводимого объекта. Например, не допускается строительство производственного цеха на участке, предназначенном для размещения жилья.
+							</li>
+							<li>
+								Отсутствие необходимых документов, согласований и разрешений на строительство, которые должны быть получены по закону.
+							</li>
+							<li>
+								Нарушение в ходе возведения объекта строительных правил, санитарно-эпидемиологических, противопожарных, экологических и других обязательных требований. Здесь важна существенность отклонения от норм: за незначительные несоответствия самостроем объект не признают, но, если он угрожает безопасности человека или окружающей среды, это уже другое дело.
+							</li>
+						</ul>
+						<p>
+							Перечисленные черты самовольной постройки могут быть выявлены не только в новом завершённом здании, но и в любой момент его возведения, начиная с момента устройства фундамента. А также в реконструированном объекте, изначально построенном без нарушений.
+						</p>
+						<p>
+							Пленум Верховного суда РФ в своём Постановлении № 44 от 12.12.2023 подчеркнул: приведённый перечень признаков самовольной постройки является исчерпывающим. Органы местного самоуправления не вправе «придумывать» дополнительные основания для сноса объектов. Тем не менее и эти критерии охватывают обширный набор жизненных ситуаций.
+						</p>
+						<h2 id="anchor2">
+							Когда постройку не признают самовольной?
+						</h2>
+						<p>
+							Даже формальное наличие названных выше признаков не всегда позволяет присвоить объекту статус самостроя. Есть несколько таких сценариев:
+						</p>
+						<ul>
+							<li>
+								На момент начала строительных работ не существовало каких-либо стандартов и ограничений или требований о получении разрешений, то есть они появились позже.
+							</li>
+							<li>
+								При строительстве нормы были нарушены, но затем их отменили, и на дату выявления постройки контролирующим органом такие требования стали неприменимы.
+							</li>
+							<li>
+								Собственник участка объективно не мог знать об ограничениях в момент организации строительных работ. Например, возводил здание в охранной зоне, ещё не зарегистрированной в ЕГРН.
+							</li>
+						</ul>
+						<p>
+							Кроме того, для владельцев частных загородных домов сделаны дополнительные исключения:
+						</p>
+						<ul>
+							<li>
+								Объект ИЖС или садовый дом не считается самовольной постройкой, если возводится без разрешения на строительство или до направления уведомления о планируемом строительстве (при условии, что строится в соответствии с нормативами). В рамках «дачной амнистии» до 01.03.2031 такие объекты могут быть зарегистрированы в Росреестре только на основании технического плана и правоустанавливающего документа на земельный участок.
+							</li>
+							<li>
+								Решение о сносе самостроя или приведении его в соответствие с обязательными требованиями не может быть вынесено в отношении жилого дома на участке под ИЖС или ЛПХ (в границах населённого пункта), а также дачном или садовом, если права на такую постройку зарегистрированы до 01.09.2018, участок принадлежит тому же владельцу, что и здание, а параметры дома соответствуют предельным разрешённым в соответствующей местности.
+							</li>
+						</ul>
+						<h2 id="anchor3">
+							Что будет, если не легализовать самовольную постройку?
+						</h2>
+						<p>
+							Если возведённый объект недвижимости имеет признаки самостроя, а к перечисленным выше исключениям ситуация не относится, это чревато многими негативными последствиями:
+						</p>
+						<ol>
+							<li>
+								<p>
+									Самовольную постройку не удастся оформить в полноценную собственность, а значит, и продать, подарить, завещать, заложить, сдать в аренду или иным образом ею распорядиться. Защищать свои законные права от посягательств третьих лиц (например, владельцев соседних участков) тоже будет затруднительно. Строго говоря, самострой вообще нельзя эксплуатировать. Не получится, в частности, подключить объект к инженерным сетям или официально пользоваться им для ведения коммерческой деятельности.
+								</p>
+							</li>
+							<li>
+								<p>
+									Владельца самостроя рано или поздно ждёт неизбежное предписание о сносе. До 2018 года это был единственный возможный сценарий. Вступивший затем в силу ФЗ № 339 снизил категоричность санкции: теперь хозяин самовольной постройки может получить требование о сносе или приведении объекта в соответствие с обязательными правилами (если отклонения некритичны и безопасны). В обоих случаях всё за счёт нарушителя. Второй вариант позволяет сохранить здание, однако может повлечь за собой существенные расходы. А иногда его вообще нельзя реализовать технически.
+								</p>
+								<p>
+									Причём на выполнение предписания дадут ограниченное время:
+								</p>
+								<ul>
+									<li>
+										на снос самостроя — от 3 до 12 месяцев;
+									</li>
+									<li>
+										на устранение несоответствий — от 6 месяцев до 3 лет.
+									</li>
+								</ul>
+								<p>
+									Выносится такое указание одной из двух инстанций:
+								</p> 
+								<ul>
+									<li>
+										органами местного самоуправления — в отдельных случаях. Например, когда самострой возведён на участке, относящемся к государственной или муниципальной собственности, а у его пользователя нет правоустанавливающих документов на землю (кроме жилых домов, построенных на дачных и садовых участках до 01.01.2019);
+									</li>
+									<li>
+										судом (обычно по иску того же муниципалитета) — в остальных ситуациях.
+									</li>
+								</ul>
+							</li>
+							<li>
+								Если собственник не исполнит предписание о сносе или приведении самовольной постройки в соответствие с требованиями в предложенный срок, ему грозит изъятие земельного участка.
+							</li>
+							<li>
+								Наконец, нарушителю грозит административная ответственность. По статье 9.5 КоАП за строительство капитального объекта без разрешения на граждан накладывается штраф до 5 тыс. рублей, на ИП — до 50 тыс. рублей, на юридических лиц — до 1 млн рублей (либо приостановка деятельности до 90 суток). За использование здания, не введённого в эксплуатацию, тоже грозят штрафы аналогичного размера.
+							</li>
+						</ol>
+						<p>
+							На фоне перечисленных потенциальных проблем есть и хорошая новость: собственнику самостроя предоставляется возможность его легализовать и оформить право собственности. Правда, не всегда.
+						</p>
+						<h2 id="anchor4">Что нужно для признания права собственности?</h2>
+						<p>
+							Возможность узаконивания самовольной постройки закреплена в части 3 статьи 222 ГК РФ. Но для этого необходимо соблюдение совокупности условий:
+						</p>
+						<ul>
+							<li>
+								Земельный участок, на котором расположено строение, находится в собственности, пожизненном наследуемом владении или постоянном бессрочном пользовании лица, претендующего на оформление недвижимости.
+							</li>
+							<li>
+								Строительство объекта на участке допускается с точки зрения законодательства. Здесь речь идёт как о соблюдении градостроительных требований, так и о наличии прав у конкретного лица. Например, если он арендует землю, по договору с арендодателем ему должно быть разрешено возводить здание соответствующего типа.
+							</li>
+							<li>
+								Постройка соответствует всем обязательным требованиям: правилам землепользования и застройки, документации по планировке территории, другим действующим нормативам.
+							</li>
+							<li>
+								Сохранение самостроя не нарушает права и интересы третьих лиц, а также не создаёт угрозы жизни и здоровью населения.
+							</li>
+						</ul>
+						<p>
+							Таким образом, чтобы добиться признания права собственности на самовольно возведённый объект, инициатор должен устранить все имеющиеся несоответствия и собрать комплект документов, которые подтверждают выполнение всех перечисленных условий. Нужно подготовить правоустанавливающие документы на участок, градостроительную документацию, проектные решения на постройку, ЗОС, АГР, разрешения отдельных государственных органов, экспертные заключения и другие материалы. Единого заранее известного перечня документов нет, комплект собирается с учётом специфики объекта и обстоятельств.
+						</p>
+						<h2 id="anchor5">
+							Способы признания права собственности на самовольную постройку
+						</h2>
+						<p>
+							Существует два пути легализации самостроя: внесудебный (административный) и судебный. Выбор стратегии зависит от особенностей конкретной ситуации. Как правило, владельцу самостроя лучше начать с попытки узаконить объект в административном порядке, чтобы доказать свою добросовестность, а уже в случае отказа уполномоченного органа обращаться в суд. Но иногда приходится сразу использовать судебный «маршрут», например в ситуации, когда администрация подала иск о сносе самостроя, на который подаётся встречное требование о признании права собственности.
+						</p>
+						<p>
+							Самый распространённый вариант административного узаконивания самовольной постройки — через ответственную структуру в органах местного самоуправления. Например, в Москве это Градостроительная земельная комиссия (ГЗК). На основании обращения собственника проводится обследование объекта, запрашиваются заключения контролирующих ведомств, а затем рабочая группа ГЗК принимает решение о возможности узаконивания постройки. Если оно положительное, заявитель обязан оплатить назначенный комиссией штраф, а затем может обратиться в Росреестр для оформления права собственности на недвижимость.
+						</p>
+						<p>
+							Существует также альтернативный вариант внесудебного узаконивания самостроя, правда, он, скорее, «безвыходный»: собственник получает предписание о сносе недвижимости или устранении недостатков. На его основании владелец проводит модернизацию и отчитывается перед контролирующими органами о приведении постройки в соответствие с требованиями. Это позволяет затем оформить право собственности на объект.
+						</p>
+						<p>
+							Судебное признание права собственности на самострой реализуется путём подачи в суд иска с подтверждающими материалами. Если удастся добиться положительного решения органа правосудия, оно и будет являться основанием для постановки недвижимости на кадастровый учёт и регистрации прав в ЕГРН.
+						</p>
+						<p>
+							Обратиться в суд может не только собственник участка, но и правообладатель земли на других основаниях. Это возможно, даже если самовольную постройку возвело другое лицо. Например, заявить иск о признании права собственности на самострой вправе наследник или покупатель земли, на котором обнаружился нелегальный объект. Арендатор публичного земельного участка тоже может подать аналогичный иск при условии, что получил надел для строительства соответствующего здания или сооружения.
+						</p>
+						<p>
+							Важный момент: хотя предварительная попытка легализовать недвижимость в административном порядке по закону не является обязательной, но крайне желательно её предпринять. Суд при рассмотрении иска будет оценивать добросовестность заявителя: по каким причинам он оказался обладателем самостроя, пытался ли избежать этой ситуации. Документы, подтверждающие досудебное взаимодействие истца с уполномоченными органами, послужат свидетельством в его пользу.
+						</p>
+						<p> 
+							Результат судебной тяжбы зависит от многих факторов: докажет ли заявитель свою добросовестность и осведомлённость, насколько убедительно продемонстрирует, что самострой пригоден к эксплуатации и безопасен, соответствует требованиям и не нарушает ничьих прав.
+						</p>
+						<p>
+							Для повышения шансов на положительный исход дела стоит воспользоваться помощью профессионалов. Юристы Lex Group тщательно проанализируют вашу ситуацию и предложат самую подходящую правовую стратегию. Далее специалисты организуют сбор всех необходимых документов, сопроводят внесудебную и судебную процедуры и доведут дело до получения выписки из ЕГРН, подтверждающей ваше право собственности на постройку.
+						</p>
+					</div>
+					<div class="article-contrlo-panel">
+						<span href="#" class="btn btn--border btn-prev-case upp disabled">
+							<span class="arrow-icon arrow-icon--left"></span>
+							Предыдущая <span>статья</span>
+						</span>
+						<a href="#" class="btn btn--border btn-next-case upp">
+							Следующая <span>статья</span>
+							<span class="arrow-icon arrow-icon--right"></span>
+						</a>
+					<a href="#" class="btn btn--light upp btn-to-share">
+						Поделиться
+						<span class="share-icon"></span>
+					</a>
+					</div>
+					<div class="worker-action worker-action--author-question">
+						<span class="h3" aria-hidden="true">
+							Задайте вопрос автору!
+						</span>
+						<form action="#" class="form-ask-author-question">
+							<fieldset>
+								<legend>Задайте вопрос автору!</legend>
+								
+								<div class="columns-box columns-box--two-col">
+									<label class="form-elem crf-name">
+										<input type="text" class="form-elem__field" name="name" autocomplete="off" placeholder="Как вас зовут">
+									</label>
+									<label class="form-elem crf-tel">
+										<input type="tel" class="form-elem__field mask-tel" name="tel" autocomplete="off" placeholder="Номер телефона">
+									</label> 
+								</div>
+								<label class="form-elem crf-tel">
+									<textarea class="form-elem__textarea" name="message" placeholder="Текст вопроса"></textarea>
+								</label> 
+							</fieldset>
+							<div class="form-footer">
+								<button type="submit" class="btn btn--light">Отправить</button>
+								<p class="form-notification">
+									Нажимая на «Отправить» вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+								</p>
+							</div>
+						</form>
+						<div class="worker-action__worker-box">
+							<div class="wa-worker">
+								<img src="./local/templates/lex/img/workers/worker-1.jpg" alt="Добрякова Анна" class="wa-worker__photo">
+								<div class="wa-worker__text-box">
+									<span class="wa-worker__name">Добрякова Анна</span>
+									<span class="wa-worker__position">Главный юрист по претензионно-исковой работе Lex Group</span>
+								</div>
+							</div>
+						</div>
+					</div>  
+				</div> 
+				<div class="article-toc">
+					<div class="article-toc__label">
+						Содержание
+					</div>
+					<ul>
+						<li>
+							<a href="#anchor1" class="anchor-link">Что такое самострой?</a>
+						</li>
+						<li>
+							<a href="#anchor2" class="anchor-link">Когда постройку не признают самовольной?</a>
+						</li>
+						<li>
+							<a href="#anchor3" class="anchor-link">Что будет, если не легализовать самовольную постройку?</a>
+						</li>
+						<li>
+							<a href="#anchor4" class="anchor-link">Что нужно для признания права собственности?</a>
+						</li>
+						<li>
+							<a href="#anchor5" class="anchor-link">Способы признания права собственности на самовольную пристройку</a>
+						</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+		<div class="penultimate-section articles-section">
+			<div class="inner">
+				<h2 class="section-title">Статьи</h2>
+				<div class="sl-control-box">
+					<a href="#" class="btn btn--border btn--link upp">все статьи</a>
+					<div class="slider-btn-box news-slider-controller">
+						<button class="arrow-btn arrow-btn--left">
+							<span class="arrow-btn__icon arrow-icon"></span>
+						</button>
+						<button class="arrow-btn arrow-btn--right">
+							<span class="arrow-btn__icon arrow-icon"></span>
+						</button>
+					</div>
+				</div> 
+				<div class="swiper news-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-1.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Изменения в законе для дольщиков
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-2.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Юристы о постановлении № 326
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-3.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Приемка квартир в 2024: новые нюансы
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-4.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Про спорт
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-5.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Самовольная пристройка
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-1.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Изменения в законе для дольщиков
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-2.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Юристы о постановлении № 326
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-3.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Приемка квартир в 2024: новые нюансы
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-4.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Про спорт
+									</span>
+								</span>
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="./article.html" class="article cover" style="background-image: url(./local/templates/lex/image/articles/article-5.png);">
+								<img src="./local/templates/lex/img/article-spacer.png" alt="" class="article__spacer" aria-hidden="true">
+								<span class="article__desc-box">
+									<span class="article__parameters-box">
+										<span class="article__parameter">
+											<span class="calendar-icon"></span>
+											02.06.2024
+										</span>
+										<span class="article__parameter">
+											<span class="watch-icon"></span>
+											5 минут
+										</span>
+										<span class="article__parameter">
+											<span class="eye-icon"></span>
+											74
+										</span>
+									</span>
+									<span class="article__title">
+										Самовольная пристройка
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+		<section class="consultation-request-section">
+    <div class="inner">
+        <div class="consultation-request-wr">
+            <div class="consultation-request">
+                <img src="./local/templates/lex/img/consultation-request-circle.svg" class="consultation-request__decor consultation-request-circle" alt="" aria-hidden="true">
+                <img src="./local/templates/lex/img/consultation-request-smartphone.svg" class="consultation-request__decor consultation-request-smartphone"  alt="" aria-hidden="true">
+                <h2 class="consultation-request__title">Запишитесь на консультацию прямо сейчас!</h2>
+                <div class="consultation-request__text-box">
+                    <p>
+                        Наши специалисты ответят на все интересующие вас вопросы в удобное для вас время
+                    </p>
+                </div>
+                <form class="consultation-request-form">
+                    <label class="form-elem crf-name">
+                        <input type="text" class="form-elem__field" name="name" autocomplete="off" placeholder="Как вас зовут">
+                    </label>
+                    <label class="form-elem crf-tel">
+                        <input type="tel" class="form-elem__field mask-tel" name="tel" autocomplete="off" placeholder="+7 (___) 123-45-67">
+                    </label>
+                    <button type="submit" class="btn btn--gold upp crf-submit">получить консультацию</button>
+                </form>
+                <span class="consultation-request__warning">
+                    Нажимая на «Получить консультацию» вы соглашаетесь с <a href="#">политикой
+                        конфиденциальности</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</section> 
+	</main>
+	<footer id="footer"> 
+    <div class="inner footer__main-inner">
+        <span class="footer__logo">
+            <img src="./local/templates/lex/img/logo.svg" alt="" >
+        </span>
+
+        <div class="contact-bubble-box">
+            <div class="contact-bubble">
+                <span class="contact-bubble__label">Работаем по графику</span>
+                <span class="contact-bubble__balue">Пн-Пт: 9:00 - 18:00</span>
+            </div>
+            <div class="contact-bubble">
+                <span class="contact-bubble__label">Звоните, если есть вопросы</span>
+                <a href="tel:+74956040475" class="contact-bubble__balue">+7 (495) 604 04 75</a>
+            </div>
+            <div class="contact-bubble">
+                <span class="contact-bubble__label">Или пишите на почту</span>
+                <a href="mailto:info@lex24.ru" class="contact-bubble__balue">info@lex24.ru</a>
+            </div>
+        </div>
+
+        <div class="decor-line"></div>
+
+        <div class="copyright-box">
+            <span class="copyright">LexGroup © 2025. Все права защищены</span>
+            <a href="#" class="privacy-policy-link">Политика конфиденциальности</a>
+        </div>
+
+        <ul class="social-links">
+            <li>
+                <a href="#">
+                    Телеграм
+                    <span class="telegram-icon"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Телеграм
+                    <span class="youtube-icon"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Телеграм
+                    <span class="vk-icon"></span>
+                </a>
+            </li>
+        </ul>
+
+        <a href="#" class="btn btn--transparent-light btn-enter">
+            <span class="btn__icon briefcase-icon"></span>
+            <span class="btn__text">Вход</span>
+        </a>
+        <div class="yandex-rating-box">
+            <img src="./local/templates/lex/image/yandex-rating.jpg" alt="" class="yandex-rating-tmp">
+        </div>
+    </div>
+</footer>
+	<div class="great-shadow"></div>
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="./local/templates/lex/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

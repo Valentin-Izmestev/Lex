@@ -1,0 +1,90 @@
+.publication{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 270px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0E1E37;
+        background: linear-gradient(0deg,rgba(14, 30, 55, 0.94) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .publication__type{
+        position: relative;
+        display: block;
+        width: fit-content;
+        padding: 7px 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--light);
+        z-index: 1; 
+        &--blue{
+            background-color: var(--blue);
+        }
+        &--gold{
+            background-color: var(--gold);
+        }
+    }
+    .publication__title{
+        position: relative;
+        font-family: 'NotoSerif', sans-serif;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: var(--light);
+        z-index: 1;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+
+}
+
+
+// =========================================================
+@media screen and (max-width: 1470px){
+    .publication{ 
+        gap: 20px; 
+        border-radius: 20px;
+        padding: 20px;
+        min-height: 195px; 
+    
+        .publication__type{ 
+            padding: 5px 8px;
+            border-radius: 8px;
+            font-size: 14px;  
+        }
+        .publication__title{ 
+            font-size: 22px; 
+        }  
+    }
+}
+@media screen and (max-width: 600px){
+    .publication{ 
+        border-radius: 15px;
+        padding: 20px;
+        min-height: 150px; 
+    
+        .publication__type{  
+            font-size: 12px;  
+        }
+        .publication__title{ 
+            font-size: 18px; 
+        }  
+    }
+}

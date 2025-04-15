@@ -1,0 +1,55 @@
+.pd-list{
+    gap: 4px; 
+    
+} 
+.pd-item{
+    display: flex;
+    gap: 20px;
+    flex-direction: row !important;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: var(--light);
+    border: none;
+
+    .pd-item__parameter{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .pd-item__data{
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--blue);
+        white-space: nowrap;
+    }
+}
+
+// ===========================================================================
+
+@media screen and (max-width: 1470px){
+    .pd-item{ 
+        gap: 20px; 
+        padding: 15px 20px;
+        border-radius: 10px; 
+    
+        .pd-item__parameter{
+            font-size: 18px; 
+        }
+        .pd-item__data{
+            font-size: 18px; 
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .pd-item{  
+        padding: 15px; 
+    
+        .pd-item__parameter{
+            font-size: 15px; 
+        }
+        .pd-item__data{
+            font-size: 15px; 
+        }
+    }
+} 

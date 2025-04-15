@@ -1,0 +1,114 @@
+.reviews-section{
+    padding: 100px 0;
+    .trust-tab-controller{
+        margin-bottom: 30px;
+    }
+    .sticky-elem-col-box {
+        .floating-offer{
+            margin-top: -50px;
+        }
+    }
+}
+.feedback-list{ 
+    position: relative;
+    display: block;
+    column-count:2;
+    // column-width: 50%;
+    list-style-type: none; 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    li { 
+        padding-left: 0;
+        border-left: none;
+        margin-bottom: 20px; 
+        box-sizing: border-box;
+    }
+    .feedback{ 
+        gap: 30px;
+    }
+}
+.social-feedback-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.feedback-letter-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+// ====================================================
+@media screen and (max-width: 1470px){
+    .reviews-section{
+        padding: 80px 0;
+    }
+    .feedback-list{ 
+        position: relative;
+        column-count: auto; 
+        li { 
+            margin-bottom: 10px; 
+            box-sizing: border-box;
+        }
+        .feedback{ 
+            gap: 20px;
+        }
+    }
+    .social-feedback-grid{ 
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .feedback-letter-grid{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 1100px){
+    .reviews-section{ 
+        .trust-tab-controller{
+            margin-bottom: 20px;
+        }
+        .sticky-elem-col-box {
+            .floating-offer{
+                margin-top: 0;
+                order: 1;
+            }
+            .sticky-elem-col-box__main-content{
+                order: 2;
+            }
+        }
+    }
+    .feedback-letter-grid{ 
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 999px){
+    .reviews-section{
+        padding: 60px 0;
+    }
+}
+@media screen and (max-width: 800px){
+    .feedback-letter-grid{ 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 600px){
+    .social-feedback-grid{ 
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+    .feedback-letter-grid{ 
+        grid-gap: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    .feedback-letter-grid{ 
+        grid-template-columns: 1fr;
+    }
+    .reviews-section{
+        padding: 30px 0;
+    }
+}
+@media screen and (max-width: 360px){
+    .social-feedback-grid{ 
+        grid-template-columns: 1fr; 
+    }
+}
