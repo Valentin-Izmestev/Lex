@@ -110,33 +110,76 @@
     </main>
     @@include('_footer.html')
     <div class="great-shadow"></div>
-    <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+    <!-- <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"
+        type="text/javascript"></script> -->
+        <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e1a78638-aee9-40a0-ae0b-730474071a4f' type='text/javascript'></script>
     <script>
         // ------yamaps-----------------------
+
+        const jsonPlacemarks = {
+            activity: [
+                {
+                    name: 'Офис Пушкино',
+                    address: 'Московская область, г. Пушкино, ул. 50 лет Комсомола, 34, БЦ "Деловой", оф.10',
+                    coordinates: [56.001450, 37.849886]
+                },
+                {
+                    name: 'Офис Москва',
+                    address: 'Москва, Мякининское ш., Квартал Спутник, д.5',
+                    coordinates: [55.799187, 37.377552]
+                },
+                {
+                    name: 'Офис в БЦ «Сильвер Стоун»',
+                    address: 'Москва, пр-д Серебрякова, 14, БЦ «Сильвер Стоун», стр. 15, оф. 15227',
+                    coordinates: [55.846399, 37.655523]
+                }
+
+            ]
+        }
+
+
         function initMap() {
             var myMap = new ymaps.Map("map", {
-                center: [55.727937, 37.574690],
-                zoom: 14
+                center: [55.903175, 37.527005],
+                zoom: 9
             });
 
             myMap.controls.add('zoomControl', {
                 size: "large"
             });
 
-            myPlacemark1 = new ymaps.Placemark([55.727937, 37.574690], {
-                // Свойства. 
-                hintContent: '<div class="map-hint caption-color">Сеченовский университет</div>',
-                balloonContent: '<div class="map-hint"><span class="caption-color">Первый Московский государственный медицинский университет имени И. М. Сеченова</span> </div>',
-            }, {
-                iconImageHref: './local/templates/admission/img/map-marker.svg',
-                // Размеры метки.
-                iconImageSize: [46, 62.5],
-                iconImageOffset: [-23, -62.5]
+
+           // создаю маркеры и помещаю их в arrPlacemarks
+           let arrPlacemarks = jsonPlacemarks.activity.map((obj)=>{
+                let myPlacemark = new ymaps.Placemark(obj.coordinates,{
+                    hintContent: `${obj.name}`,
+                    balloonContent: `<div class="lex-map-item"><span class="lex-map-item__name">${obj.name}</span><span class="lex-map-item__address">${obj.address}</span></div>`
+                },
+                {
+                    iconLayout: 'default#image',
+                    iconImageHref: '/local/templates/lex/img/map-marker.svg',
+                    iconImageSize: [46, 62.5],
+                    iconImageOffset: [-23, -62.5] 
+                }
+                ); 
+                return myPlacemark;
             });
 
-            myMap.geoObjects
-                .add(myPlacemark1);
+            /* создаю объект clusterer, добавляю в него вышесозданные маркеры, 
+            далее кластер с находящимеся в нем маркерами добавляю на карту*/
+            let clusterer = new ymaps.Clusterer({
+                clusterIcons: [
+                    {
+                        href: '/local/templates/lex/img/map-marker.svg',
+                        size: [46, 62.5],
+                        offset: [-23, -62.5]
+                    }
+                ] 
+            });
+            clusterer.add(arrPlacemarks);
+            myMap.geoObjects.add(clusterer);
         }
+
         if (document.querySelector('#map')) {
             ymaps.ready(initMap);
         }

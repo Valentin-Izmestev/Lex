@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lex/css/style.min.css">
+	<noscript>
+		<style>
+			.content-wrapper {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body>
+
+	@@include('_header.html')
+	<main class="main">
+		<section class="hall-page hall-page--worker-page hall-page--become-a-partner">
+			<div class="inner"> 
+				<div class="hall-page__content">
+					<ul class="breadcrumbs">
+						<li>
+							<a href="/">Главная</a>
+						</li>
+						<li>
+							<a href="./about.html">О компании</a>
+						</li>  
+					</ul>
+					<h1 class="page-title">Стать партнёром Lex Group</h1>
+                    <p class="hall-page__position">
+                        Сотрудничество, которое открывает новые возможности
+                    </p>
+                    <p>
+                        Мы предлагаем уникальные условия для физических и юридических лиц. Станьте нашим партнером и получите доступ к эксклюзивным бонусам и профессиональной поддержке от специалистов Lex Group
+                    </p> 
+				</div>
+                <div class="buns-for-a-partner">
+                    <div class="buns-for-a-partner-item">
+                        <div class="buns-for-a-partner-item__header">
+                            <span class="buns-for-a-partner-item__icon passport-icon"></span>
+                            <span class="buns-for-a-partner-item__title">Удобный Личный Кабинет</span>
+                        </div>
+                        <p>
+                            Используйте наш сервис для отслеживания этапов работы по делу и информации о вознаграждениях в реферальной программе.
+                        </p>
+                    </div>
+                    <div class="buns-for-a-partner-item">
+                        <div class="buns-for-a-partner-item__header">
+                            <span class="buns-for-a-partner-item__icon gift-icon"></span>
+                            <span class="buns-for-a-partner-item__title">Эксклюзивные бонусы</span>
+                        </div>
+                        <p>
+                            Наши партнеры получают денежное вознаграждение за каждого привлеченного клиента в рамках программы лояльности.
+                        </p>
+                    </div>
+                    <div class="buns-for-a-partner-item">
+                        <div class="buns-for-a-partner-item__header">
+                            <span class="buns-for-a-partner-item__icon shield-icon"></span>
+                            <span class="buns-for-a-partner-item__title">Поддержка от экспертов</span>
+                        </div>
+                        <p>
+                            Наша команда всегда на связи и готова оказать оперативную помощь по любым вопросам сотрудничества
+                        </p>
+                    </div> 
+                    <button class="btn btn--gold upp">Стать партнёром</button>
+                </div>
+			</div>
+		</section>
+		<div class="penultimate-section"></div> 
+	
+		@@include('_consultation-request.html') 
+	</main>
+	@@include('_footer.html')
+	<div class="great-shadow"></div>
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="./local/templates/lex/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

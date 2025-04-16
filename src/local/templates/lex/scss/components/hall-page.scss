@@ -99,6 +99,18 @@
             z-index: 2;
         }
     }
+    &--become-a-partner{
+        .hall-page__content {
+            max-width: 1025px; 
+            margin-bottom: 100px;
+        }
+        p{
+            max-width: 845px;
+        }
+        .buns-for-a-partner{
+            margin-top: auto;
+        }
+    }
     .hall-page__position{
         color: var(--gold);
     }

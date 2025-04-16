@@ -80,13 +80,24 @@
     height: 820px;
 
 }
-#map{
-    background: red;
+#map{ 
     position: absolute;
     top: -100px;
     right: -100px;
     width: calc(100% + 100px);
     height: 100%;
+}
+.lex-map-item{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    .lex-map-item__name{
+        font-family: 'NotoSerif', sans-serif;
+        font-size: 18px;
+    }
+    .lex-map-item__address{
+        font-size: 14px;
+    }
 }
 
 // ==================================================================================
@@ -137,14 +148,14 @@
             gap: 40px;
         }
     }
-    .office-cell-box{ 
-        max-width:  100%;
+    .office-cell-box{  
         width: 100%;
     }
     .map-wr{
         position: relative;
         width: 100%; 
         padding-top: 57.45%;
+        min-height: 434px;
         height: 100%; 
         border-radius: 20px;
         overflow: hidden;
@@ -181,6 +192,7 @@
             } 
         }
     }
+ 
 }
 @media screen and (max-width: 700px){
     .office-cell{ 

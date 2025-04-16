@@ -136,4 +136,35 @@
     background-color: var(--blue);
 }
 
+.gift-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/gift-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--gold);
+}
+.shield-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/shield-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--gold);
+}
+.passport-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/passport-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--gold);
+}
+
 

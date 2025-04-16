@@ -1,0 +1,46 @@
+.buns-for-a-partner{
+    position: relative;
+    display: flex;
+    
+    border-radius: 30px;
+    background-color: rgba(3, 14, 23, 0.8);
+    padding-right: 53px;
+    overflow: hidden;
+    box-sizing: border-box;
+    .btn{
+        flex-shrink: 0;
+        padding: 20px 50px;
+        align-self: center;
+    }
+    .buns-for-a-partner-item{
+        width: 26.75%;
+    }
+}
+
+.buns-for-a-partner-item{
+    padding: 30px;
+    box-sizing: border-box;
+    .buns-for-a-partner-item__header{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--light);
+    }
+    .buns-for-a-partner-item__icon{
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        background-color: var(--gold);
+    }
+    .buns-for-a-partner-item__title{
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 600; 
+    }
+    p{
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 400;
+    }
+}

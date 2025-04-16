@@ -19,32 +19,7 @@ h3, .h3{
     line-height: 1.2;
     font-weight: 700;
 }
-.checked-list{
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    li{
-        position: relative;
-        padding-left: 35px;
-        box-sizing: border-box;
-        &::after{
-            content: ''; 
-            position: absolute;
-            top: 2px;
-            left: 0;
-            width: 30px;
-            height: 30px;
-            mask-image: url(../img/icons/checked-list-icon.svg);
-            mask-size: contain;
-            mask-repeat: no-repeat;
-            mask-position: center center;
-            background-color: var(--gold);
-        }
-    }
-}
+
 main{
     ul{
         display: flex;
@@ -102,6 +77,34 @@ main{
                     }
                 }
             }
+        }
+    }
+}
+.checked-list{
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li{
+        position: relative;
+        padding-left: 35px;
+        font-weight: 500;
+        border-left: none;
+        box-sizing: border-box;
+        &::after{
+            content: ''; 
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            mask-image: url(../img/icons/checked-list-icon.svg);
+            mask-size: contain;
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            background-color: var(--gold);
         }
     }
 }
