@@ -1,0 +1,80 @@
+.our-advantages{
+    display: flex;
+    justify-content: space-between;
+    gap: 40xp;
+    color: var(--light);
+    .our-advantages__text-col{
+        width: 45%;
+        max-width: 707px;
+        .section-title{
+            margin-bottom: 40px;
+        }
+        p{
+            font-size: 22px;
+            margin-top: 30px;
+        }
+    }
+    .our-advantages__reason-box{
+        width: 50%;
+        max-width: 849px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+// =============================================================
+@media screen and (max-width: 1470px){
+    .our-advantages{
+        display: flex;
+        justify-content: space-between;
+        gap: 40xp;
+        color: var(--light);
+        .our-advantages__text-col{
+            width: 45%; 
+            max-width: 534px;
+            .section-title{
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .our-advantages__reason-box{
+            width: 50%;
+            max-width: 620px; 
+        }
+    }
+}
+
+@media screen and (max-width: 999px){
+    .our-advantages{ 
+        gap: 20px; 
+        flex-direction: column;
+        .our-advantages__text-col{
+            width: 100%; 
+            max-width: 100%; 
+            .section-title{
+                margin-bottom: 40px;
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .our-advantages__reason-box{
+            width: 100%; 
+            max-width: 100%; 
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .our-advantages{  
+        .our-advantages__text-col{
+            width: 100%; 
+            max-width: 100%;  
+            p{
+                font-size: 16px;
+            }
+        } 
+    }
+}

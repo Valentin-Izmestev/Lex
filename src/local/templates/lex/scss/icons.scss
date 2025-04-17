@@ -166,5 +166,35 @@
     mask-repeat: no-repeat;
     background-color: var(--gold);
 }
+.heart-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/heart-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.handshake-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/handshake-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.timer-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/timer-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
 
 
