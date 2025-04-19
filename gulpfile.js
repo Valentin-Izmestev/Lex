@@ -20,7 +20,7 @@ let path = {
         js: source_folder +"/local/templates/lex/js/script.js",
         img: source_folder +"/local/templates/lex/img/**/*.{jpg,png,svg,gif,ico,webp}",
         image: source_folder +"/local/templates/lex/image/**/*.{jpg,png,svg,gif,ico,webp}",
-        fonts: source_folder + "/local/templates/lex/fonts/**/*.{eot,ttf,woff,woff2,svg}"
+        fonts: source_folder + "/local/templates/lex/fonts/**/*.{eot,ttf,woff,woff2,svg,otf}"
     },
     // пути папок за которыми нужно будет следить
     watch:{
