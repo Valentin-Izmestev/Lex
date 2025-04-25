@@ -387,6 +387,41 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
+  const muvieSliderUp = document.querySelector('.swiper-muvie--up');
+ 
+  if (muvieSliderUp) {
+    var swipermuvieSliderUp = new Swiper(muvieSliderUp, {  
+      loop: true,
+      // roundLengths: true, 
+      slidesPerView: 5,
+      spaceBetween: 20,
+      speed: 10000,
+      loop: true, 
+      autoplay: {
+        delay: 0,
+        //disableOnInteraction: true // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+      }
+    });
+  }
+
+  const muvieSliderDown = document.querySelector('.swiper-muvie--down');
+ 
+  if (muvieSliderDown) {
+    var swipermuvieSliderDown = new Swiper(muvieSliderDown, {  
+      loop: true,
+      // roundLengths: true, 
+      slidesPerView: 5,
+      spaceBetween: 20,
+      speed: 10000,
+      loop: true, 
+      autoplay: {
+        reverseDirection: true,
+        delay: 0,
+        //disableOnInteraction: true // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+      }
+    });
+  }
+
   // lightgallery
 
   const nlLightgallery = document.querySelectorAll('.v-lightgallery');
@@ -424,5 +459,23 @@ document.addEventListener('DOMContentLoaded', function () {
         })
       })
     }
+
+    // работа поля для пароля
+    const nlEyeBtn = document.querySelectorAll('.eye-btn');
+    
+    if(nlEyeBtn.length > 0){
+      nlEyeBtn.forEach(eye => {
+        eye.addEventListener('click', (e) => {
+          const passInput = eye.previousElementSibling; 
+          if(eye.classList.contains('open')){
+            eye.classList.remove('open');
+            passInput.setAttribute('type', 'password');
+          }else{
+            eye.classList.add('open');
+            passInput.setAttribute('type', 'text');
+          }
+        })
+      })
+    } 
 
 })

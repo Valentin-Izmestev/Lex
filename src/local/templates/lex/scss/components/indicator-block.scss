@@ -1,0 +1,99 @@
+.indicator-block-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;  
+    &--long-last{
+        .indicator-block{
+            &:last-child{
+                grid-column: 1/3;
+            }
+        }
+    }
+}
+.indicator-block{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.102);
+    color: var(--light);
+    box-sizing: border-box;
+
+    .indicator-block__value{
+        font-family: 'NotoSerif', sans-serif;
+        font-size: 60px;
+        line-height: 1;
+        font-weight: 700; 
+    }
+    .indicator-block__desk{
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500; 
+    }
+}
+
+// ===================================================================
+
+@media screen and (max-width: 1470px){
+    .indicator-block-box{ 
+        grid-gap: 10px;  
+    }
+    .indicator-block{ 
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px; 
+    
+        .indicator-block__value{ 
+            font-size: 40px; 
+        }
+        .indicator-block__desk{
+            font-size: 15px; 
+        }
+    }
+}
+
+@media screen and (max-width: 999px){
+    .indicator-block{  
+        .indicator-block__value{ 
+            font-size: 30px; 
+        } 
+    }
+}
+@media screen and (max-width: 1470px){
+    .indicator-block{ 
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px; 
+    
+        .indicator-block__value{ 
+            font-size: 40px; 
+        }
+        .indicator-block__desk{
+            font-size: 15px; 
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .indicator-block-box{ 
+        grid-template-columns: 1fr;
+        grid-gap: 5px; 
+        &--long-last{
+            .indicator-block{
+                &:last-child{
+                    grid-column: 1/2;
+                }
+            }
+        }
+    }
+    .indicator-block{ 
+        gap: 20px;
+        padding: 15px;
+        border-radius: 15px; 
+    
+        .indicator-block__value{ 
+            font-size: 25px; 
+        } 
+    }
+}

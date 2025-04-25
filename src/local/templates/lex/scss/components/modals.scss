@@ -1,0 +1,119 @@
+.great-shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--great-transition);
+    &.open{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal{ 
+    position: absolute;
+    right: -100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--light);
+    border-radius: 30px 0 0 30px;
+    width: 100%;
+    max-width: 800px;
+    padding: 60px;
+    box-sizing: border-box;
+    transition: all 200ms ease-out;
+    .modal__body{
+        display: flex;
+        flex-grow: 1; 
+        flex-direction: column;
+        height: 100%;
+    }
+    .modal__close-row{
+        display: none;
+    }
+    .modal__header{
+        margin-bottom: 40px;
+    }
+    .modal__inner{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex-grow: 1;
+        overflow-Y: auto;
+    }
+    .modal__footer{
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .btn{
+            width: 100%;
+        }
+    }
+    &.open{
+        right: 0;
+    }
+    .modal-step{
+        display: none;
+        &.active{
+            display: flex;
+        }
+    }
+}
+
+ 
+
+.modal-tab-control{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background-color: var(--bg);
+    overflow: hidden;
+    .modal-tab-control__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        min-height: 60px;
+        background-color: var(--bg);
+        border-radius: 50px;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: 500;;
+        transition: var(--great-transition); 
+        &.active{
+            color: var(--light);
+            background-color: var(--blue);
+        }
+    }
+}
+.modal-tab-display{
+    display: none;
+    &.active{
+        display: flex;
+    }
+}
+
+// ========================================================================
+@media screen and (max-width: 1470px){
+    .modal{  
+        max-width: 600px;
+        padding: 40px; 
+        font-size: 16px;
+        .modal__header{
+            margin-bottom: 30px;
+        }
+        .modal__inner{ 
+            gap: 30px; 
+        }
+    }
+}

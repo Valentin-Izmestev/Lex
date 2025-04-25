@@ -1,0 +1,206 @@
+<div class="great-shadow">
+ 
+    <div class="modal" id="auth-reg-modal">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body modal-step active" id="modal-step--auth-step">
+            <div class="modal__header">
+                <span class="modal__title h3">Вход</span>
+            </div>
+            <div class="modal__inner">
+                <p>
+                    Мы предлагаем уникальные условия для физических и юридических лиц. Станьте нашим партнером и
+                    получите доступ к эксклюзивным бонусам и профессиональной поддержке от специалистов Lex Group
+                </p>
+                <form class="modal-form">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="login" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required" autocomplete="username">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="form-elem form-elem--password">
+                        <div class="form-elem__field-box">
+                            <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                required="required" autocomplete="current-password">
+                            <button type="button" class="eye-btn">
+                                <span class="closed-eye-icon"></span>
+                                <span class="open-eye-icon"></span>
+                            </button>
+                        </div>
+                        <span class="form-elem__error">Ошибка</span>
+                        <a href="#" class="forgot-your-password">Забыли пароль?</a>
+                    </div>
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+
+                        <button type="button" class="btn btn--bg btn--thin-text"
+                            data-modal-step-id="modal-step--auth-reg">
+                            <span>Ещё нет аккаунта? <span class="color-blue">Зарегистрироваться</span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal__body modal-step" id="modal-step--auth-reg">
+            <div class="modal__header">
+                <span class="modal__title h3">Регистрация</span>
+            </div>
+            <div class="modal__inner modal-tab">
+                <div class="modal-tab-control">
+                    <button class="modal-tab-control__btn active">Физическое лицо</button>
+                    <button class="modal-tab-control__btn">Юридическое лицо</button>
+                </div>
+                <form class="modal-form modal-tab-display active">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="Фамилия"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="name" class="form-elem__field" placeholder="Имя"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="patronymic" class="form-elem__field" placeholder="Отчество"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="email" class="form-elem__field" placeholder="E-mail"  pattern="^\S+@\S+\.\S+$" required="required" autocomplete="email">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="tel" name="tel" class="form-elem__field tel-mask" placeholder="Номер телефона" required="required" autocomplete="tel">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="columns-box columns-box--two-col">
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                    required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password"
+                                    placeholder="Повторите пароль" required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                    </div>
+
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+                        <button type="button" class="btn btn--bg btn--thin-text"
+                            data-modal-step-id="modal-step--auth-step">
+                            <span>Уже есть аккаунт? <span class="color-blue">Войти</span></span>
+                        </button>
+                    </div>
+                </form>
+                <form class="modal-form modal-tab-display ">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="ИНН"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="Название конторы"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="Фамилия"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="name" class="form-elem__field" placeholder="Имя"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="patronymic" class="form-elem__field" placeholder="Отчество"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required" autocomplete="email">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="tel" name="tel" class="form-elem__field mask-tel" placeholder="Номер телефона" required="required" autocomplete="tel">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="columns-box columns-box--two-col">
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                    required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password"
+                                    placeholder="Повторите пароль" required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                    </div>
+
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+                        <button type="button" class="btn btn--bg btn--thin-text"
+                            data-modal-step-id="modal-step--auth-step">
+                            <span>Уже есть аккаунт? <span class="color-blue">Войти</span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

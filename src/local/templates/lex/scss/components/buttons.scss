@@ -76,7 +76,10 @@
         }
     }
     &--bg{
-
+        background-color: var(--bg);
+    }
+    &--thin-text{
+        font-weight: 500;
     }
     &--light{
 
@@ -93,6 +96,11 @@
         .btn__icon{
             background-color: var(--light);
         }
+    }
+    &[disabled], 
+    &.disabled{
+        opacity: 0.4;
+        cursor:auto;
     }
     
 }

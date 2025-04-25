@@ -1,0 +1,19 @@
+ 
+.swiper-muvie{
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+            transition-timing-function: linear !important;
+  }
+}
+.swiper-muvie-item{
+  display: block;
+  width: 100%;
+  // width: 380px;
+  // height: 320px;
+  height: auto;
+  // max-width: 320px;
+}
+.swiper-muvie--up{
+  margin-bottom: 14px;
+}
+ 

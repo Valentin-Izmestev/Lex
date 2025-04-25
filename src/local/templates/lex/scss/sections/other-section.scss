@@ -5,6 +5,9 @@
 .commot-padding-section{
     padding: 100px 0;
 }
+.commot-top-padding-section{
+    padding-top: 100px;
+}
 .gallery-section{
     position: relative;
     padding-top: 70px;
@@ -42,6 +45,9 @@
             margin-bottom: 80px;
         }
     }
+    .commot-top-padding-section{
+        padding-top: 80px;
+    }
 }
 @media screen and (max-width: 999px){
     .basic-services-section{
@@ -59,6 +65,9 @@
             margin-bottom: 60px;
         }
     }
+    .commot-top-padding-section{
+        padding-top: 60px;
+    }
 }
 @media screen and (max-width: 600px){
     .basic-services-section{
@@ -72,5 +81,8 @@
         .inner{
             margin-bottom: 30px;
         }
+    }
+    .commot-top-padding-section{
+        padding-top: 30px; 
     }
 }

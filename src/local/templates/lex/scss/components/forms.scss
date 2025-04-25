@@ -1,7 +1,24 @@
 .form-elem{
     position: relative;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
     width: 100%;
+    .form-elem__caption{
+        width: 100%;
+        font-size: 18px;
+    }
+    .form-elem__field-box{
+        position: relative;
+        width: 100%;
+    }
+    .form-elem__error{
+        display: none;
+        font-size: 16px;
+        color: var(--error);
+    }
     .form-elem__field{
         padding: 16px 24px;
         border: 1px solid var(--border);
@@ -46,7 +63,72 @@
             &:focus:-moz-placeholder{opacity: 0; transition: opacity 0.3s ease;}
             &:focus:-ms-input-placeholder{opacity: 0; transition: opacity 0.3s ease;}
     }
-    
+    &--password{
+        .form-elem__field{
+            padding-right: 55px;
+        }
+        .eye-btn{
+            position: absolute;
+            top: 50%;
+            right: 24px;
+            transform: translateY(-50%);
+        }
+    }
+    &--error{
+        .form-elem__field,
+        .form-elem__textarea{
+            border: 1px solid var(--error);
+            &::-webkit-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color: var(--error);}
+            &::-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:var(--error);}
+            &:-moz-placeholder{opacity: 1; transition: opacity 0.3s ease; color:var(--error);}
+            &:-ms-input-placeholder{opacity: 1; transition: opacity 0.3s ease; color:var(--error);}
+        }
+        .form-elem__error{
+            display: block;
+        }
+    }
+    .forgot-your-password{
+        margin-left: auto;
+    }
+}
+.forgot-your-password{
+    align-self: flex-end;
+    font-size: 18px;
+    line-height: 1.4;
+    color: rgba(42, 49, 92, 0.8);
+    transition: var(--great-transition);
+    &:hover{
+        text-decoration: none;
+        color: var(--blue);
+    }
+}
+.eye-btn{
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background-color: transparent; 
+    span{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: var(--great-transition);
+    }
+    .closed-eye-icon{
+        opacity: 1;
+    }
+    .open-eye-icon{
+        opacity: 0;
+    }
+    &.open{
+        .closed-eye-icon{
+            opacity: 0;
+        }
+        .open-eye-icon{
+            opacity: 1;
+        }
+    }
 }
 fieldset{
     padding: 0;
@@ -89,6 +171,17 @@ legend{
         min-height: 64px;
     }
     
+}
+
+// ------------------------------------------------------------------------------------------------
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    .columns-box {
+        grid-gap: 20px;
+    }
 }
 // ====================================================================================
 @media screen and (max-width: 880px){

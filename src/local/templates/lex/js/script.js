@@ -4,5 +4,6 @@
 
 
 @@ include('header.js');
+@@ include('modal.js');
 @@ include('trust-tap.js');
 @@ include('vi-script.js');
