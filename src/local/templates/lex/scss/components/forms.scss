@@ -184,6 +184,12 @@ legend{
     }
 }
 // ====================================================================================
+@media screen and (max-width: 1470px){
+    .forgot-your-password { 
+        font-size: 16px; 
+    }
+}
+
 @media screen and (max-width: 880px){
     .form-ask-author-question {
         .btn {
@@ -198,5 +204,15 @@ legend{
         .btn{
             width: 100%;
         }
+    }
+    .form-elem {
+        .form-elem__field, 
+        .form-elem__textarea { 
+            font-size: 15px; 
+        }
+        
+    }
+    .forgot-your-password { 
+        font-size: 14px; 
     }
 }

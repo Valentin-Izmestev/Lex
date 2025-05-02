@@ -1,0 +1,229 @@
+.table-title{
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: 'NotoSerif', sans-serif;
+}
+.table-box{
+    position: relative;
+    overflow-x: auto;
+}
+.table{
+    width: 100%;
+    color: var(--dark-blue);
+    thead{
+        th{
+            padding: 10px 6px;
+            font-size: 14px;
+            line-height: 1.6; 
+            font-weight: 600;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        tr{
+            th:first-child{
+                padding-left: 30px;
+            }
+            th:last-child{
+                padding-left: 16px;
+            }
+        }
+    }
+    tbody{
+        th,td{
+            padding: 21px 6px;
+            font-size: 16px;
+            background-color: var(--light);
+            vertical-align: middle;
+            font-weight: 500;
+            box-sizing: border-box;
+
+            &:first-child{
+                padding-left: 30px;
+            }
+            &:last-child{
+                padding-right: 16px;
+            }
+            &:not(:last-child){
+                border-right: 1px solid var(--border);
+            }
+        }
+        tr{ 
+            &:first-child{
+                th, td{
+                    &:first-child{
+                        border-radius: 30px 0 0 0;
+                    }
+                    &:last-child{
+                        border-radius: 0 30px 0 0;
+                    }
+                }
+            }
+            &:last-child{
+                th, td{
+                    &:first-child{
+                        border-radius:  0 0 0 30px;
+                    }
+                    &:last-child{
+                        border-radius: 0  0 30px 0;
+                    }
+                }
+            }
+           
+        }
+    }
+}
+
+.table--zebra{
+    tbody{
+        tr{
+            &:nth-child(2n){
+                td, th{
+                    background-color: #F7F9FC;
+                }
+            }
+        }
+    }
+}
+
+.table--moratorium-periods{
+    thead{
+        tr{
+            th{
+                &:first-child{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    tbody{
+        th{
+            text-align: left;
+            min-width: 128px;
+        }
+        td{
+            text-align: center;
+            width: 212px;
+            min-width: 150px;
+        }
+    }
+}
+
+
+// ===========================================================
+@media screen and (max-width: 1470px){
+    
+    .table{ 
+        thead{
+            th{ 
+                padding: 10px 5px;
+                
+            }
+            tr{
+                th:first-child{
+                    padding-left: 20px;
+                }
+                th:last-child{
+                    padding-left: 16px;
+                }
+            }
+        }
+        tbody{
+            th,td{
+                padding: 15px 5px;
+                font-size: 14px; 
+    
+                &:first-child{
+                    padding-left: 20px;
+                }
+                &:last-child{
+                    padding-right: 16px;
+                } 
+            }
+            tr{ 
+                &:first-child{
+                    th, td{
+                        &:first-child{
+                            border-radius: 20px 0 0 0;
+                        }
+                        &:last-child{
+                            border-radius: 0 20px 0 0;
+                        }
+                    }
+                }
+                &:last-child{
+                    th, td{
+                        &:first-child{
+                            border-radius:  0 0 0 20px;
+                        }
+                        &:last-child{
+                            border-radius: 0  0 20px 0;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+    .table-title{
+        font-size: 24px; 
+    }
+}
+@media screen and (max-width: 999px){
+    .table{ 
+        thead{
+            th{ 
+                font-weight: 500; 
+            }
+            tr{
+                th:first-child{
+                    padding-left: 15px;
+                }
+                th:last-child{
+                    padding-left: 6px;
+                }
+            }
+        }
+        tbody{
+            th,td{
+                padding: 20px 6px;
+                font-size: 14px; 
+    
+                &:first-child{
+                    padding-left: 15px;
+                }
+                &:last-child{
+                    padding-right: 15px;
+                } 
+            }
+            tr{ 
+                &:first-child{
+                    th, td{
+                        &:first-child{
+                            border-radius: 20px 0 0 0;
+                        }
+                        &:last-child{
+                            border-radius: 0 20px 0 0;
+                        }
+                    }
+                }
+                &:last-child{
+                    th, td{
+                        &:first-child{
+                            border-radius:  0 0 0 20px;
+                        }
+                        &:last-child{
+                            border-radius: 0  0 20px 0;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .table-title{
+        font-size: 20px; 
+    }
+}

@@ -1,0 +1,12 @@
+.tooltip{
+    cursor: pointer;
+}
+.tooltip-icon{
+    width: 20px;
+    height: 20px;
+    background-color: #8B90AC;
+    
+    &:hover{
+        background-color: var(--gold);
+    }
+}

@@ -1,0 +1,311 @@
+
+.rate-row{
+    position: relative;
+    overflow: auto;
+    margin-right: -100px;
+    padding-right: 100px;
+}
+.rate-box{ 
+    display: flex; 
+    gap: 20px; 
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.rate{
+    position: relative;
+    max-width: 415px;
+    padding: 25px;
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-sizing: border-box;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .rate__head{
+        position: relative;
+        display: flex;
+        flex-direction: column; 
+        min-height: 270px;
+        padding: 10px;
+        z-index: 1;
+    }   
+    .rate__title{
+        font-size: 25px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
+    .rate__deadlines{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 500;
+    } 
+    .rate__descr{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 500;
+        color: var(--dark-blue);
+    }
+    .rate__action{
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;;
+    }
+    .rate__price-box{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .btn{
+        width: 100%;
+        min-height: 54px;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    .rate-cell{
+        border-top: 1px solid rgba(64, 95, 206, 0.302);
+        margin-top: 20px; 
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .rate__body{
+        position: relative;
+        z-index: 1;
+        font-size: 15px;
+        .rate-cell{
+            &:first-child{
+                margin-top: 10px;
+            }
+        }
+        p{
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--dark-blue);
+        }
+        .rate-lv{
+            margin-bottom: 20px;
+        }
+    }
+    
+    .checked-list{
+        gap: 12px;
+        li{
+            padding-left: 29px;
+            font-size: 15px;
+            font-weight: 500;
+            &::after{
+                top: 0;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    } 
+    &--level-one{
+        &::before{ 
+            background-image: url(../img/rate-level-one-bg.png);
+        }
+        .checked-list{ 
+            li{ 
+                &::after{
+                    background-color: #7988C0;
+                }
+            }
+        } 
+    }
+    &--level-two{
+        &::before{ 
+            background-image: url(../img/rate-level-two-bg.png);
+        }
+        .checked-list{ 
+            li{ 
+                &::after{
+                    background-color: #7988C0;
+                }
+            }
+        } 
+    }
+    &--level-three{
+        &::before{ 
+             background-image: url(../img/rate-level-three-bg.png);
+        }
+        .checked-list{ 
+            li{ 
+                &::after{
+                    background-color: #08164B;
+                }
+            }
+        } 
+    }
+    &--level-four{
+        &::before{ 
+             background-image: url(../img/rate-level-four-bg.png);
+        }
+        .checked-list{ 
+            li{ 
+                &::after{
+                    background-color: var(--gold);
+                }
+            }
+        } 
+    }
+}
+
+
+.rate-lv{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    .rate-lv__label{ 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        flex-wrap: wrap;
+        font-size: 15px;
+        line-height: 1;
+        font-weight: 500;
+        color: #405E75;
+        min-height: 20px;
+        
+    }
+    .rate-lv__value{
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 700;
+        .rate__price{
+            font-size: 30px;
+        }
+    }
+}
+
+// ==============================================================================
+
+@media screen and (max-width: 1500px){
+    .rate-box{
+        .rate{
+            flex-shrink: 0;
+        }
+    }
+    .rate{ 
+        width: 305px;
+        padding: 10px;
+        border-radius: 20px; 
+ 
+        .rate__head{ 
+            min-height: 265px;
+            padding: 10px; 
+        }   
+        .rate__title{
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+        .rate__deadlines{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px; 
+        } 
+        .rate__action{ 
+            gap: 20px;
+        }
+        .rate__price-box{ 
+            gap: 20px; 
+        }
+        .btn{ 
+            min-height: 48px; 
+            font-size: 14px;
+        }
+        .rate-cell{
+            border-top: 1px solid rgba(64, 95, 206, 0.302);
+            margin-top: 20px; 
+            padding-top: 20px;
+            box-sizing: border-box;
+        }
+        .rate__body{
+            position: relative;
+            z-index: 1;
+            font-size: 13px;
+            .rate-cell{
+                &:first-child{
+                    margin-top: 10px;
+                }
+            }
+            p{
+                margin-bottom: 10px; 
+            }
+            .rate-lv{
+                margin-bottom: 20px;
+            }
+        }
+        
+        .checked-list{
+            gap: 12px;
+            li{
+                padding-left: 29px;
+                font-size: 13px; 
+            }
+        }  
+    }
+    
+    
+    .rate-lv{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        .rate-lv__label{  
+            font-size: 13px; 
+            
+        }
+        .rate-lv__value{
+            font-size: 16px; 
+            .rate__price{
+                font-size: 24px;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 1470px){
+    .rate-row{ 
+        margin-right: -80px;
+        padding-right: 80px;
+    }
+}
+@media screen and (max-width: 1335px){
+    .rate-row{ 
+        margin-right: -20px;
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .rate-box { 
+        gap: 10px; 
+    }
+}
+@media screen and (max-width: 500px){
+    .rate-row{ 
+        margin-right: -15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 350px){
+    .rate {
+        width: 270px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+}

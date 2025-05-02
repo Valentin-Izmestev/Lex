@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title here</title>
+
+	<!--   Cascading Style Sheets-->
+	<!-- <link rel="stylesheet" href="css/style.css">  -->
+	<link rel="stylesheet" href="./local/templates/lex/css/style.min.css">
+	<noscript>
+		<style>
+			.content-wrapper {
+				overflow: auto;
+			}
+		</style>
+	</noscript>
+</head>
+
+<body>
+
+	@@include('_header-auth.html')
+	<main class="main">
+		<section class="hall-page hall-page--auth-user">
+			<div class="inner">
+				<div class="hall-page__content">
+                    <div class="hall-page__auth-nav-panel">
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="/">Главная</a>
+                            </li> 
+                        </ul>
+                        <a href="#" class="exit-btn">
+                            Выйти
+                            <span class="exit-btn__icon go-to-icon"></span>
+                        </a>
+                    </div> 
+					<h1 class="page-title">Личный кабинет</h1>
+				</div> 
+			</div>
+		</section>
+        <div class="user-panel-section">
+            <div class="inner">
+                <div class="user-panel">
+                    <div class="user-panel-lv">
+                        <div class="user-panel-lv__label">Здравствуйте,</div>
+                        <div class="user-panel-lv__value">Константинопольский К.К.</div>
+                        <!-- <div class="user-panel-lv__value">КонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольский</div> -->
+                    </div>
+                    <div class="user-panel-lv">
+                        <div class="user-panel-lv__label">Следующий клиент</div>
+                        <div class="user-panel-lv__value">+ 6 000 ₽</div>
+                    </div>
+                    <div class="user-panel-lv">
+                        <div class="user-panel-lv__label">Ваш код партнёра</div>
+                        <div class="user-panel-lv__value  copyred-cell">
+                            <span class="partners-code copyred-cell__target">
+                                CJKHH
+                            </span>
+                            <button class="copy-it-btn copy-it-icon">скопировать код партнера</button>
+                            <div class="copyred-cell__success-message">Скопированно в буфер обмена</div>
+                        </div>
+                        
+                    </div>
+                    <div class="user-panel__btn-box">
+                        <a href="#" class="btn btn--border upp">
+                            Следующий кейс 
+                        </a>
+                        <button class="btn btn--gold upp">Передать клиента</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        afafafawfawfawf
+		<div class="penultimate-section"></div> 
+	
+		@@include('_consultation-request.html') 
+	</main>
+	@@include('_footer.html')
+	<div class="great-shadow"></div>
+	<!-- ++++++++++JavaScript++++++++++-->
+	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+	<script src="./local/templates/lex/js/script.js"></script>
+	<!-- ++++++++++JavaScript end++++++++++-->
+</body>
+
+</html>

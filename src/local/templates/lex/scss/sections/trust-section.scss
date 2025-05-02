@@ -35,6 +35,13 @@
     .suggestion-feedback{
         margin-top: 50px;
     }
+    &--no-bg{
+        background-color: transparent;
+        padding: 100px 0;
+        .suggestion-feedback{
+            background-color: var(--light);
+        }
+    }
 }
 
 
@@ -61,7 +68,7 @@
         }
         .trust-section__text-box{
             font-size: 16px;
-        }
+        } 
     }
 }
 @media screen and (max-width: 1200px){

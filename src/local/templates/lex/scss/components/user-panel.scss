@@ -1,0 +1,182 @@
+.user-panel{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    box-sizing: border-box;
+    .user-panel__btn-box{
+        display: flex;
+        gap: 20px;
+        .btn{
+            min-height: 70px;
+            padding: 10px 30px;
+            font-size: 16px;
+            &--border{
+                border: 1px solid var(--light);
+                color: var(--light);
+                &:hover{
+                    border: 1px solid var(--gold);
+                color: var(--gold);
+                }
+            }
+        }
+    }
+}
+
+.user-panel-lv{
+    color: var(--light);
+    .user-panel-lv__label{
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 600;
+    }
+    .user-panel-lv__value{
+        
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 700;
+ 
+    }
+}
+.copyred-cell{
+    position: relative;
+    .copyred-cell__target{
+
+    }
+    .copy-it-btn{
+    
+    }
+    .copyred-cell__success-message{
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 50%;
+        width: fit-content;
+        padding: 10px;
+        background-color: var(--light);
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: var(--dark);
+        transform: translateX(-50%);
+        box-shadow: 0 0 7px 0  rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        z-index: 1;
+        transition: var(--great-transition);
+        opacity: 0;
+        visibility: hidden;
+    }
+    &.copyred-cell--success{
+        .copyred-cell__success-message{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+// ======================================================================
+@media screen and (max-width: 1590px){
+    .user-panel{  
+        gap: 20px; 
+        padding: 20px 30px;
+        border-radius: 20px; 
+        .user-panel__btn-box{
+            display: flex;
+            gap: 10px;
+            .btn{
+                min-height: 58px;
+                padding: 10px 20px;
+                font-size: 13px; 
+            }
+        }
+    }
+    .user-panel-lv{
+        color: var(--light);
+        .user-panel-lv__label{
+            font-size: 14px; 
+        }
+        .user-panel-lv__value{  
+            margin-top: 10px;
+            font-size: 20px;  
+            .copy-it-btn{
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1135px){
+    .user-panel{   
+        flex-wrap: wrap;
+        .user-panel__btn-box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .btn{
+                width: 100%; 
+            }
+        }
+    }
+}
+@media screen and (max-width: 790px){
+    .user-panel{     
+        .user-panel__btn-box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .btn{
+                width: 100%; 
+            }
+        }
+    }
+    .user-panel-lv{
+        color: var(--light);
+        .user-panel-lv__label{
+            font-size: 14px; 
+        }
+        .user-panel-lv__value{   
+            font-size: 18px;  
+            .copy-it-btn{
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 520px){
+    .user-panel{    
+        padding: 15px;
+        border-radius: 15px;
+
+        .user-panel__btn-box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            .btn{
+                width: 100%; 
+            }
+        }
+    }
+    .user-panel-lv{
+        color: var(--light);
+        .user-panel-lv__label{
+            font-size: 12px; 
+        }
+        .user-panel-lv__value{   
+            font-size: 18px;  
+            .copy-it-btn{
+                position: relative;
+                top: -3px;
+            }
+        }
+    }
+}

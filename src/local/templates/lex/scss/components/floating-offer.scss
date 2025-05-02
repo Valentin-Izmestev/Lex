@@ -44,8 +44,16 @@
             max-width: 300px;  
         } 
     }
+    &--calculator{
+        .floating-offer__title{
+            max-width: 323px; 
+        }
+        p { 
+            max-width: 323px; 
+        }
+    }
     &--big-question{
-
+        
     }
 }
 

@@ -158,11 +158,47 @@
 .btn-to-share{
     font-weight: 600;
 }
+.exit-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--light);
+    transition: var(--great-transition);
+
+    .exit-btn__icon{
+        width: 20px;
+        height: 20px; 
+        background-color: var(--light);
+        transition: var(--great-transition);
+    }
+    &:hover{
+        color: var(--gold);
+        text-decoration: none;
+        .exit-btn__icon{
+            background-color: var(--gold);
+        }
+    }
+}
+.copy-it-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    transition: var(--great-transition);
+    &:hover{
+        background-color: var(--gold);
+    }
+}
 // ==============================================================
 @media screen and (max-width: 1470px){
     .btn{
         min-height: 64px;
         font-size: 16px;
+    }
+    .exit-btn{ 
+        font-size: 15px; 
     }
 }
 @media screen and (max-width: 999px){
@@ -180,5 +216,10 @@
 @media screen and (max-width: 700px){
     .btn{
         min-height: 54px; 
+    }
+}
+@media screen and (max-width: 600px){
+    .exit-btn{ 
+        font-size: 13px; 
     }
 }

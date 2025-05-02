@@ -227,6 +227,20 @@
         width: 22px;
         height: 22px;
     }
+    &--user-auth{
+        gap: 10px;
+        background-color: var(--gold);
+        .briefcase-icon{
+            display: none;
+        }
+        .btn__text--mobile{
+            display: block;
+        }
+        .btn__icon{
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 .logo{
     display: block;
@@ -790,7 +804,27 @@
     }
  
 }
-
+@media screen and (max-width: 900px){
+    #header{
+        .btn-enter{ 
+            gap: 5px;
+            &--user-auth{ 
+                .briefcase-icon{
+                    display: block;
+                } 
+                .btn__text{
+                    &--desk{
+                        display: none;
+                    }
+                    &--mobile{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+ 
+}
 @media screen and (max-width: 700px){
     .burger-btn{
         padding: 0;
@@ -830,14 +864,21 @@
             .btn-enter {
                 min-height: 40px;
                 width: 40px;
-                padding: 0;
+                padding: 0; 
                 .btn__text{
                     display: none;
                 } 
                 .btn__icon {
                     width: 24px;
-                    height: 24px;
-                    
+                    height: 24px; 
+                }
+                &--user-auth{
+                    width: auto;
+                    padding: 5px 10px; 
+                    .btn__text--mobile{
+                        display: block;
+                        font-size: 14px;
+                    }
                 }
             }
             .btn-get-consultation{

@@ -1,19 +1,39 @@
  
 .swiper-muvie{
+  height: 1200px;
+  width: auto;
   .swiper-wrapper {
     -webkit-transition-timing-function: linear !important;
             transition-timing-function: linear !important;
   }
+  .swiper-slide{
+    height: auto !important; 
+    padding-bottom: 20px;
+  } 
 }
 .swiper-muvie-item{
-  display: block;
+  display: block; 
+  max-width: 320px;
   width: 100%;
-  // width: 380px;
-  // height: 320px;
   height: auto;
-  // max-width: 320px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center center;
 }
 .swiper-muvie--up{
   margin-bottom: 14px;
 }
  
+// ===================================================
+@media screen and (max-width: 1650px){
+  .swiper-muvie-item { 
+      max-width: 270px; 
+      border-radius: 20px; 
+  }
+}
+@media screen and (max-width: 999px){
+  .swiper-muvie-item { 
+      max-width: 180px; 
+      border-radius: 20px; 
+  }
+}

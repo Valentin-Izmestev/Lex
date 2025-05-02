@@ -393,11 +393,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var swipermuvieSliderUp = new Swiper(muvieSliderUp, {  
       loop: true,
       // roundLengths: true, 
-      slidesPerView: 5,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      spaceBetween: 0,
       speed: 10000,
       loop: true, 
+      direction: 'vertical',
       autoplay: {
+        reverseDirection: true,
         delay: 0,
         //disableOnInteraction: true // или сделать так, чтобы восстанавливался autoplay после взаимодействия
       }
@@ -410,12 +412,12 @@ document.addEventListener('DOMContentLoaded', function () {
     var swipermuvieSliderDown = new Swiper(muvieSliderDown, {  
       loop: true,
       // roundLengths: true, 
-      slidesPerView: 5,
-      spaceBetween: 20,
+      slidesPerView: 3,
+      spaceBetween: 0,
       speed: 10000,
       loop: true, 
-      autoplay: {
-        reverseDirection: true,
+      direction: 'vertical',
+      autoplay: { 
         delay: 0,
         //disableOnInteraction: true // или сделать так, чтобы восстанавливался autoplay после взаимодействия
       }
@@ -477,5 +479,49 @@ document.addEventListener('DOMContentLoaded', function () {
         })
       })
     } 
+
+
+    const nlTooltips = document.querySelectorAll('.tooltip'); 
+    if(nlTooltips.length > 0){
+      nlTooltips.forEach(tooltip => { 
+        let tooltipTemplate = tooltip.querySelector('.tooltip-template'); 
+        tippy(tooltip, {
+          content: tooltipTemplate,
+          // trigger: 'click',
+          placement: "bottom", 
+          flipOnUpdate: true
+        }
+        );
+      })
+      }
+
+      // ячейки копирования в буфер обмена 
+      
+      const nlCopyredCell = document.querySelectorAll('.copyred-cell');
+      if(nlCopyredCell.length > 0){
+        nlCopyredCell.forEach(ccItem => {
+          let copyTarget = ccItem.querySelector('.copyred-cell__target');
+          let copyBtn = ccItem.querySelector('.copy-it-btn');
+          if(copyBtn && copyTarget){
+            copyBtn.addEventListener('click', (e) => {
+              e.preventDefault(); 
+              navigator.clipboard.writeText(copyTarget.innerHTML)
+                .then(() => {
+                  console.log('Скопировано')
+                  ccItem.classList.add('copyred-cell--success');
+                  setTimeout(()=>{
+                    ccItem.classList.remove('copyred-cell--success');
+                  }, 1200);
+                })
+                .catch(error => {
+                    console.error(`Текст не скопирован ${error}`)
+              })
+            })
+          }
+          
+        });
+      }
+
+
 
 })

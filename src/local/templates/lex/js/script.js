@@ -1,6 +1,8 @@
 @@ include('imask.js');
 @@ include('swiper-bundle.min.js');
 @@ include('lightgallery.min.js');
+@@ include('popper.js');
+@@ include('tippy.js');
 
 
 @@ include('header.js');

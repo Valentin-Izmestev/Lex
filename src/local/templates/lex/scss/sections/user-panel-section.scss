@@ -1,0 +1,27 @@
+.user-panel-section{
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    .user-panel{
+        position: relative;
+        transform: translateY(-50%);
+    }
+}
+
+// ================================================{
+@media screen and (max-width: 1350px){
+    .user-panel-section{
+        padding-bottom: 60px; 
+        .user-panel{ 
+            transform: translateY(0);
+            margin-top: -52px;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .user-panel-section{
+        padding-bottom: 40px; 
+        .user-panel{  
+            margin-top: -172px;
+        }
+    }
+}

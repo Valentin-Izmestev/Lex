@@ -57,7 +57,7 @@ main{
                 content: counter(num) ;  
                 counter-increment: num;
                 position: absolute;
-                top: 0;
+                top: 2px;
                 left: 0;
                 display: flex;
                 justify-content: center;
@@ -150,7 +150,7 @@ blockquote{
         margin: 0;
     }
 } 
-
+ 
 // ===========================================================
 @media screen and (max-width: 1470px) {
     :root {

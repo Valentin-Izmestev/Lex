@@ -28,6 +28,19 @@
         margin-bottom: 145px;
     }
 }
+.faq-section{
+    &--light{
+        background-color: var(--light);
+        .spoiler{
+            border: 1px solid var(--border);
+        }
+        .floating-offer{
+            background-color: var(--bg);
+            border: none;
+        }
+    }
+}
+
 // ====================================================
 @media screen and (max-width: 1470px){
     .basic-services-section{

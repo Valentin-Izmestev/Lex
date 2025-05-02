@@ -1,0 +1,53 @@
+.collection-description-section{
+    .sticky-elem-col-box{
+        width: 100%;
+        justify-content: space-between;
+        .sticky-elem-col-box__main-content{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 875px;
+            font-weight: 500;
+            .section-title{
+                margin: 0;
+            } 
+
+        } 
+    }
+    .page-content-section__table-box{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        .table-title{
+            margin-bottom: 40px;
+        }
+        .table-box{
+            width: 100%;
+        }
+    }
+}
+ 
+
+
+// =============================================================================
+@media screen and (max-width: 1470px){
+    .page-content-section__table-box{
+        margin-top: 60px;
+        
+    }
+    
+}
+@media screen and (max-width: 999px){
+    .page-content-section__table-box{
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 500px){
+    .page-content-section__table-box{
+        margin-top: 30px;
+        .table-title{
+            margin-bottom: 30px;
+        }
+    }
+}

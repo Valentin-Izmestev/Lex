@@ -218,4 +218,25 @@
     background-color: var(--blue);
 }
 
+.go-to-icon{
+    display: block;  
+    width: 20px;
+    height: 20px;
+    mask-image: url(../img/icons/go-to-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--blue);
+}
+.copy-it-icon{
+    display: block;  
+    width: 20px;
+    height: 20px;
+    mask-image: url(../img/icons/copy-it-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+
 
