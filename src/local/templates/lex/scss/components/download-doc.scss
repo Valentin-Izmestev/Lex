@@ -1,0 +1,77 @@
+.download-doc-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.download-doc{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--light);
+    padding: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: var(--dark-blue);
+    box-sizing: border-box;
+    transition: var(--great-transition);
+    .download-doc__icon{
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        transition: var(--great-transition);
+    }
+    .download-icon{
+        width: 24px;
+        height: 24px;
+        background-color: var(--blue);
+    }
+
+    &:hover{
+        color: var(--blue);
+        text-decoration: none;
+        .download-doc__icon{
+            border: 1px solid var(--blue);
+        }
+    }
+}
+
+// ======================================================
+@media screen and (max-width: 1470px){
+    .download-doc{   
+        padding: 20px; 
+        font-size: 16px; 
+        .download-doc__icon{ 
+            width: 40px;
+            height: 40px; 
+        }
+        .download-icon{
+            width: 20px;
+            height: 20px; 
+        } 
+    }
+}
+@media screen and (max-width: 999px){
+    .download-doc-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .download-doc-grid{ 
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .download-doc{   
+        padding: 15px; 
+        border-radius: 15px;
+        font-size: 15px;  
+    }
+}

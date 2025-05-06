@@ -1,0 +1,260 @@
+.advice-section{
+    position: relative;
+    overflow: hidden;
+    .inner{
+        display: flex;
+    }
+    .advice-section__left-col,
+    .advice-section__right-col{
+        padding: 100px 0;
+        box-sizing: border-box
+    }
+    .advice-section__left-col{
+        width: calc(50% + 20px);
+        padding-right: 160px;
+        & > *:not(.section-title){
+            margin: 30px 0;
+        }*:last-child{
+            margin-bottom: 0;
+        }
+        p{
+            line-height: 1.6;
+            font-weight: 500;
+        }
+        
+    }
+    .advice-section__right-col{
+        position: relative;
+        width: calc(50% - 20px);
+        background-color: #E9EEFD;
+        padding-left: 143px;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 10000px;
+            height: 100%;
+            background-color: #E9EEFD;
+        }
+    }
+    .advice-section__mini-title{
+        display: block;
+        margin-bottom: 20px;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.4;;
+    }
+    &--recommended{
+        .advice-section__left-col{
+            p{
+                font-size: 22px;
+            } 
+        }
+    }
+    &--no-recommended{
+        .advice-section__left-col{
+            position: relative;
+            background-color: var(--light);
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 100%;
+                width: 10000px;
+                height: 100%;
+                background-color: var(--light);
+            }
+        }
+    }
+}
+
+// =========================================================
+
+@media screen and (max-width: 1470px){
+    .advice-section{ 
+        .inner{
+            display: flex;
+        }
+        .advice-section__left-col,
+        .advice-section__right-col{
+            padding: 80px 0;
+            box-sizing: border-box
+        }
+        .advice-section__left-col{
+            width: calc(50% + 20px);
+            padding-right: 110px;
+            & > *:not(.section-title){
+                margin: 30px 0;
+            }*:last-child{
+                margin-bottom: 0;
+            }
+            p{
+                line-height: 1.6;
+                font-weight: 500;
+            }
+            
+        }
+        .advice-section__right-col{
+            position: relative;
+            width: calc(50% - 20px);
+            background-color: #E9EEFD;
+            padding-left: 100px;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 100%;
+                width: 10000px;
+                height: 100%;
+                background-color: #E9EEFD;
+            }
+        }
+        .advice-section__mini-title{
+            display: block;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.4;;
+        }
+        &--recommended{
+            .advice-section__left-col{
+                p{
+                    font-size: 18px;
+                } 
+            }
+        }
+        &--no-recommended{
+            .advice-section__left-col{
+                padding-right: 80px;
+                p{
+                    font-size: 18px;
+                } 
+            }
+        }
+  
+    }
+}
+@media screen and (max-width: 999px){
+    .advice-section{ 
+        .inner{
+           flex-direction: column;
+        } 
+        .advice-section__left-col{
+            padding-top: 60px;
+            padding-bottom: 30px;
+            width: 100%;
+            padding-right: 0;
+            & > *:not(.section-title){
+                margin: 20px 0;
+            } 
+            *:last-child{
+                margin-bottom: 0;
+            }  
+        }
+        .advice-section__right-col{
+            padding-top: 30px;
+            padding-bottom: 60px;
+            width: 100%;
+            padding-left: 0;
+
+            &::after{ 
+                top: 0;
+                left: 100%;
+                width: 20px;
+                height: 100%;
+                background-color: #E9EEFD;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 100%;
+                width: 20px;
+                height: 100%;
+                background-color: #E9EEFD;
+            }
+        }
+        .advice-section__mini-title{ 
+            font-size: 18px; 
+        }
+        &--recommended{
+            .advice-section__left-col{
+                p{
+                    font-size: 18px;
+                } 
+            }
+        }
+        &--no-recommended{
+            .advice-section__left-col{
+                padding-right: 0;
+                &::before{ 
+                    top: 0;
+                    right: 100%;
+                    width: 20px;
+                    height: 100%;
+                    background-color: var(--light);
+                }
+                &::after{ 
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    width: 20px;
+                    height: 100%;
+                    background-color: var(--light);
+                }
+                p{
+                    font-size: 18px;
+                } 
+            }
+        }
+        
+        .circle-checked-list{
+            li{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    .advice-section{ 
+        .inner{
+           flex-direction: column;
+        }
+ 
+        .advice-section__left-col{
+            padding-top: 30px;
+            padding-bottom: 15px;   
+
+        }
+        .advice-section__right-col{
+            padding-top: 15px;
+            padding-bottom: 30px;  
+            font-size: 15px;
+        }
+        .advice-section__mini-title{ 
+            font-size: 18px; 
+        }
+        &--recommended{
+            .advice-section__left-col{
+                p{
+                    font-size: 15px;
+                } 
+            }
+        }
+        &--no-recommended{
+            .advice-section__left-col{ 
+                p{
+                    font-size: 15px;
+                } 
+            }
+        }
+        
+        .circle-checked-list{
+            li{
+                font-size: 15px;
+            }
+        }
+    }
+}

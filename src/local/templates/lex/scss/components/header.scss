@@ -218,28 +218,39 @@
 }
 
 .btn-enter{
+    max-width: 290px;
     min-height: 42px;
     padding: 5px 16px;
     font-size: 16px;
     font-weight: 500;
     gap: 5px;
     .btn__icon{
+        flex-shrink: 0;
         width: 22px;
         height: 22px;
     }
     &--user-auth{
-        gap: 10px;
-        background-color: var(--gold);
+        gap: 10px; 
         .briefcase-icon{
             display: none;
         }
         .btn__text--mobile{
-            display: block;
+            display: none;
         }
         .btn__icon{
             width: 20px;
             height: 20px;
         }
+    }
+    &--user-in-lk{
+        background-color: var(--gold);
+    }
+    .btn__text--desk{
+        position: relative;
+        display: inline-block;
+        text-overflow: ellipsis; 
+        overflow: hidden;
+        white-space: nowrap;
     }
 }
 .logo{

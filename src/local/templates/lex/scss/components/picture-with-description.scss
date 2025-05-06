@@ -1,0 +1,91 @@
+.picture-with-description-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.picture-with-description{
+    position: relative; 
+    background-color: #2274F0;
+    border-radius: 20px;
+    overflow: hidden;
+    .picture-with-description__img-box{
+        position: relative;
+        padding-top: 52.5%; 
+    }
+    .picture-with-description__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .picture-with-description__desk-box{ 
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        padding: 9px 30px 30px 30px;
+        background-color: #2274F0;
+        color: var(--light);
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+        box-sizing: border-box;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            width: 100%;
+            height: 21px;
+            border-radius: 20px 20px 0 0;
+            background-color: #2274F0;
+        }
+    }
+    .picture-with-description__title{
+        font-family: 'NotoSerif', sans-serif;
+        font-size: 20px;
+        line-height: 1.3;
+        font-weight: 700;
+    }
+}
+
+
+// ====================================================================================
+@media screen and (max-width: 1470px){
+    .picture-with-description{   
+        .picture-with-description__desk-box{ 
+            padding: 0 20px 20px 20px; 
+            font-size: 16px; 
+            &::before{ 
+                height: 20px;
+                border-radius: 20px 20px 0 0; 
+            }
+        } 
+    }
+}
+@media screen and (max-width: 999px){
+    .picture-with-description-box{ 
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 600px){
+    .picture-with-description{   
+        border-radius: 10px;
+        .picture-with-description__desk-box{ 
+            padding: 0 15px 15px 15px; 
+            font-size: 14px; 
+            &::before{  
+                height: 15px;
+                border-radius: 10px 10px 0 0; 
+            }
+        } 
+        .picture-with-description__title{ 
+            font-size: 18px; 
+        }
+    }
+}

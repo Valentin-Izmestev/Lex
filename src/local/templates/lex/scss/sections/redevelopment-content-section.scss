@@ -1,0 +1,103 @@
+.redevelopment-content-section{
+  
+    .picture-with-description-box{
+        margin-top: 100px;
+    }   
+}
+.redevelopment-content{
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    width: 100%;
+    .redevelopment-content__right-col,
+    .redevelopment-content__left-col{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        *{
+            margin: 0;
+        }
+    }
+    .redevelopment-content__left-col{ 
+        flex-basis: 850px;
+        font-size: 24px;
+    }
+    .redevelopment-content__right-col{ 
+        flex-basis: 670px;
+    } 
+}
+
+// =============================================
+@media screen and (max-width: 1470px){
+    .redevelopment-content-section{
+  
+        .picture-with-description-box{
+            margin-top: 40px;
+        }   
+    }
+    .redevelopment-content{
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        width: 100%;
+        .redevelopment-content__right-col,
+        .redevelopment-content__left-col{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            *{
+                margin: 0;
+            }
+        }
+        .redevelopment-content__left-col{
+            flex-basis: 632px;
+            font-size: 18px;
+        }
+        .redevelopment-content__right-col{
+            flex-basis: 527px;
+            font-size: 16px;
+        } 
+    }
+}
+@media screen and (max-width: 999px){
+    .redevelopment-content-section{
+  
+        .picture-with-description-box{
+            margin-top: 30px;
+        }   
+    }
+    .redevelopment-content{ 
+        flex-wrap: wrap;
+        gap: 30px;  
+        .redevelopment-content__left-col{
+            flex-basis: auto;
+            font-size: 16px;
+        }
+        .redevelopment-content__right-col{
+            flex-basis: auto;
+            font-size: 16px;
+        } 
+    }
+}
+@media screen and (max-width: 600px){
+    .redevelopment-content-section{
+  
+        .picture-with-description-box{
+            margin-top: 20px;
+        }   
+    }
+    .redevelopment-content{ 
+        flex-wrap: wrap;
+        gap: 10px;  
+        .redevelopment-content__right-col,
+        .redevelopment-content__left-col{ 
+            gap: 10px; 
+        }
+        .redevelopment-content__left-col{ 
+            font-size: 15px;
+        }
+        .redevelopment-content__right-col{ 
+            font-size: 15px;
+        } 
+    }
+}

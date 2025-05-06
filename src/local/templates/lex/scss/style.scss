@@ -55,6 +55,11 @@
 @use './components/tables.scss';
 @use './components/user-panel.scss';
 @use './components/copyred-cell.scss';
+@use './components/picture-with-description.scss';
+@use './components/pay-attention.scss';
+@use './components/threat.scss';
+@use './components/reason.scss';
+@use './components/download-doc.scss';
 
 
 @use './sections/other-section.scss'; 
@@ -76,6 +81,9 @@
 @use './sections/pricing-plans-section';     
 @use './sections/collection-description-section.scss';     
 @use './sections/user-panel-section.scss';     
+@use './sections/redevelopment-content-section.scss';     
+@use './sections/advice-section.scss';     
+@use './sections/reason-section.scss';     
 
 
 

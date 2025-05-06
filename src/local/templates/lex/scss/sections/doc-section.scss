@@ -1,0 +1,17 @@
+.doc-section{
+    .section-title{
+        max-width: 995px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+
+// =======================================================
+
+@media screen and (max-width: 1470px){
+    .doc-section{
+        .section-title{ 
+            margin-bottom: 30px;
+        }
+    }
+} 

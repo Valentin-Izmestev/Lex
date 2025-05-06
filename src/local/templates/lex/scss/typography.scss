@@ -136,6 +136,20 @@ main{
             background-position: center center; 
         }
     }
+    &--blue{
+        li{
+            &::after{
+                background-image: url(../img/icons/blue-checked-in-cirle-icon.svg);
+            }
+        }
+    }
+    &--cross{
+        li{
+            &::after{
+                background-image: url(../img/icons/cross-checked-in-cirle-icon.svg);
+            }
+        }
+    }
 }
 
 blockquote{
@@ -170,6 +184,7 @@ blockquote{
         font-size: 18px; 
     }
     .circle-checked-list{ 
+        gap: 15px;
         li{ 
             padding-left: 34px; 
             &::after{ 
@@ -204,4 +219,13 @@ blockquote{
     h3, .h3{ 
         font-size: 18px; 
     }
+    .circle-checked-list{  
+        li{ 
+            padding-left: 30px; 
+            &::after{ 
+                width: 20px;
+                height: 20px; 
+            }
+        }
+    } 
 }

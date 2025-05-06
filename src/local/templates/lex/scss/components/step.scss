@@ -6,6 +6,8 @@
 }
 .step{
     position: relative;
+    display: flex;
+    align-items: center;
     padding: 30px 34px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.1);

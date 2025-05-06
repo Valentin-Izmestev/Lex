@@ -1,0 +1,72 @@
+.reason-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    .section-title{
+        margin-bottom: 40px;
+    }
+}
+
+.reason{
+    display: flex; 
+    gap: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 500;
+    box-sizing: border-box;
+
+    .reason__icon{
+        flex-shrink: 0; 
+        width: 50px;
+        height: 50px;
+        background-color: var(--gold);
+    }
+}
+
+
+// =============================================================================
+
+@media screen and (max-width: 1470px){
+    .reason-grid{ 
+        .section-title{
+            margin-bottom: 30px;
+        }
+    }
+    .reason{ 
+        padding: 20px;
+        border-radius: 20px; 
+        font-size: 15px; 
+    
+        .reason__icon{ 
+            width: 40px;
+            height: 40px; 
+        }
+    }
+}
+
+@media screen and (max-width: 999px){
+    .reason-grid{ 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+@media screen and (max-width: 700px){
+    .reason-grid{ 
+        grid-template-columns: 1fr; 
+        grid-gap: 10px;
+    }
+}
+@media screen and (max-width: 600px){ 
+    .reason{ 
+        padding: 15px;
+        border-radius: 15px; 
+        gap: 15px; 
+    
+        .reason__icon{ 
+            width: 40px;
+            height: 40px; 
+        }
+    }
+}

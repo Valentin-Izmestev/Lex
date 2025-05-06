@@ -1,0 +1,41 @@
+.threat-list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.threat{
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 20px;
+    border-radius: 20px;
+    background-color: var(--light);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 500;
+    box-sizing: border-box;
+    .threat__icon{
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        align-self: flex-start;
+        flex-shrink: 0;
+        background-color: var(--error);
+    }
+}
+
+// ===============================================================
+
+@media screen and (max-width: 1470px){
+    .threat{ 
+        gap: 15px;
+        padding: 10px 15px;
+        border-radius: 10px; 
+        font-size: 14px; 
+        .threat__icon{
+            width: 24px;
+            height: 24px; 
+        }
+    }
+}

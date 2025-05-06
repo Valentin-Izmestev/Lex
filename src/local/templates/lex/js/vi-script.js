@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // roundLengths: true, 
       slidesPerView: 3,
       spaceBetween: 0,
-      speed: 10000,
+      speed: 30000,
       loop: true, 
       direction: 'vertical',
       autoplay: {
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // roundLengths: true, 
       slidesPerView: 3,
       spaceBetween: 0,
-      speed: 10000,
+      speed: 30000,
       loop: true, 
       direction: 'vertical',
       autoplay: { 
@@ -462,7 +462,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     }
 
-    // работа поля для пароля
+    // показать или скрыть пароль
     const nlEyeBtn = document.querySelectorAll('.eye-btn');
     
     if(nlEyeBtn.length > 0){
@@ -519,6 +519,28 @@ document.addEventListener('DOMContentLoaded', function () {
             })
           }
           
+        });
+      }
+
+      // работа таба в тарифе
+      let nlRateStack = document.querySelectorAll('.rate-stack');
+      if(nlRateStack.length > 0){
+        nlRateStack.forEach(rs => {
+          const nlRateNavBtn = rs.querySelectorAll('.rate-nav-btn');
+          const nlRate = rs.querySelectorAll('.rate'); 
+          if(nlRateNavBtn.length > 0){
+            nlRateNavBtn.forEach(rBtn => {
+              rBtn.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                if(nlRate[rBtn.dataset.rateNumer - 1]){
+                  nlRate.forEach(r => {
+                    r.classList.remove('active');
+                  });
+                  nlRate[rBtn.dataset.rateNumer - 1].classList.add('active');
+                }
+              });
+            });
+          }
         });
       }
 
