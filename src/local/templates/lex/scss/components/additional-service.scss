@@ -1,4 +1,11 @@
+.additional-service-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
 .additional-service{
+    display: flex;
+    flex-direction: column;
     padding: 40px;
     border-radius:  30px;
     border: 1px solid var(--border);
@@ -15,8 +22,8 @@
         line-height: 1;
         font-weight: 700;
     }
-    p{
-        margin: 10px 0;
+    p{ 
+        margin-bottom: auto;
         font-size: 15px;
         font-weight: 500;
         color: var(--dark-blue);
@@ -33,6 +40,9 @@
     .additional-service__kv-box{
         display: flex; 
         gap: 28px;
+        .additional-service-kv{
+            flex-basis: 221px;
+        }
     } 
     .btn{
         padding: 10px 61px;
@@ -115,7 +125,11 @@
         }
     }
 }
-
+@media screen and (max-width: 999px){
+    .additional-service-grid{ 
+        grid-template-columns: 1fr; 
+    }
+}
 @media screen and (max-width: 600px){
     .additional-service{
         padding: 15px;

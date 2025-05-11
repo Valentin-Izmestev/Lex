@@ -164,7 +164,35 @@ blockquote{
         margin: 0;
     }
 } 
- 
+.blockquote{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px;
+    border-radius: 30px;
+    background-color: var(--light);
+    margin: 0; 
+    font-size: 20px;
+    font-style: italic;
+    box-sizing: border-box;
+    &::before{
+        content: '';
+        position: absolute;
+        top: -24px;
+        right: 35px;
+        width: 72px;
+        height: 56px;
+        mask-image: url(../img/icons/quotation-marks-icon.svg);
+        mask-repeat: no-repeat;
+        mask-position: center center;
+        mask-size: contain;
+        background-color: var(--gold);
+    }
+    p{
+        margin: 0;
+    }
+} 
 // ===========================================================
 @media screen and (max-width: 1470px) {
     :root {
@@ -193,6 +221,16 @@ blockquote{
             }
         }
     } 
+    .blockquote{ 
+        gap: 20px;
+        padding: 30px;
+        border-radius: 20px; 
+        font-size: 16px; 
+        &::before{ 
+            top: -24px;
+            right: 16px; 
+        } 
+    } 
 }
 @media screen and (max-width: 999px) {
     :root {
@@ -207,6 +245,20 @@ blockquote{
     h3, .h3{ 
         font-size: 25px; 
     }
+}
+@media screen and (max-width: 500px){
+    .blockquote{ 
+        gap: 15px;
+        padding: 15px;
+        border-radius: 15px; 
+        font-size: 14px; 
+        &::before{ 
+            top: -14px;
+            right: 16px;
+            width: 42px; 
+            height: 32px;
+        } 
+    } 
 }
 @media screen and (max-width: 500px) {
     h1, .h1{ 

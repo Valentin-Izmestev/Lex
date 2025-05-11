@@ -33,6 +33,17 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .rate__marker{
+        display: block;
+        width: fit-content;
+        margin-bottom: 20px;
+        padding: 8px 16px;
+        border-radius: 60px;
+        font-size: 13px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 700;
+    }
     .rate__term{
         display: block;
         margin-top: 2px;
@@ -145,6 +156,10 @@
         &::before{ 
             background-image: url(../img/rate-level-two-bg.png);
         }
+        .rate__marker{
+            background-color: rgba(121, 136, 192, 0.1);
+            color: var(--dark);
+        }
         .checked-list{ 
             li{ 
                 &::after{
@@ -163,11 +178,19 @@
                     background-color: #08164B;
                 }
             }
+            .rate__marker{
+                background-color: rgba(8, 23, 75, 0.1);
+                color: #08164B;
+            }
         } 
     }
     &--level-four{
         &::before{ 
              background-image: url(../img/rate-level-four-bg.png);
+        }
+        .rate__marker{
+            background-color: rgba(205, 161, 41, 0.1);
+            color: var(--dark);
         }
         .checked-list{ 
             li{ 
@@ -177,6 +200,26 @@
             }
         } 
     }
+    &--level-five{
+        &::before{ 
+            background-image: url(../img/rate-level-five-bg.png);
+       }
+       .rate__head{
+        min-height: 365px;
+       }
+       .rate__marker{
+           background-color: rgba(64, 95, 206, 0.1);
+           color: var(--blue);
+       }
+       .checked-list{ 
+           li{ 
+               &::after{
+                   background-color: var(--blue);
+               }
+           }
+       } 
+    }
+
     &--summoner{
         border: 1px solid var(--ligth);
         background-color: var(--blue);
@@ -231,6 +274,12 @@
         }
     }
 }
+.rate-lv-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
 .rate-lv{
     display: flex;
     flex-direction: column;
@@ -253,6 +302,9 @@
         font-weight: 700;
         .rate__price{
             font-size: 30px;
+        }
+        &--blue{
+            color: var(--blue);
         }
     }
 }
@@ -283,6 +335,11 @@
             min-height: 265px;
             padding: 10px; 
         }   
+        .rate__marker{
+            margin-bottom: 10px;
+            padding: 4.5px 12px;
+            font-size: 12px;
+        }
         .rate__title{
             font-size: 20px;
             line-height: 1.2;

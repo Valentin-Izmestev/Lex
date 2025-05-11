@@ -30,12 +30,17 @@
         font-weight: 700;
     }
     p{
+        max-width: 745px;
         font-size: 18px;
         font-weight: 400;
     }
     .btn{
         padding: 10px 60px;
         flex-shrink: 0;
+    }
+    &--dark{
+        background-color: var(--dark-blue);
+        color: var(--light);
     }
 }
 

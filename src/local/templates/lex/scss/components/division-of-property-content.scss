@@ -1,0 +1,27 @@
+.division-of-property-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.division-of-property-content__left-col{
+    flex-basis: 780px;
+}
+.division-of-property-content__right-col{
+    flex-basis: 847px;
+}
+
+
+// ===================================================================
+@media screen and (max-width: 1470px){
+    .division-of-property-content{
+        display: block; 
+    } 
+    .division-of-property-content__right-col{
+        margin-top: 40px;
+    } 
+}
+@media screen and (max-width: 600px){ 
+    .division-of-property-content__right-col{
+        margin-top: 20px;
+    } 
+}

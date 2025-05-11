@@ -60,6 +60,9 @@
 @use './components/threat.scss';
 @use './components/reason.scss';
 @use './components/download-doc.scss';
+@use './components/division-of-property-content.scss';
+@use './components/panel.scss';
+ 
 
 
 @use './sections/other-section.scss'; 
@@ -83,7 +86,7 @@
 @use './sections/user-panel-section.scss';     
 @use './sections/redevelopment-content-section.scss';     
 @use './sections/advice-section.scss';     
-@use './sections/reason-section.scss';     
+@use './sections/reason-section.scss';      
 
 
 
