@@ -1,0 +1,821 @@
+.pseudotable {
+    .pseudotable-cell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 1.4;
+        color: var(--dark-blue);
+        box-sizing: border-box;
+    }
+
+    .pseudotable__head {
+        .pseudotable-cell {
+            padding: 10px 20px;
+        }
+    }
+
+    .pseudotable__caption {
+        display: block;
+        font-size: 14px;
+        line-height: 1.6;
+        font-weight: 500;
+        color: var(--dark-blue);
+    }
+
+    .pseudotable__body {
+        .pseudotable__row {
+            .pseudotable-cell {
+                padding: 20px;
+                background-color: var(--light);
+
+                a {
+                    color: var(--blue);
+                }
+            }
+
+            &:nth-child(2n) {
+                .pseudotable-cell {
+                    background-color: #F7F9FC;
+                }
+            }
+        }
+
+
+        .pseudotable__caption {
+            display: none;
+        }
+
+        .pseudotable__row {
+            &:first-child {
+                .pseudotable-cell {
+                    &:first-child {
+                        border-radius: 30px 0 0 0;
+                    }
+
+                    &:last-child {
+                        border-radius: 0 30px 0 0;
+                    }
+                }
+            }
+
+            &:last-child {
+                .pseudotable-cell {
+                    &:first-child {
+                        border-radius: 0 0 0 30px;
+                    }
+
+                    &:last-child {
+                        border-radius: 0 0 30px 0;
+                    }
+                }
+            }
+
+            .pseudotable-cell {
+                &:first-child {
+                    padding-left: 30px;
+                }
+
+                &:last-child {
+                    padding-right: 30px;
+                }
+
+                &:not(:last-child) {
+                    border-right: 1px solid var(--border);
+                }
+            }
+
+        }
+    }
+}
+
+.tcl-award {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tcl-status {
+    .tcl-status__name {
+        display: block;
+    }
+
+    .tcl-status__date {
+        font-size: 13px;
+        color: #929DAF;
+    }
+}
+
+.pseudotable-transferred-clients-list {
+    .pseudotable__row {
+        display: grid;
+        grid-template-columns: 1fr 280px 200px 250px 188px 0.9fr;
+    }
+
+    .pt-client {
+        &--new {
+            .tcl-status {
+                .tcl-status__name {
+                    color: var(--blue);
+                }
+            }
+
+            .blue-check-marker {
+                background-image: url(../img/icons/grey-checked-in-cirle-icon.svg);
+            }
+        }
+
+        &--hired {
+            .tcl-status {
+                .tcl-status__name {
+                    color: var(--success);
+                }
+            }
+        }
+
+        &--refusal {
+
+            .pseudotable-cell {
+                color: #2A315C80;
+
+                a {
+                    color: #405FCE80;
+                }
+            }
+
+            .tcl-status {
+                .tcl-status__name {
+                    color: var(--error);
+                }
+            }
+
+        }
+    }
+
+    .pseudotable-transferred-clients-list-cell {
+        &--name {}
+
+        &--email {}
+
+        &--tel {}
+
+        &--status {}
+
+        &--award {
+            font-weight: 600;
+        }
+
+        &--comment {
+            display: block;
+        }
+    }
+}
+
+.pseudotable-case {
+    .pseudotable__row {
+        display: grid;
+        grid-template-columns: 1fr 250px minmax(350px, 412px);
+    }
+
+    .pseudotable-case-row {
+        &--sent {
+            .tcl-status {
+                .tcl-status__name {
+                    color: var(--success);
+                }
+            }
+        }
+    }
+
+    .pseudotable-case-cell {
+        &--movement {
+            font-weight: 600;
+        }
+
+        &--status {}
+
+        &--note {
+            display: block;
+        }
+    }
+}
+
+// ======================================================
+@media screen and (max-width: 1600px) {
+    .pseudotable {
+        .pseudotable-cell {
+            font-size: 16px;
+        }
+
+        .pseudotable__head {
+            .pseudotable-cell {
+                padding: 10px 15px;
+            }
+        }
+
+        .pseudotable__caption {
+            font-size: 14px;
+        }
+
+        .pseudotable__body {
+            .pseudotable-cell {
+                padding: 15px;
+            }
+
+            .pseudotable__caption {
+                display: none;
+            }
+
+            .pseudotable__row {
+                &:first-child {
+                    .pseudotable-cell {
+                        &:first-child {
+                            border-radius: 20px 0 0 0;
+                        }
+
+                        &:last-child {
+                            border-radius: 0 20px 0 0;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    .pseudotable-cell {
+                        &:first-child {
+                            border-radius: 0 0 0 20px;
+                        }
+
+                        &:last-child {
+                            border-radius: 0 0 20px 0;
+                        }
+                    }
+                }
+
+                .pseudotable-cell {
+                    &:first-child {
+                        padding-left: 15px;
+                    }
+
+                    &:last-child {
+                        padding-right: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .pseudotable-transferred-clients-list {
+        .pseudotable__row {
+            display: grid;
+            grid-template-columns: 1fr 260px 177px 143px 158px 0.9fr;
+        }
+
+        .pt-client {
+            &--new {
+                .tcl-status {
+                    .tcl-status__name {
+                        color: var(--blue);
+                    }
+                }
+
+                .blue-check-marker {
+                    background-image: url(../img/icons/grey-checked-in-cirle-icon.svg);
+                }
+            }
+
+            &--hired {
+                .tcl-status {
+                    .tcl-status__name {
+                        color: var(--success);
+                    }
+                }
+            }
+
+            &--refusal {
+
+                .pseudotable-cell {
+                    color: #2A315C80;
+
+                    a {
+                        color: #405FCE80;
+                    }
+                }
+
+                .tcl-status {
+                    .tcl-status__name {
+                        color: var(--error);
+                    }
+                }
+
+            }
+        }
+
+        .pseudotable-transferred-clients-list-cell {
+            &--name {}
+
+            &--email {}
+
+            &--tel {}
+
+            &--status {}
+
+            &--award {
+                font-weight: 600;
+            }
+
+            &--comment {}
+        }
+    }
+
+    .pseudotable-case {
+        .pseudotable__row {
+            display: grid;
+            grid-template-columns: 1fr 236px minmax(350px, 412px);
+        }
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+    .pseudotable-transferred-clients-list {
+
+        .pseudotable__head {
+            display: none;
+        }
+
+        .tcl-status {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+
+            .tcl-status__date {
+                order: 1;
+                font-size: 12px;
+                line-height: 1;
+            }
+
+            .tcl-status__name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                order: 2;
+                padding: 5px 10px;
+                min-height: 28px;
+                background-color: var(--bg);
+                border-radius: 30px;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 1;
+                white-space: nowrap;
+                box-sizing: border-box;
+            }
+        }
+
+        .pseudotable__body {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .pseudotable__caption {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .pseudotable__row {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background-color: var(--light);
+                gap: 20px;
+                padding: 20px;
+                border-radius: 20px;
+
+                &:nth-child(2n) {
+                    .pseudotable-cell {
+                        background-color: transparent;
+                    }
+                }
+
+                .pseudotable-cell {
+                    background-color: transparent;
+                    padding: 0;
+                    align-items: flex-start;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+
+                    &:not(:last-child) {
+                        border-right: none;
+                    }
+                }
+
+                .pseudotable-transferred-clients-list-cell {
+                    &--name {
+                        order: 2;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid var(--border);
+                        padding-right: 277px;
+                        border-radius: 0 !important;
+                        width: 100%;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    &--email {
+                        order: 4;
+                        flex-basis: 30%;
+                    }
+
+                    &--tel {
+                        order: 3;
+                        flex-basis: 30%;
+                    }
+
+                    &--status {
+                        order: 1;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+
+                    &--award {
+                        order: 5;
+                        flex-basis: 30%;
+                    }
+
+                    &--comment {
+                        order: 6;
+                        flex-basis: 30%;
+                    }
+
+                }
+            }
+        }
+
+        .pt-client {
+            &--new {
+                .tcl-status {
+                    .tcl-status__name {
+                        background-color: var(--blue);
+                        color: var(--light);
+                    }
+                }
+            }
+
+            &--hired {
+                .tcl-status {
+                    .tcl-status__name {
+                        background-color: var(--success);
+                        color: var(--light);
+                    }
+                }
+            }
+
+            &--refusal {
+
+                .pseudotable-cell {
+
+                    .tcl-status {
+                        .tcl-status__name {
+                            background-color: var(--error);
+                            color: var(--light);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .pseudotable-case {
+        .pseudotable__row {
+            display: grid;
+            grid-template-columns: 1fr 236px 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+
+
+    .pseudotable-case {
+        .pseudotable__head {
+            display: none;
+        }
+
+        .pseudotable__body {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .pseudotable__row {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                background-color: var(--light);
+                border-radius: 20px;
+                padding: 20px;
+                box-sizing: border-box;
+
+                .tcl-status {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    align-items: center;
+
+                    .tcl-status__date {
+                        order: 1;
+                        font-size: 12px;
+                        line-height: 1;
+                    }
+
+                    .tcl-status__name {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        order: 2;
+                        padding: 5px 10px;
+                        min-height: 28px;
+                        background-color: var(--bg);
+                        border-radius: 30px;
+                        font-size: 13px;
+                        font-weight: 500;
+                        line-height: 1;
+                        white-space: nowrap;
+                        box-sizing: border-box;
+                    }
+                }
+
+
+
+                .pseudotable-cell {
+                    padding: 0;
+                    background-color: transparent;
+                    border-radius: 0 !important;
+
+                    &:not(:last-child) {
+                        border-right: none;
+                    }
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+
+                &:nth-child(2n) {
+                    .pseudotable-cell {
+                        background-color: transparent;
+                    }
+                }
+
+                .pseudotable__caption {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                .pseudotable-case-cell {
+                    &--movement {
+                        order: 2;
+                        min-height: 28px;
+                        width: 100%;
+                        padding-right: 240px;
+                        font-size: 16px;
+                    }
+
+                    &--status {
+                        order: 1;
+                        position: absolute;
+                        top: 20px;
+                        right: 20px; 
+                    }
+                    &--no-status{
+                        display: none;
+                    }
+
+                    &--note {
+                        display: none;
+                        order: 3;
+                        width: 100%;
+                        margin-top: 20px;
+                        padding-top: 15px;
+                        border-top: 1px solid var(--border);
+                        font-size: 14px;
+                    }
+
+                    &--no-empty {
+                        display: block;
+                    }
+                }
+
+
+            }
+
+            .pseudotable-case-row {
+                &--sent { 
+                    .tcl-status {
+                        .tcl-status__name {
+                            background-color: var(--success);
+                            color: var(--light);
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .pseudotable-transferred-clients-list {
+        .tcl-status {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            .tcl-status__date {
+                line-height: 2;
+                font-size: 13px;
+            }
+
+            .tcl-status__name {
+                order: 1;
+                font-size: 12px;
+            }
+        }
+
+        .pseudotable__body {
+            .pseudotable__caption {
+                margin-bottom: 5px;
+            }
+
+            .pseudotable__row {
+                gap: 0;
+                padding: 15px;
+                border-radius: 20px;
+
+                .pseudotable-cell {
+                    padding: 0;
+                    align-items: flex-start;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+
+                .pseudotable-transferred-clients-list-cell {
+                    &--name {
+                        order: 2;
+                        padding-bottom: 15px;
+                        font-size: 16px;
+                    }
+
+                    &--email {
+                        margin-top: 10px;
+                        order: 4;
+                        flex-basis: 100%;
+                    }
+
+                    &--tel {
+                        margin-top: 10px;
+                        order: 3;
+                        flex-basis: 100%;
+                    }
+
+                    &--status {
+                        order: 1;
+                        position: relative;
+                        top: 0;
+                        right: 0;
+                        margin-bottom: 10px;
+                    }
+
+                    &--award {
+                        margin-top: 10px;
+                        order: 5;
+                        flex-basis: 100%;
+                    }
+
+                    &--comment {
+                        margin-top: 10px;
+                        order: 6;
+                        flex-basis: 100%;
+                    }
+
+                }
+            }
+        }
+
+        .pt-client {
+            &--new {
+                .tcl-status {
+                    .tcl-status__name {
+                        background-color: var(--blue);
+                        color: var(--light);
+                    }
+                }
+            }
+
+            &--hired {
+                .tcl-status {
+                    .tcl-status__name {
+                        background-color: var(--success);
+                        color: var(--light);
+                    }
+                }
+            }
+
+            &--refusal {
+
+                .pseudotable-cell {
+
+                    .tcl-status {
+                        .tcl-status__name {
+                            background-color: var(--error);
+                            color: var(--light);
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+       .pseudotable-case { 
+
+        .pseudotable__body { 
+
+            .pseudotable__row { 
+                border-radius: 15px;
+                padding: 15px; 
+
+                .tcl-status { 
+                    gap: 10px;  
+                    .tcl-status__date {
+                        order: 2; 
+                    } 
+                    .tcl-status__name { 
+                        order: 1; 
+                    }
+                } 
+ 
+
+                .pseudotable-case-cell {
+                    &--movement {
+                        order: 2;
+                        min-height: auto; 
+                        padding-right: 0; 
+                    }
+
+                    &--status {
+                        order: 1;
+                        position: relative;
+                        top: 0;
+                        right: 0; 
+                        margin-bottom: 15px;
+                    }
+                    &--no-status{
+                        display: none;
+                    }
+ 
+                }
+
+
+            }
+
+            .pseudotable-case-row {
+                &--sent { 
+                    .tcl-status {
+                        .tcl-status__name {
+                            background-color: var(--success);
+                            color: var(--light);
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+}

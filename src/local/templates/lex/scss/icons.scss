@@ -572,5 +572,35 @@
     mask-repeat: no-repeat;
     background-color: var(--dark);
 }
+.cross-icon{
+    display: block;  
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/icons/cross-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--dark);
+}
+.checked-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/checked-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
+.fat-cross-icon{
+    display: block;  
+    width: 16px;
+    height: 16px;
+    mask-image: url(../img/icons/fat-cross-icon.svg);
+    mask-position: center center;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-color: var(--light);
+}
 
 

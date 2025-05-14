@@ -3,6 +3,8 @@
 @@ include('lightgallery.min.js');
 @@ include('popper.js');
 @@ include('tippy.js');
+@@ include('choices.min.js');
+@@ include('FileFunnel.js');
 
 
 @@ include('header.js');

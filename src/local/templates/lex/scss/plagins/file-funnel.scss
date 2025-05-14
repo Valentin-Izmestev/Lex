@@ -1,0 +1,131 @@
+.file-funnel{
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    border: 2px dashed #C6D5F3;
+    padding: 16px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 200ms ease;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover{
+        border: 2px dashed #35BAA2;
+    }
+    input[type="file"]{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .file-funnel__text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    .file-funnel__receiver{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+        font-size: 80px;
+        color: rgba(53, 186, 162, 0.8);
+        z-index: 1;
+        opacity: 0;
+        transition: all 200ms ease;
+    }
+    .file-funnel__docs{
+        position: relative;
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        z-index: 3;
+        &--show{
+            display: flex;
+        }
+    }
+    .file-funnel__caption{
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #3073F8;
+    }
+    .file-funnel__direction{
+        display: block;
+        text-align: center;
+        font-size: 13px;
+        line-height: 1.5;
+        color: #5C6E91;
+    }
+    &__dragenter{
+        .file-funnel__receiver{
+            opacity: 1;
+        }
+
+    }
+}
+
+
+
+.file-funnel-doc{
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    .file-funnel-doc__caption{
+        position: relative;
+        display: block;
+        width: 99.9%;
+        font-size: 14px;
+        color: #071E4B;
+        line-height: 1.5;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .file-funnel-doc__extension-and-size{
+        display: block;
+        font-sizE: 12px;
+        color: #5C6E91;
+        line-height: 1.5;
+    }
+}
+.file-funnel-btn{
+    margin-top: auto;
+    padding: 5px;
+    padding-top: 7px;
+    border-radius: 5px;
+    background-color: #35BAA2;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 500;
+    box-sizing: border-box;
+    transition: all 200ms ease;
+    &:hover{
+        background-color: #089F84;
+    }
+}

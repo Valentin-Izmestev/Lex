@@ -1,0 +1,61 @@
+.checked-client-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checked-client {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    .checked {
+        width: 28px;
+        height: 28px;
+        flex-shrink: 0;
+        background-color: var(--border)
+    }
+
+    .checked__label {
+        flex-grow: 1;
+        font-size: 16px;
+        color: #2A315C;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+
+    .checked__price {
+        font-size: 18px;
+        color: #2A315C;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+
+    &--done {
+        .checked__label, .checked__price { 
+            color: rgba(42, 49, 92, 0.502); 
+        }
+        .checked {
+            flex-shrink: 0;
+            background-color: var(--blue);
+        }
+    }
+
+    &--current {
+        background-color: var(--blue);
+        .checked__label, .checked__price { 
+            color: var(--light); 
+        }
+        .checked {
+            border: 1px solid var(--light);
+            flex-shrink: 0;
+            background-color: var(--blue);
+            .checked-icon{
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+}

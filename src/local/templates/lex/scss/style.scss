@@ -10,6 +10,8 @@
 @use './plagins/swiper-bundle.min.scss';
 @use './plagins/lightgallery.min.scss';
 @use './plagins/tippy.scss';
+@use './plagins/choices.min.scss';
+@use './plagins/file-funnel.scss';
 
 
 @use './components/other-components.scss';
@@ -62,6 +64,9 @@
 @use './components/download-doc.scss';
 @use './components/division-of-property-content.scss';
 @use './components/panel.scss';
+@use './components/pseudotable.scss';
+@use './components/information-search-form.scss';
+@use './components/checked-client.scss';
  
 
 

@@ -2,26 +2,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Title here</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title here</title>
 
-	<!--   Cascading Style Sheets-->
-	<!-- <link rel="stylesheet" href="css/style.css">  -->
-	<link rel="stylesheet" href="./local/templates/lex/css/style.min.css">
-	<noscript>
-		<style>
-			.content-wrapper {
-				overflow: auto;
-			}
-		</style>
-	</noscript>
+    <!--   Cascading Style Sheets-->
+    <!-- <link rel="stylesheet" href="css/style.css">  -->
+    <link rel="stylesheet" href="./local/templates/lex/css/style.min.css">
+    <noscript>
+        <style>
+            .content-wrapper {
+                overflow: auto;
+            }
+        </style>
+    </noscript>
 </head>
 
 <body>
 
-	<header id="header" class="">
+    <header id="header" class="">
     <div class="click-catcher"></div>
     <div class="inner">
         <a href="/" class="logo logo__img"></a>
@@ -253,32 +253,31 @@
         </div>
     </div>
 </header>
-	<main class="main">
-		<section class="hall-page hall-page--auth-user">
-			<div class="inner">
-				<div class="hall-page__content">
+    <main class="main">
+        <section class="hall-page hall-page--auth-user">
+            <div class="inner">
+                <div class="hall-page__content">
                     <div class="hall-page__auth-nav-panel">
                         <ul class="breadcrumbs">
                             <li>
                                 <a href="/">Главная</a>
-                            </li> 
+                            </li>
                         </ul>
                         <a href="#" class="exit-btn">
                             Выйти
                             <span class="exit-btn__icon go-to-icon"></span>
                         </a>
-                    </div> 
-					<h1 class="page-title">Личный кабинет</h1>
-				</div> 
-			</div>
-		</section>
+                    </div>
+                    <h1 class="page-title">Личный кабинет</h1>
+                </div>
+            </div>
+        </section>
         <div class="user-panel-section">
             <div class="inner">
                 <div class="user-panel">
                     <div class="user-panel-lv">
                         <div class="user-panel-lv__label">Здравствуйте,</div>
                         <div class="user-panel-lv__value">Константинопольский К.К.</div>
-                        <!-- <div class="user-panel-lv__value">КонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольскийКонстантинопольский</div> -->
                     </div>
                     <div class="user-panel-lv">
                         <div class="user-panel-lv__label">Следующий клиент</div>
@@ -287,27 +286,412 @@
                     <div class="user-panel-lv">
                         <div class="user-panel-lv__label">Ваш код партнёра</div>
                         <div class="user-panel-lv__value  copyred-cell">
-                            <span class="partners-code copyred-cell__target">
-                                CJKHH
-                            </span>
+                            <span class="partners-code copyred-cell__target">CJKHH</span>
                             <button class="copy-it-btn copy-it-icon">скопировать код партнера</button>
                             <div class="copyred-cell__success-message">Скопированно в буфер обмена</div>
                         </div>
-                        
+
                     </div>
                     <div class="user-panel__btn-box">
-                        <a href="#" class="btn btn--border upp">
-                            Следующий кейс 
-                        </a>
-                        <button class="btn btn--gold upp">Передать клиента</button>
-                    </div> 
+                        <button class="btn btn--border upp" data-modal-id="terms-partner-program-modal">
+                            Условия программы
+                        </button>
+                        <button class="btn btn--gold upp" data-modal-id="transfer-the-client">Передать клиента</button>
+                    </div>
                 </div>
             </div>
         </div>
-        afafafawfawfawf
-		<div class="penultimate-section"></div> 
-	
-		<section class="consultation-request-section">
+        <section class="transferred-clients-list lk-section">
+            <div class="inner">
+                <h2 class="h3 section-title">Список переданных клиентов</h2>
+                <div class="pseudotable pseudotable-transferred-clients-list">
+                    <div class="pseudotable__head">
+                        <div class="pseudotable__row">
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--name">
+                                <span class="pseudotable__caption">ФИО</span>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--email">
+                                <span class="pseudotable__caption">E-mail</span>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--tel">
+                                <span class="pseudotable__caption">Телефон</span>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--status">
+                                <span class="pseudotable__caption">Статус</span>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--award">
+                                <span class="pseudotable__caption">Вознаграждение</span>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--comment">
+                                <span class="pseudotable__caption">Комментарий</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pseudotable__body">
+                        <div class="pseudotable__row pt-client pt-client--new">
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--name">
+                                Иванова Екатерина Васильевна
+                            </div>
+
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--email">
+                                <span class="pseudotable__caption">E-mail</span>
+                                <a href="mailto:Marry742@mail.ru">Marry742@mail.ru</a>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--tel">
+                                <span class="pseudotable__caption">Телефон</span>
+                                +7 999 789 28 18
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--status">
+                                <div class="tcl-status">
+                                    <span class="tcl-status__name">Новый</span>
+                                    <span class="tcl-status__date">10.02.2025</span>
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--award">
+                                <span class="pseudotable__caption">Вознаграждение</span>
+                                <div class="tcl-award">
+                                    <span class="blue-check-marker"></span>
+                                    6 500 ₽
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--comment">
+                                <span class="pseudotable__caption">Комментарий</span>
+                                —
+                            </div>
+                        </div>
+
+                        <div class="pseudotable__row pt-client">
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--name">
+                                Константинопольский Константин Константинович
+                            </div>
+
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--email">
+                                <span class="pseudotable__caption">E-mail</span>
+                                <a href="mailto:Konstantinopolskii@mail.ru">Konstantinopolskii@mail.ru</a>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--tel">
+                                <span class="pseudotable__caption">Телефон</span>
+                                +7 999 123 45 67
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--status">
+                                <div class="tcl-status">
+                                    <span class="tcl-status__name">Заключено соглашение</span>
+                                    <span class="tcl-status__date">08.02.2025</span>
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--award">
+                                <span class="pseudotable__caption">Вознаграждение</span>
+                                <div class="tcl-award">
+                                    <span class="blue-check-marker"></span>
+                                    6 000 ₽
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--comment">
+                                <span class="pseudotable__caption">Комментарий</span>
+                                —
+                            </div>
+                        </div>
+
+                        <div class="pseudotable__row pt-client">
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--name">
+                                Иванова Екатерина Васильевна
+                            </div>
+
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--email">
+                                <span class="pseudotable__caption">E-mail</span>
+                                <a href="mailto:Ivanova@mail.ru">Ivanova@mail.ru</a>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--tel">
+                                <span class="pseudotable__caption">Телефон</span>
+                                +7 999 998 52 52
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--status">
+                                <div class="tcl-status">
+                                    <span class="tcl-status__name">Заключено соглашение</span>
+                                    <span class="tcl-status__date">08.02.2025</span>
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--award">
+                                <span class="pseudotable__caption">Вознаграждение</span>
+                                <div class="tcl-award">
+                                    <span class="blue-check-marker"></span>
+                                    6 000 ₽
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--comment">
+                                <span class="pseudotable__caption">Комментарий</span>
+                                —
+                            </div>
+                        </div>
+
+                        <div class="pseudotable__row pt-client pt-client--hired">
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--name">
+                                Шарков Александр Александрович
+                            </div>
+
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--email">
+                                <span class="pseudotable__caption">E-mail</span>
+                                <a href="mailto:Shay789@mail.ru">Shay789@mail.ru</a>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--tel">
+                                <span class="pseudotable__caption">Телефон</span>
+                                +7 999 199 23 51
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--status">
+                                <div class="tcl-status">
+                                    <span class="tcl-status__name">Принят в работу</span>
+                                    <span class="tcl-status__date">04.02.2025</span>
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--award">
+                                <span class="pseudotable__caption">Вознаграждение</span>
+                                <div class="tcl-award">
+                                    <span class="blue-check-marker"></span>
+                                    5 000 ₽
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--comment">
+                                <span class="pseudotable__caption">Комментарий</span>
+                                —
+                            </div>
+                        </div>
+
+                        <div class="pseudotable__row pt-client pt-client--refusal">
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--name">
+                                Иванова Екатерина Васильевна
+                            </div>
+
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--email">
+                                <span class="pseudotable__caption">E-mail</span>
+                                <a href="mailto:Marry742@mail.ru">Marry742@mail.ru</a>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--tel">
+                                <span class="pseudotable__caption">Телефон</span>
+                                +7 999 789 28 18
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--status">
+                                <div class="tcl-status">
+                                    <span class="tcl-status__name">Отказ</span>
+                                    <span class="tcl-status__date">02.02.2025</span>
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--award">
+                                <span class="pseudotable__caption">Вознаграждение</span>
+                                <div class="tcl-award">
+                                    —
+                                </div>
+                            </div>
+                            <div
+                                class="pseudotable-cell pseudotable-transferred-clients-list-cell pseudotable-transferred-clients-list-cell--comment">
+                                <span class="pseudotable__caption">Комментарий</span>
+                                Не устроили условия
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="information-search-section lk-section">
+            <div class="inner">
+                <h2 class="h3 section-title alCenter">
+                    Поиск информации по своим делам
+                    </h3>
+                    <form class="information-search-form">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field" placeholder="ФИО">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field mask-tel"
+                                    placeholder="Номер телефона" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <div class="information-search-form__btn-box">
+                            <button type="submit" class="btn btn--blue upp">Искать</button>
+                            <button class="btn btn-clear-form">
+                                <span class="cross-icon"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="pseudotable pseudotable-case">
+                        <div class="pseudotable__head">
+                            <div class="pseudotable__row">
+                                <div class="pseudotable-cell">
+                                    <span class="pseudotable__caption">Движение дела</span>
+                                </div>
+                                <div class="pseudotable-cell">
+                                    <span class="pseudotable__caption">Статус</span>
+                                </div>
+                                <div class="pseudotable-cell">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pseudotable__body">
+                            <div class="pseudotable__row pseudotable-case-row">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Экспертиза
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status">
+                                    <div class="tcl-status">
+                                        <span class="tcl-status__name">Назначена</span>
+                                        <span class="tcl-status__date">04.02.2025</span>
+                                    </div>
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    —
+                                </div>
+                            </div>
+                            <div class="pseudotable__row pseudotable-case-row pseudotable-case-row--sent">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Претензия застройщику
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status">
+                                    <div class="tcl-status">
+                                        <span class="tcl-status__name">Отправлена</span>
+                                        <span class="tcl-status__date">04.02.2025</span>
+                                    </div>
+                                </div>
+                                <!-- ВНИМАНИЕ!!!! Если имеется текст примечания, то нужно установить класс pseudotable-case-cell--no-empty -->
+                                <div
+                                    class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note pseudotable-case-cell--no-empty">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    Пример текста комментария, тут может находиться много текста или даже <a
+                                        href="#">ссылка</a> так что лучше показать как будет
+                                </div>
+                            </div>
+                            <div class="pseudotable__row pseudotable-case-row">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Исковое заявление
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status">
+                                    <div class="tcl-status">
+                                        <span class="tcl-status__name">Подготавливается</span>
+                                        <span class="tcl-status__date">04.02.2025</span>
+                                    </div>
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    —
+                                </div>
+                            </div>
+                            <div class="pseudotable__row pseudotable-case-row">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Заседание суда
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status">
+                                    <div class="tcl-status">
+                                        <span class="tcl-status__name">Ещё не назначено</span>
+                                        <span class="tcl-status__date">04.02.2025</span>
+                                    </div>
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    —
+                                </div>
+                            </div>
+                            <div class="pseudotable__row pseudotable-case-row">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Заседание суда 2 инстанции
+                                </div>
+                                <!-- ВНИМАНИЕ!!!! Если у нет статуса (стоит прочерк), нужно тегу установить класс pseudotable-case-cell--no-status -->
+                                <div
+                                    class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status pseudotable-case-cell--no-status">
+                                    —
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    —
+                                </div>
+                            </div>
+                            <div class="pseudotable__row pseudotable-case-row">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Исполнительный лист
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status">
+                                    <div class="tcl-status">
+                                        <span class="tcl-status__name">Не готов</span>
+                                        <span class="tcl-status__date">04.02.2025</span>
+                                    </div>
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    —
+                                </div>
+                            </div>
+                            <div class="pseudotable__row pseudotable-case-row">
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--movement">
+                                    Экспертиза
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--status">
+                                    <div class="tcl-status">
+                                        <span class="tcl-status__name">Не готова</span>
+                                        <span class="tcl-status__date">04.02.2025</span>
+                                    </div>
+                                </div>
+                                <div class="pseudotable-cell pseudotable-case-cell pseudotable-case-cell--note">
+                                    <span class="pseudotable__caption">Примечание</span>
+                                    —
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="suggestion-feedback suggestion-feedback--border">
+                        <img src="./local/templates/lex/img/suggestion-phone.svg" alt=""
+                            class="suggestion-feedback__icon" aria-hidden="true">
+                        <div class="suggestion-feedback__text">
+                            <span class="suggestion-feedback__title">Возникла техническая неисправность или есть другой
+                                вопрос?</span>
+                            <p>Оставьте заявку и мы свяжемся с вами</p>
+                        </div>
+                        <button class="btn btn--border upp">Задать вопрос</button>
+                    </div>
+            </div>
+        </section> 
+        <div class="penultimate-section"></div>
+        <section class="consultation-request-section">
     <div class="inner">
         <div class="consultation-request-wr">
             <div class="consultation-request">
@@ -336,9 +720,506 @@
         </div>
     </div>
     
-</section> 
-	</main>
-	<footer id="footer"> 
+</section>
+    </main>
+    <div class="great-shadow">
+    <div class="modal" id="terms-partner-program-modal">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Условия партнёрской программы</span>
+            </div>
+            <div class="modal__inner modal__inner--text">
+                <div class="panel panel--grey">
+                    <p>
+                        ВАЖНО! Чтобы получить вознаграждение, полученный код клиент должен передать до или во время
+                        подписания соглашения.
+                    </p>
+                </div>
+                <p>
+                    По услуге "Взыскание за некачественный ремонт с Застройщика" данная программа действует только по
+                    объектам с отделкой от застройщика.
+                </p>
+                <p>
+                    По услуге "Перепланировка и реконструкция" данная программа действует по любым объектам как с уже
+                    проведенной перепланировкой и ремонтными работами, так и объектами, в которых перепланировка только
+                    планируется.
+                </p>
+                <p>
+                    Поскольку не в каждом случае уже проведенной перепланировки возможно ее узаконить, мы не сможем
+                    подписать соглашения со всеми желающими. В случае не подписания соглашения, вознаграждение партнеру
+                    не выплачивается.
+                </p>
+                <p class="accent">
+                    За каждого клиента, который укажет ваш код партнёра, вы получаете дополнительную выплату в 500 ₽. С
+                    11-го клиента вознаграждение увеличивается до 10 000 ₽ за каждого последующего.
+                </p>
+                <div class="checked-client-list">
+                    <div class="checked-client checked-client--done">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">1-й клиент</span>
+                        <span class="checked__price">5 000 ₽</span>
+                    </div>
+                    <div class="checked-client checked-client--done">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">2-й клиент</span>
+                        <span class="checked__price">5 500 ₽</span>
+                    </div>
+                    <div class="checked-client checked-client--done">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">3-й клиент</span>
+                        <span class="checked__price">6 000 ₽</span>
+                    </div>
+                    <div class="checked-client checked-client--current">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">4-й клиент</span>
+                        <span class="checked__price">6 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">5-й клиент</span>
+                        <span class="checked__price">7 000 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">6-й клиент</span>
+                        <span class="checked__price">7 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">7-й клиент</span>
+                        <span class="checked__price">8 000 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">8-й клиент</span>
+                        <span class="checked__price">8 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">9-й клиент</span>
+                        <span class="checked__price">9 000 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">10-й клиент</span>
+                        <span class="checked__price">9 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">11-й клиент и последующие</span>
+                        <span class="checked__price">10 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Модалка инже - это для кнопки Условия программы на странице ЛК юр. лица -->
+    <div class="modal" id="terms-partner-program-modal-ul">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Условия партнёрской программы</span>
+            </div>
+            <div class="modal__inner modal__inner--text">
+                <div class="panel panel--grey">
+                    <p>
+                        За каждого клиента, который заключил с нами соглашение, Вы получаете 10% от стоимости наших
+                        услуг.
+                    </p>
+                </div>
+                <p>
+                    По услуге "Взыскание за некачественный ремонт с Застройщика" данная программа действует только по
+                    объектам с отделкой от застройщика.
+                </p>
+                <p>
+                    По услуге "Перепланировка и реконструкция" данная программа действует по любым объектам как с уже
+                    проведенной перепланировкой и ремонтными работами, так и объектами, в которых перепланировка только
+                    планируется.
+                </p>
+                <p>
+                    Поскольку не в каждом случае уже проведенной перепланировки возможно ее узаконить, мы не сможем
+                    подписать соглашения со всеми желающими. В случае не подписания соглашения, вознаграждение партнеру
+                    не выплачивается.
+                </p>
+                <p class="accent">
+                    За каждого клиента, который заключил с нами соглашение, Вы получаете 10% от стоимости наших услуг.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- авторизация/регистрация -->
+    <div class="modal" id="auth-reg-modal">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body modal-step active" id="modal-step--auth-step">
+            <div class="modal__header">
+                <span class="modal__title h3">Вход</span>
+            </div>
+            <div class="modal__inner">
+                <p>
+                    Мы предлагаем уникальные условия для физических и юридических лиц. Станьте нашим партнером и
+                    получите доступ к эксклюзивным бонусам и профессиональной поддержке от специалистов Lex Group
+                </p>
+                <form class="modal-form">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="login" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required" autocomplete="username">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="form-elem form-elem--password">
+                        <div class="form-elem__field-box">
+                            <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                required="required" autocomplete="current-password">
+                            <button type="button" class="eye-btn">
+                                <span class="closed-eye-icon"></span>
+                                <span class="open-eye-icon"></span>
+                            </button>
+                        </div>
+                        <span class="form-elem__error">Ошибка</span>
+                        <a href="#" class="forgot-your-password">Забыли пароль?</a>
+                    </div>
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+
+                        <button type="button" class="btn btn--bg btn--thin-text"
+                            data-modal-step-id="modal-step--auth-reg">
+                            <span>Ещё нет аккаунта? <span class="color-blue">Зарегистрироваться</span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal__body modal-step" id="modal-step--auth-reg">
+            <div class="modal__header">
+                <span class="modal__title h3">Регистрация</span>
+            </div>
+            <div class="modal__inner modal-tab">
+                <div class="modal-tab-control">
+                    <button class="modal-tab-control__btn active">Физическое лицо</button>
+                    <button class="modal-tab-control__btn">Юридическое лицо</button>
+                </div>
+                <form class="modal-form modal-tab-display active">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="Фамилия"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="name" class="form-elem__field" placeholder="Имя"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="patronymic" class="form-elem__field" placeholder="Отчество"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required" autocomplete="email">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="tel" name="tel" class="form-elem__field tel-mask" placeholder="Номер телефона"
+                                required="required" autocomplete="tel">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="columns-box columns-box--two-col">
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                    required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password"
+                                    placeholder="Повторите пароль" required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                    </div>
+
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+                        <button type="button" class="btn btn--bg btn--thin-text"
+                            data-modal-step-id="modal-step--auth-step">
+                            <span>Уже есть аккаунт? <span class="color-blue">Войти</span></span>
+                        </button>
+                    </div>
+                </form>
+                <form class="modal-form modal-tab-display ">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="ИНН"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="Название конторы"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="surname" class="form-elem__field" placeholder="Фамилия"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="name" class="form-elem__field" placeholder="Имя"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="patronymic" class="form-elem__field" placeholder="Отчество"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required" autocomplete="email">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="tel" name="tel" class="form-elem__field mask-tel" placeholder="Номер телефона"
+                                required="required" autocomplete="tel">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="columns-box columns-box--two-col">
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                    required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password"
+                                    placeholder="Повторите пароль" required="required" autocomplete="new-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                        </div>
+                    </div>
+
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+                        <button type="button" class="btn btn--bg btn--thin-text"
+                            data-modal-step-id="modal-step--auth-step">
+                            <span>Уже есть аккаунт? <span class="color-blue">Войти</span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Передать клиента -->
+    <div class="modal" id="transfer-the-client">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Передать клиента</span>
+            </div>
+            <div class="modal__inner">
+                <form class="modal-form modal-form--transfer-the-client">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="user-name" class="form-elem__field" placeholder="ФИО клиента"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="tel" name="tel" class="form-elem__field mask-tel" placeholder="Номер телефона"
+                                required="required" autocomplete="tel">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <select name="theme" class="form-elem__choices" data-placeholder="Тема вопроса">
+                                <option value="0" placeholder>Тема вопроса</option>
+                                <option>Перепланировка</option>
+                                <option>Затопление</option>
+                                <option>Перебои с элекртопитанием</option>
+                            </select>
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="file-funnel file-funnel--client-files">
+                        <div class="file-funnel__receiver-wr">
+                            <label class="file-funnel__text">
+                                <input type="file" name="file[]" class="file-funnel__file-input" multiple="multiple">
+                                <span class="file-funnel__decor-icon upload-icon"></span>
+                                <span type="button" class="file-funnel__caption">
+                                    Прикрепить файл(ы)
+                                </span>
+                            </label>
+                        </div>
+                        <div class="file-funnel__docs">
+                        </div>
+                    </div>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input name="client-code" type="text" class="form-elem__field form-elem__field--client-code"
+                                placeholder="Введите ваш код партнёра" required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Клиент успешно передан! -->
+    <div class="modal" id="transfer-the-client-complete">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Клиент успешно передан!</span>
+            </div>
+            <div class="modal__inner">
+                <div class="panel panel--grey">
+                    <div class="transfer-client-info">
+                        <div class="kv-item">
+                            <span class="lv-item__label">ФИО клиента</span>
+                            <span class="lv-item__value">
+                                Иванова Екатерина Васильевна
+                            </span>
+                        </div>
+                        <div class="kv-item">
+                            <span class="lv-item__label">E-mail</span>
+                            <span class="lv-item__value">
+                                Marry742@mail.ru
+                            </span>
+                        </div>
+                        <div class="kv-item">
+                            <span class="lv-item__label">Телефон</span>
+                            <span class="lv-item__value">
+                                +7 999 789 28 18
+                            </span>
+                        </div>
+                        <div class="kv-item">
+                            <span class="lv-item__label">Тема вопроса</span>
+                            <span class="lv-item__value">
+                                Взыскание компенсации за ремонт и неустойки по ДДУ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kv-item">
+                        <span class="lv-item__label">Прикреплённые файлы</span>
+                        <div class="available-files-list">
+                            <div class="available-file">
+                                <a href="#" class="available-file__link">Документы по делу №526556 Ивановой Екатерины
+                                    Васильевны</a>
+                                <div class="available-file__info">
+                                    PDF 151kb
+                                </div>
+                            </div>
+                            <div class="available-file">
+                                <a href="#" class="available-file__link">Документы по делу №526556 Ивановой Екатерины
+                                    Васильевны</a>
+                                <div class="available-file__info">
+                                    PDF 151kb
+                                </div>
+                            </div>
+                            <div class="available-file">
+                                <a href="#" class="available-file__link">Документы по делу №526556 Ивановой Екатерины
+                                    Васильевны</a>
+                                <div class="available-file__info">
+                                    PDF 151kb
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Тут может быть дополнительный текст о том что за статусом передачи можно следить в ЛК или что-то
+                    подобное, так же ниже я вывела подробную информацию, и в случае если что-то не так - пользователь
+                    может <a href="#">обратиться в техподдержку</a>
+                </p>
+            </div>
+            <button class="btn btn--blue upp close-modal">В личный кабинет</button>
+        </div>
+    </div>
+
+
+</div>
+    <footer id="footer"> 
     <div class="inner footer__main-inner">
         <span class="footer__logo">
             <img src="./local/templates/lex/img/logo.svg" alt="" >
@@ -396,12 +1277,47 @@
         </div>
     </div>
 </footer>
-	<div class="great-shadow"></div>
-	<!-- ++++++++++JavaScript++++++++++-->
-	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
-	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
-	<script src="./local/templates/lex/js/script.js"></script>
-	<!-- ++++++++++JavaScript end++++++++++-->
+    <div class="great-shadow"></div>
+    <!-- ++++++++++JavaScript++++++++++-->
+    <!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
+    <!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->
+    <script src="./local/templates/lex/js/script.js"></script>
+    <script>
+        let fileFunnel = document.querySelector('.file-funnel--client-files');
+        let ffElemClientFiles; //это для объекта, в котором будут находиться подгруженные файлы
+        /*
+            для получения подгруженных файлов используется метод .getUploadedFiles(). Ниже по коду пример его использования
+        */
+
+        if (fileFunnel) {
+            ffElemClientFiles = new FileFunnel(fileFunnel, {
+                deskBox: '.file-funnel__text',
+                reciever: '.file-funnel__receiver',
+                accept: ['.pdf', '.jpg', '.png', '.doc', '.docx'],
+                docsBox: '.file-funnel__docs'
+            });
+        } 
+
+        let mfTransferOfClient = document.querySelector('.modal-form--transfer-the-client');
+        if(mfTransferOfClient){
+            mfTransferOfClient.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let fd = new FormData(mfTransferOfClient);
+                fd.append('files', ffElemClientFiles.getUploadedFiles());
+                console.log(Array.from(fd)); //Пример данных в форм дате
+                /*
+                    ниже приведен пример кода, который можно запустить при успешной отправке данных на сервер.
+                    В коде первая функция закрывает все модалки, вторая открывает нужную модалку.
+                */
+                closeAllModal();
+                setTimeout(function(){
+                    openModal('transfer-the-client-complete');
+                }, 300)
+                
+            })
+        }
+    </script>
+    <!-- ++++++++++JavaScript end++++++++++-->
 </body>
 
 </html>

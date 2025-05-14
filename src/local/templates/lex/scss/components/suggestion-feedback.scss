@@ -42,6 +42,9 @@
         background-color: var(--dark-blue);
         color: var(--light);
     }
+    &--border{
+        border: 1px solid var(--border);
+    }
 }
 
 // ===========================================

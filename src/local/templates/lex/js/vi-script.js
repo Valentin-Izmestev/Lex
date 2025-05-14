@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   const nlFeedbackSlider = document.querySelectorAll('.feedback-slider');
-  if(nlFeedbackSlider.length > 0){
+  if (nlFeedbackSlider.length > 0) {
     nlFeedbackSlider.forEach(item => {
       var swipeFeedbackSlider = new Swiper(item, {
         slidesPerView: 3,
@@ -132,9 +132,9 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     })
   }
-  
+
   const nlFCasesSlider = document.querySelectorAll('.cases-slider');
-  if(nlFCasesSlider.length > 0){
+  if (nlFCasesSlider.length > 0) {
     nlFCasesSlider.forEach(item => {
       var swipeFeedbackSlider = new Swiper(item, {
         slidesPerView: 2,
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   const nlFeedbackSocSlider = document.querySelectorAll('.social-feedback-slider');
-  if(nlFeedbackSocSlider.length > 0){
+  if (nlFeedbackSocSlider.length > 0) {
     nlFeedbackSocSlider.forEach(item => {
       var swipefeedbackSocSlider = new Swiper(item, {
         slidesPerView: 6,
@@ -208,48 +208,48 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   const nlGalleryrSlider = document.querySelectorAll('.gallery-slider');
- 
+
   if (nlGalleryrSlider.length > 0) {
     nlGalleryrSlider.forEach(item => {
       var swiperGalleryrSlider = new Swiper(item, {
         // slidesPerView: 5,
         // spaceBetween: 20,
         // slidesPerView: "auto",
-        centeredSlides: true, 
+        centeredSlides: true,
         loop: true,
         // roundLengths: true,
         navigation: {
           nextEl: '.gallery-slider-controller .arrow-btn--right',
           prevEl: '.gallery-slider-controller .arrow-btn--left',
         },
-        breakpoints: { 
+        breakpoints: {
           300: {
             slidesPerView: 2,
             spaceBetween: 10,
-            centeredSlides: true, 
+            centeredSlides: true,
           },
           580: {
             slidesPerView: 3,
             spaceBetween: 10,
-            centeredSlides: true, 
+            centeredSlides: true,
           },
           700: {
             slidesPerView: 3,
             spaceBetween: 20,
-            centeredSlides: true, 
+            centeredSlides: true,
           },
           999: {
             slidesPerView: 4,
             spaceBetween: 20,
-            centeredSlides: true, 
-          }, 
+            centeredSlides: true,
+          },
           1470: {
             slidesPerView: 4,
-            spaceBetween: 20, 
-          }, 
+            spaceBetween: 20,
+          },
           5000: {
             slidesPerView: 4,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
         }
       });
@@ -257,48 +257,48 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const nlCertificatesSlider = document.querySelectorAll('.certificates-slider');
- 
+
   if (nlCertificatesSlider.length > 0) {
     nlCertificatesSlider.forEach(item => {
       var swiperCertificatesSlider = new Swiper(item, {
         // slidesPerView: 5,
         // spaceBetween: 20,
         // slidesPerView: "auto",
-        centeredSlides: true, 
+        centeredSlides: true,
         loop: true,
         // roundLengths: true,
         navigation: {
           nextEl: '.certificates-slider-controller .arrow-btn--right',
           prevEl: '.certificates-slider-controller .arrow-btn--left',
         },
-        breakpoints: { 
+        breakpoints: {
           300: {
             slidesPerView: 2,
             spaceBetween: 10,
-            centeredSlides: true, 
+            centeredSlides: true,
           },
           580: {
             slidesPerView: 3,
             spaceBetween: 10,
-            centeredSlides: true, 
+            centeredSlides: true,
           },
           700: {
             slidesPerView: 3,
             spaceBetween: 20,
-            centeredSlides: true, 
+            centeredSlides: true,
           },
           999: {
             slidesPerView: 4,
             spaceBetween: 20,
-            centeredSlides: true, 
-          }, 
+            centeredSlides: true,
+          },
           1470: {
             slidesPerView: 4,
-            spaceBetween: 20, 
-          }, 
+            spaceBetween: 20,
+          },
           5000: {
             slidesPerView: 4,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
         }
       });
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   const nlPublicationSlider = document.querySelectorAll('.publications-slider');
- 
+
   if (nlPublicationSlider.length > 0) {
     nlPublicationSlider.forEach(item => {
       var swiperPublicationSlider = new Swiper(item, {
@@ -321,26 +321,26 @@ document.addEventListener('DOMContentLoaded', function () {
           nextEl: '.publications-slider-controller .arrow-btn--right',
           prevEl: '.publications-slider-controller .arrow-btn--left',
         },
-        breakpoints: { 
+        breakpoints: {
           300: {
             slidesPerView: 2,
-            spaceBetween: 10, 
+            spaceBetween: 10,
           },
           580: {
             slidesPerView: 2,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
           780: {
             slidesPerView: 3,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
           1100: {
             slidesPerView: 4,
-            spaceBetween: 20, 
-          },  
+            spaceBetween: 20,
+          },
           5000: {
             slidesPerView: 4,
-            spaceBetween: 20, 
+            spaceBetween: 20,
           },
         }
       });
@@ -388,15 +388,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   const muvieSliderUp = document.querySelector('.swiper-muvie--up');
- 
+
   if (muvieSliderUp) {
-    var swipermuvieSliderUp = new Swiper(muvieSliderUp, {  
+    var swipermuvieSliderUp = new Swiper(muvieSliderUp, {
       loop: true,
       // roundLengths: true, 
       slidesPerView: 3,
       spaceBetween: 0,
       speed: 30000,
-      loop: true, 
+      loop: true,
       direction: 'vertical',
       autoplay: {
         reverseDirection: true,
@@ -407,17 +407,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const muvieSliderDown = document.querySelector('.swiper-muvie--down');
- 
+
   if (muvieSliderDown) {
-    var swipermuvieSliderDown = new Swiper(muvieSliderDown, {  
+    var swipermuvieSliderDown = new Swiper(muvieSliderDown, {
       loop: true,
       // roundLengths: true, 
       slidesPerView: 3,
       spaceBetween: 0,
       speed: 30000,
-      loop: true, 
+      loop: true,
       direction: 'vertical',
-      autoplay: { 
+      autoplay: {
         delay: 0,
         //disableOnInteraction: true // или сделать так, чтобы восстанавливался autoplay после взаимодействия
       }
@@ -437,113 +437,150 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // спойдеры
   // spoiler
-    const nlSpoilerHead = document.querySelectorAll('.spoiler__head');
-    if(nlSpoilerHead.length > 0){
-      nlSpoilerHead.forEach(sph => {
-        sph.addEventListener('click', () => {
-          sph.parentElement.classList.toggle('active');
+  const nlSpoilerHead = document.querySelectorAll('.spoiler__head');
+  if (nlSpoilerHead.length > 0) {
+    nlSpoilerHead.forEach(sph => {
+      sph.addEventListener('click', () => {
+        sph.parentElement.classList.toggle('active');
+      })
+    })
+  }
+
+  // работа якорных ссылок
+  const nlAnchorLink = document.querySelectorAll('.anchor-link');
+
+  if (nlAnchorLink.length > 0) {
+    nlAnchorLink.forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        let anchorTarget = document.querySelector(anchor.getAttribute('href'));
+        anchorTarget.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
         })
       })
-    }
+    })
+  }
 
-    // работа якорных ссылок
-    const nlAnchorLink = document.querySelectorAll('.anchor-link');
+  // показать или скрыть пароль
+  const nlEyeBtn = document.querySelectorAll('.eye-btn');
 
-    if(nlAnchorLink.length > 0){
-      nlAnchorLink.forEach(anchor => {
-        anchor.addEventListener('click', (e) => {
-          e.preventDefault();
-          let anchorTarget = document.querySelector(anchor.getAttribute('href')); 
-          anchorTarget.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          })
-        })
-      })
-    }
-
-    // показать или скрыть пароль
-    const nlEyeBtn = document.querySelectorAll('.eye-btn');
-    
-    if(nlEyeBtn.length > 0){
-      nlEyeBtn.forEach(eye => {
-        eye.addEventListener('click', (e) => {
-          const passInput = eye.previousElementSibling; 
-          if(eye.classList.contains('open')){
-            eye.classList.remove('open');
-            passInput.setAttribute('type', 'password');
-          }else{
-            eye.classList.add('open');
-            passInput.setAttribute('type', 'text');
-          }
-        })
-      })
-    } 
-
-
-    const nlTooltips = document.querySelectorAll('.tooltip'); 
-    if(nlTooltips.length > 0){
-      nlTooltips.forEach(tooltip => { 
-        let tooltipTemplate = tooltip.querySelector('.tooltip-template'); 
-        tippy(tooltip, {
-          content: tooltipTemplate,
-          // trigger: 'click',
-          placement: "bottom", 
-          flipOnUpdate: true
+  if (nlEyeBtn.length > 0) {
+    nlEyeBtn.forEach(eye => {
+      eye.addEventListener('click', (e) => {
+        const passInput = eye.previousElementSibling;
+        if (eye.classList.contains('open')) {
+          eye.classList.remove('open');
+          passInput.setAttribute('type', 'password');
+        } else {
+          eye.classList.add('open');
+          passInput.setAttribute('type', 'text');
         }
-        );
       })
-      }
+    })
+  }
 
-      // ячейки копирования в буфер обмена 
-      
-      const nlCopyredCell = document.querySelectorAll('.copyred-cell');
-      if(nlCopyredCell.length > 0){
-        nlCopyredCell.forEach(ccItem => {
-          let copyTarget = ccItem.querySelector('.copyred-cell__target');
-          let copyBtn = ccItem.querySelector('.copy-it-btn');
-          if(copyBtn && copyTarget){
-            copyBtn.addEventListener('click', (e) => {
-              e.preventDefault(); 
-              navigator.clipboard.writeText(copyTarget.innerHTML)
-                .then(() => {
-                  console.log('Скопировано')
-                  ccItem.classList.add('copyred-cell--success');
-                  setTimeout(()=>{
-                    ccItem.classList.remove('copyred-cell--success');
-                  }, 1200);
-                })
-                .catch(error => {
-                    console.error(`Текст не скопирован ${error}`)
-              })
+
+  const nlTooltips = document.querySelectorAll('.tooltip');
+  if (nlTooltips.length > 0) {
+    nlTooltips.forEach(tooltip => {
+      let tooltipTemplate = tooltip.querySelector('.tooltip-template');
+      tippy(tooltip, {
+        content: tooltipTemplate,
+        // trigger: 'click',
+        placement: "bottom",
+        flipOnUpdate: true
+      }
+      );
+    })
+  }
+
+  // ячейки копирования в буфер обмена 
+
+  const nlCopyredCell = document.querySelectorAll('.copyred-cell');
+  if (nlCopyredCell.length > 0) {
+    nlCopyredCell.forEach(ccItem => {
+      let copyTarget = ccItem.querySelector('.copyred-cell__target');
+      let copyBtn = ccItem.querySelector('.copy-it-btn');
+      if (copyBtn && copyTarget) {
+        copyBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          navigator.clipboard.writeText(copyTarget.innerHTML)
+            .then(() => {
+              console.log('Скопировано')
+              ccItem.classList.add('copyred-cell--success');
+              setTimeout(() => {
+                ccItem.classList.remove('copyred-cell--success');
+              }, 1200);
             })
-          }
-          
-        });
+            .catch(error => {
+              console.error(`Текст не скопирован ${error}`)
+            })
+        })
       }
 
-      // работа таба в тарифе
-      let nlRateStack = document.querySelectorAll('.rate-stack');
-      if(nlRateStack.length > 0){
-        nlRateStack.forEach(rs => {
-          const nlRateNavBtn = rs.querySelectorAll('.rate-nav-btn');
-          const nlRate = rs.querySelectorAll('.rate'); 
-          if(nlRateNavBtn.length > 0){
-            nlRateNavBtn.forEach(rBtn => {
-              rBtn.addEventListener('click', (e) => {
-                e.preventDefault(); 
-                if(nlRate[rBtn.dataset.rateNumer - 1]){
-                  nlRate.forEach(r => {
-                    r.classList.remove('active');
-                  });
-                  nlRate[rBtn.dataset.rateNumer - 1].classList.add('active');
-                }
+    });
+  }
+
+  // работа таба в тарифе
+  let nlRateStack = document.querySelectorAll('.rate-stack');
+  if (nlRateStack.length > 0) {
+    nlRateStack.forEach(rs => {
+      const nlRateNavBtn = rs.querySelectorAll('.rate-nav-btn');
+      const nlRate = rs.querySelectorAll('.rate');
+      if (nlRateNavBtn.length > 0) {
+        nlRateNavBtn.forEach(rBtn => {
+          rBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (nlRate[rBtn.dataset.rateNumer - 1]) {
+              nlRate.forEach(r => {
+                r.classList.remove('active');
               });
-            });
-          }
+              nlRate[rBtn.dataset.rateNumer - 1].classList.add('active');
+            }
+          });
         });
       }
+    });
+  }
 
 
+  // подключаю селекты
+  let arChoicesS = [];
+  let arChoices = [];
 
+
+  const ndSelect = document.querySelectorAll('.form-elem__choices');
+  if (ndSelect.length > 0) {
+    ndSelect.forEach(select => {
+
+      if (select.classList.contains('form-elem__choices--search')) {
+        let choicesS = new Choices(select, {
+          placeholder: true,
+          searchEnabled: true,
+          removeItemButton: false,
+          itemSelectText: '',
+          noResultsText: 'Нет результатов поиска',
+          noChoicesText: 'Не из чего выбирать',
+          classNames: {
+            listItems: 'choices__list--multiple-test',
+          }
+        });
+        arChoicesS.push(choicesS);
+      } else {
+        let choices = new Choices(select, {
+          placeholder: true,
+          searchChoices: false,
+          searchEnabled: false,
+          itemSelectText: '',
+          removeItemButton: false,
+          noResultsText: 'Нет результатов поиска',
+          noChoicesText: 'Нечего чего выбирать',
+        });
+
+        arChoices.push(choices);
+      }
+    })
+  }
+ 
 })

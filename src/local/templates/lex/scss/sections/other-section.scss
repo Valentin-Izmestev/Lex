@@ -1,118 +1,192 @@
-
-.basic-services-section{
+.basic-services-section {
     padding-top: 150px;
 }
-.commot-padding-section{
+
+.commot-padding-section {
     padding: 100px 0;
-    &.our-advantages-section{
-        .inner{
+
+    &.our-advantages-section {
+        .inner {
             margin-bottom: 0;
         }
-    } 
+    }
 }
-.commot-top-padding-section{
+
+.commot-top-padding-section {
     padding-top: 100px;
 }
-.gallery-section{
+
+.gallery-section {
     position: relative;
     padding-top: 70px;
     overflow: hidden;
 }
+
 .certificates-section,
-.publications-section{
+.publications-section {
     position: relative;
     overflow: hidden;
 }
-.our-advantages-section{
+
+.our-advantages-section {
     padding-top: 100px;
     background-image: url(../img/our-advantages-section-bg.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    .inner{
+
+    .inner {
         margin-bottom: 145px;
     }
 }
-.faq-section{
-    &--light{
+
+.faq-section {
+    &--light {
         background-color: var(--light);
-        .spoiler{
+
+        .spoiler {
             border: 1px solid var(--border);
         }
-        .floating-offer{
+
+        .floating-offer {
             background-color: var(--bg);
             border: none;
         }
     }
 }
-.division-of-property-content-section{
-    .suggestion-feedback{
+
+.division-of-property-content-section {
+    .suggestion-feedback {
         margin-top: 100px;
     }
 }
-.lex-about-section{
-    .section-title{
+
+.lex-about-section {
+    .section-title {
         max-width: 1141px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
 }
+
+.lk-section {
+    padding-bottom: 80px;
+}
+
+.information-search-section {
+    .information-search-form {
+        margin-bottom: 40px;
+    }
+
+    .suggestion-feedback--border {
+        margin-top: 80px;
+    }
+}
+
 // ====================================================
-@media screen and (max-width: 1470px){
-    .basic-services-section{
+@media screen and (max-width: 1470px) {
+    .basic-services-section {
         padding-top: 80px;
     }
-    .commot-padding-section{
-        padding: 80px 0; 
+
+    .commot-padding-section {
+        padding: 80px 0;
     }
-    .gallery-section{
+
+    .gallery-section {
         padding-top: 50px;
     }
-    .our-advantages-section{
-        padding-top: 80px; 
-        .inner{
+
+    .our-advantages-section {
+        padding-top: 80px;
+
+        .inner {
             margin-bottom: 80px;
         }
     }
-    .commot-top-padding-section{
+
+    .commot-top-padding-section {
         padding-top: 80px;
     }
-}
-@media screen and (max-width: 999px){
-    .basic-services-section{
-        padding-top: 60px;
-    } 
-    .commot-padding-section{
-        padding: 60px 0; 
+
+    .lk-section {
+        padding-bottom: 60px;
     }
-    .gallery-section{
+
+    .information-search-section {
+        .information-search-form {
+            margin-bottom: 40px;
+        }
+
+        .suggestion-feedback--border {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .basic-services-section {
+        padding-top: 60px;
+    }
+
+    .commot-padding-section {
+        padding: 60px 0;
+    }
+
+    .gallery-section {
         padding-top: 30px;
     }
-    .our-advantages-section{
-        padding-top: 60px; 
-        .inner{
+
+    .our-advantages-section {
+        padding-top: 60px;
+
+        .inner {
             margin-bottom: 60px;
         }
     }
-    .commot-top-padding-section{
+
+    .commot-top-padding-section {
         padding-top: 60px;
     }
+
+    .lk-section {
+        padding-bottom: 60px;
+    }
 }
-@media screen and (max-width: 600px){
-    .basic-services-section{
+
+@media screen and (max-width: 600px) {
+    .information-search-section {
+        .information-search-form {
+            margin-bottom: 20px;
+        }
+
+        .suggestion-feedback--border {
+            margin-top: 30px;
+        }
+    }
+
+    .basic-services-section {
         padding-top: 30px;
     }
-    .commot-padding-section{
-        padding: 30px 0; 
+
+    .commot-padding-section {
+        padding: 30px 0;
     }
-    .our-advantages-section{
-        padding-top: 30px; 
-        .inner{
+
+    .our-advantages-section {
+        padding-top: 30px;
+
+        .inner {
             margin-bottom: 30px;
         }
     }
-    .commot-top-padding-section{
-        padding-top: 30px; 
+
+    .commot-top-padding-section {
+        padding-top: 30px;
+    }
+
+    .lk-section {
+        padding-bottom: 30px;
     }
 }

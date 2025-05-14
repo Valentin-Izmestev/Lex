@@ -48,6 +48,10 @@
         gap: 40px;
         flex-grow: 1;
         overflow-Y: auto;
+        &--text{
+            gap: 20px;
+            font-size: 16px;
+        }
     }
     .modal__footer{
         margin-top: auto;
@@ -55,6 +59,7 @@
         flex-direction: column;
         gap: 20px;
         .btn{
+            margin: 0;
             width: 100%;
         }
     }
@@ -66,6 +71,20 @@
         &.active{
             display: flex;
         }
+    }
+    .panel{
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .accent{
+        margin-top: 20px;
+    }
+    .btn{
+        width: 100%;
+        margin-top: 30px;
+    }
+    a{
+        color: var(--blue);
     }
 }
 
@@ -159,7 +178,7 @@
         width: 100%;
         max-width: 100%;
         padding: 20px; 
-        font-size: 13px;
+        font-size: 15px;
         .modal__header {
             margin-bottom: 20px;
         }
@@ -169,5 +188,6 @@
         &.open{
             bottom: 0;
         }
+       
     }
 }

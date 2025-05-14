@@ -5,6 +5,9 @@
         color: var(--blue);
     }
 }
+.h3.section-title{
+     margin-bottom: 40px;
+}
 main{
     .section-title-panel{
         margin-bottom: 50px;
@@ -60,6 +63,9 @@ main{
                 max-width: 100%;
             }
         }
+    }
+    .h3.section-title{
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 500px){

@@ -1,8 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-    const greatShadow = document.querySelector('.great-shadow');
+     const greatShadow = document.querySelector('.great-shadow');
     const nlModalOpenBtn = document.querySelectorAll('[data-modal-id]');
     const nlModals = document.querySelectorAll('.modal'); 
+    const nlCloseModal = document.querySelectorAll('.close-modal');
 
     function openModal(modalID){ 
         if(!greatShadow) return;
@@ -16,8 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function closeAllModal(){
-        nlModals.forEach(modal => {
-            console.log(modal)
+        nlModals.forEach(modal => { 
             modal.classList.remove('open');
         });
         setTimeout(function(){
@@ -32,6 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 openModal(item.getAttribute('data-modal-id'));
             });
         });
+    }
+    if(nlCloseModal.length > 0){
+        console.log(nlCloseModal)
+        nlCloseModal.forEach(cm => {
+            cm.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeAllModal();
+            })
+        })
     }
 
     greatShadow.addEventListener('click', function(e){
@@ -97,15 +104,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     
-     // активация кнопок в форме в случае заполнения всех обяхательных полей
+     // активация кнопок в форме в случае заполнения всех обяхательных полей (ВАЛИДАЦИЯ)
      const nlModalForm = document.querySelectorAll('.modal-form');
      if(nlModalForm.length > 0){
         nlModalForm.forEach( mf => {
-            // disabled="disabled"
+ 
             let submitBtn = mf.querySelector('.btn[type="submit"]');
-            // required="required"
-            let nlReauiredField = mf.querySelectorAll('input[required="required"]');
             console.log(submitBtn)
+            let nlReauiredField = mf.querySelectorAll('input[required="required"]');  
             if(nlReauiredField.length > 0){
                 nlReauiredField.forEach(inp => { 
                     let fullnessFlag; //флаг заполненности полей
@@ -127,4 +133,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
      }
      
-});
