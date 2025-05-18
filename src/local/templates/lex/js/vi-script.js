@@ -11,6 +11,25 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
+  const nlNumberMask = document.querySelectorAll('.number-mask');
+  if (nlNumberMask.length > 0) {
+    nlNumberMask.forEach(numberMusk => {
+      let nMask = IMask(numberMusk, {
+        mask: Number,  // enable number mask
+
+        scale: 2,  // digits after point, 0 for integers
+        thousandsSeparator: '',  // any single char
+        padFractionalZeros: false,  // if true, then pads zeros at end to the length of scale
+        normalizeZeros: true,  // appends or removes zeros at ends
+        radix: '.',  // fractional delimiter
+        mapToRadix: ['.'],  // symbols to process as radix 
+        // additional number interval options (e.g.)
+        min: 0,
+        max: 100000,
+        autofix: true,
+      });
+    })
+  }
 
 
   // Код ниже следит за отсутпами предпоследнего блока с классом penultimate-section и  блока с формой заявки на консультацию
@@ -582,5 +601,20 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
   }
- 
+
+  // подключаю датапикер с мероприятиями 
+
+  let nlDateField = document.querySelectorAll('.flatpickr');
+  if (nlDateField.length > 0) {
+    nlDateField.forEach(item => {
+      flatpickr(item, {
+        locale: 'ru',
+        // enableTime: true,
+        dateFormat: "d.m.Y",
+        // inline: true, 
+      });
+    })
+
+  }
+
 })

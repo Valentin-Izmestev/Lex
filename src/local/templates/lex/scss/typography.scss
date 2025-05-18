@@ -1,53 +1,74 @@
-h1, .h1{
+h1,
+.h1 {
     display: block;
     font-family: 'NotoSerif', sans-serif;
     font-size: 70px;
     line-height: 1.2;
     font-weight: 700;
 }
-h2, .h2{
+
+h2,
+.h2 {
     display: block;
     font-family: 'NotoSerif', sans-serif;
     font-size: 50px;
     line-height: 1.2;
     font-weight: 700;
 }
-h3, .h3{
+
+h3,
+.h3 {
     display: block;
     font-family: 'NotoSerif', sans-serif;
     font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
 }
-.color-blue{
+
+h4,
+.h4 {
+    display: block;
+    font-family: 'NotoSerif', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.color-blue {
     color: var(--blue);
 }
-.color-error{
+
+.color-error {
     color: var(--error);
 }
-.color-success{
+
+.color-success {
     color: var(--success);
-} 
-main{
-    ul{
+}
+
+main {
+    ul {
         display: flex;
         flex-direction: column;
         gap: 20px;
         padding: 0;
         margin: 0;
         list-style-type: none;
-        li{
+
+        li {
             padding-left: 15px;
-            border-left: 2px solid var(--gold); 
+            border-left: 2px solid var(--gold);
             box-sizing: border-box;
-            ol{
-                li{
+
+            ol {
+                li {
                     border-left: none;
                 }
             }
         }
     }
-    ol { 
+
+    ol {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -55,12 +76,14 @@ main{
         margin: 0;
         list-style-type: none;
         counter-reset: num;
-        li{
+
+        li {
             position: relative;
             padding-left: 43px;
             box-sizing: border-box;
-            &::before{ 
-                content: counter(num) ;  
+
+            &::before {
+                content: counter(num);
                 counter-increment: num;
                 position: absolute;
                 top: 2px;
@@ -77,10 +100,12 @@ main{
                 font-weight: 700;
                 color: var(--light);
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     padding-left: 15px;
-                    &::before{
+
+                    &::before {
                         display: none;
                     }
                 }
@@ -88,24 +113,28 @@ main{
         }
     }
 }
-.accent{
+
+.accent {
     font-weight: 500;
 }
-.checked-list{
+
+.checked-list {
     display: flex;
     gap: 12px;
     flex-direction: column;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    li{
+
+    li {
         position: relative;
         padding-left: 35px;
         font-weight: 500;
         border-left: none;
         box-sizing: border-box;
-        &::after{
-            content: ''; 
+
+        &::after {
+            content: '';
             position: absolute;
             top: 2px;
             left: 0;
@@ -119,21 +148,24 @@ main{
         }
     }
 }
-.circle-checked-list{
+
+.circle-checked-list {
     display: flex;
     gap: 20px;
     flex-direction: column;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    li{
+
+    li {
         position: relative;
         padding-left: 43px;
         font-weight: 500;
         border-left: none;
         box-sizing: border-box;
-        &::after{
-            content: ''; 
+
+        &::after {
+            content: '';
             position: absolute;
             top: 2px;
             left: 0;
@@ -142,26 +174,28 @@ main{
             background-image: url(../img/icons/checked-in-cirle-icon.svg);
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center center; 
+            background-position: center center;
         }
     }
-    &--blue{
-        li{
-            &::after{
+
+    &--blue {
+        li {
+            &::after {
                 background-image: url(../img/icons/blue-checked-in-cirle-icon.svg);
             }
         }
     }
-    &--cross{
-        li{
-            &::after{
+
+    &--cross {
+        li {
+            &::after {
                 background-image: url(../img/icons/cross-checked-in-cirle-icon.svg);
             }
         }
     }
 }
 
-blockquote{
+blockquote {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -169,11 +203,13 @@ blockquote{
     padding: 0;
     font-size: 22px;
     font-style: italic;
-    p{
+
+    p {
         margin: 0;
     }
-} 
-.blockquote{
+}
+
+.blockquote {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -181,11 +217,12 @@ blockquote{
     padding: 60px;
     border-radius: 30px;
     background-color: var(--light);
-    margin: 0; 
+    margin: 0;
     font-size: 20px;
     font-style: italic;
     box-sizing: border-box;
-    &::before{
+
+    &::before {
         content: '';
         position: absolute;
         top: -24px;
@@ -198,95 +235,137 @@ blockquote{
         mask-size: contain;
         background-color: var(--gold);
     }
-    p{
+
+    p {
         margin: 0;
     }
-} 
+}
+
 // ===========================================================
 @media screen and (max-width: 1470px) {
     :root {
-        font-size: 18px; 
+        font-size: 18px;
     }
-    h1, .h1{ 
-        font-size: 55px; 
+
+    h1,
+    .h1 {
+        font-size: 55px;
     }
-    h2, .h2{ 
-        font-size: 40px; 
+
+    h2,
+    .h2 {
+        font-size: 40px;
     }
-    h3, .h3{ 
-        font-size: 30px; 
+
+    h3,
+    .h3 {
+        font-size: 30px;
     }
-    blockquote{ 
-        gap: 20px; 
-        font-size: 18px; 
+
+    h4,
+    .h4 {
+        font-size: 25px;
     }
-    .circle-checked-list{ 
+
+    blockquote {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .circle-checked-list {
         gap: 15px;
-        li{ 
-            padding-left: 34px; 
-            &::after{ 
+
+        li {
+            padding-left: 34px;
+
+            &::after {
                 width: 24px;
-                height: 24px; 
+                height: 24px;
             }
         }
-    } 
-    .blockquote{ 
+    }
+
+    .blockquote {
         gap: 20px;
         padding: 30px;
-        border-radius: 20px; 
-        font-size: 16px; 
-        &::before{ 
+        border-radius: 20px;
+        font-size: 16px;
+
+        &::before {
             top: -24px;
-            right: 16px; 
-        } 
-    } 
+            right: 16px;
+        }
+    }
 }
+
 @media screen and (max-width: 999px) {
     :root {
-        font-size: 16px; 
+        font-size: 16px;
     }
-    h1, .h1{ 
-        font-size: 45px; 
+
+    h1,
+    .h1 {
+        font-size: 45px;
     }
-    h2, .h2{ 
-        font-size: 30px; 
+
+    h2,
+    .h2 {
+        font-size: 30px;
     }
-    h3, .h3{ 
-        font-size: 25px; 
+
+    h3,
+    .h3 {
+        font-size: 25px;
     }
 }
-@media screen and (max-width: 500px){
-    .blockquote{ 
+
+@media screen and (max-width: 500px) {
+    .blockquote {
         gap: 15px;
         padding: 15px;
-        border-radius: 15px; 
-        font-size: 14px; 
-        &::before{ 
+        border-radius: 15px;
+        font-size: 14px;
+
+        &::before {
             top: -14px;
             right: 16px;
-            width: 42px; 
+            width: 42px;
             height: 32px;
-        } 
-    } 
+        }
+    }
 }
+
 @media screen and (max-width: 500px) {
-    h1, .h1{ 
-        font-size: 35px; 
+
+    h1,
+    .h1 {
+        font-size: 35px;
         // font-size: 25px; по макету, но не красиво
     }
-    h2, .h2{ 
-        font-size: 22px; 
+
+    h2,
+    .h2 {
+        font-size: 22px;
     }
-    h3, .h3{ 
-        font-size: 18px; 
+
+    h3,
+    .h3 {
+        font-size: 18px;
     }
-    .circle-checked-list{  
-        li{ 
-            padding-left: 30px; 
-            &::after{ 
+
+    h4,
+    .h4 {
+        font-size: 20px;
+    }
+
+    .circle-checked-list {
+        li {
+            padding-left: 30px;
+
+            &::after {
                 width: 20px;
-                height: 20px; 
+                height: 20px;
             }
         }
-    } 
+    }
 }

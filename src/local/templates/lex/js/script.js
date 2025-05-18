@@ -6,6 +6,9 @@
 @@ include('choices.min.js');
 @@ include('FileFunnel.js');
 
+@@ include('flatpickr.js');
+@@ include('flatpickr_ru.js');
+
 
 @@ include('header.js');
 @@ include('modal.js');

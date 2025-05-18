@@ -1,4 +1,4 @@
-     const greatShadow = document.querySelector('.great-shadow');
+    const greatShadow = document.querySelector('.great-shadow');
     const nlModalOpenBtn = document.querySelectorAll('[data-modal-id]');
     const nlModals = document.querySelectorAll('.modal'); 
     const nlCloseModal = document.querySelectorAll('.close-modal');
@@ -31,8 +31,7 @@
             });
         });
     }
-    if(nlCloseModal.length > 0){
-        console.log(nlCloseModal)
+    if(nlCloseModal.length > 0){ 
         nlCloseModal.forEach(cm => {
             cm.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -110,7 +109,7 @@
         nlModalForm.forEach( mf => {
  
             let submitBtn = mf.querySelector('.btn[type="submit"]');
-            console.log(submitBtn)
+            // console.log(submitBtn)
             let nlReauiredField = mf.querySelectorAll('input[required="required"]');  
             if(nlReauiredField.length > 0){
                 nlReauiredField.forEach(inp => { 
