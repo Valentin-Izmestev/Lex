@@ -581,7 +581,7 @@
 								<span class="rate__title">Подобрать индивидуальный тариф </span>
 								<span class="rate__deadlines">Пройдите небольшой тест  и мы подберём тариф для вас</span>
 								<div class="rate__action"> 
-									<button class="btn btn--gold upp">подобрать тариф</button>
+									<button class="btn btn--gold upp" data-modal-id="selection-of-an-individual-tariff">подобрать тариф</button>
 								</div> 
 							</div> 
 						</div>
@@ -1800,7 +1800,845 @@
         </div>
     </div>
 </footer>
-	<div class="great-shadow"></div>
+	<div class="great-shadow">
+    <div class="modal" id="terms-partner-program-modal">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Условия партнёрской программы</span>
+            </div>
+            <div class="modal__inner modal__inner--text">
+                <div class="panel panel--grey">
+                    <p>
+                        ВАЖНО! Чтобы получить вознаграждение, полученный код клиент должен передать до или во время
+                        подписания соглашения.
+                    </p>
+                </div>
+                <p>
+                    По услуге "Взыскание за некачественный ремонт с Застройщика" данная программа действует только по
+                    объектам с отделкой от застройщика.
+                </p>
+                <p>
+                    По услуге "Перепланировка и реконструкция" данная программа действует по любым объектам как с уже
+                    проведенной перепланировкой и ремонтными работами, так и объектами, в которых перепланировка только
+                    планируется.
+                </p>
+                <p>
+                    Поскольку не в каждом случае уже проведенной перепланировки возможно ее узаконить, мы не сможем
+                    подписать соглашения со всеми желающими. В случае не подписания соглашения, вознаграждение партнеру
+                    не выплачивается.
+                </p>
+                <p class="accent">
+                    За каждого клиента, который укажет ваш код партнёра, вы получаете дополнительную выплату в 500 ₽. С
+                    11-го клиента вознаграждение увеличивается до 10 000 ₽ за каждого последующего.
+                </p>
+                <div class="checked-client-list">
+                    <div class="checked-client checked-client--done">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">1-й клиент</span>
+                        <span class="checked__price">5 000 ₽</span>
+                    </div>
+                    <div class="checked-client checked-client--done">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">2-й клиент</span>
+                        <span class="checked__price">5 500 ₽</span>
+                    </div>
+                    <div class="checked-client checked-client--done">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">3-й клиент</span>
+                        <span class="checked__price">6 000 ₽</span>
+                    </div>
+                    <div class="checked-client checked-client--current">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">4-й клиент</span>
+                        <span class="checked__price">6 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">5-й клиент</span>
+                        <span class="checked__price">7 000 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">6-й клиент</span>
+                        <span class="checked__price">7 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">7-й клиент</span>
+                        <span class="checked__price">8 000 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">8-й клиент</span>
+                        <span class="checked__price">8 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">9-й клиент</span>
+                        <span class="checked__price">9 000 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">10-й клиент</span>
+                        <span class="checked__price">9 500 ₽</span>
+                    </div>
+                    <div class="checked-client">
+                        <div class="checked ">
+                            <span class="checked-icon"></span>
+                        </div>
+                        <span class="checked__label">11-й клиент и последующие</span>
+                        <span class="checked__price">10 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Модалка инже - это для кнопки Условия программы на странице ЛК юр. лица -->
+    <div class="modal" id="terms-partner-program-modal-ul">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Условия партнёрской программы</span>
+            </div>
+            <div class="modal__inner modal__inner--text">
+                <div class="panel panel--grey">
+                    <p>
+                        За каждого клиента, который заключил с нами соглашение, Вы получаете 10% от стоимости наших
+                        услуг.
+                    </p>
+                </div>
+                <p>
+                    По услуге "Взыскание за некачественный ремонт с Застройщика" данная программа действует только по
+                    объектам с отделкой от застройщика.
+                </p>
+                <p>
+                    По услуге "Перепланировка и реконструкция" данная программа действует по любым объектам как с уже
+                    проведенной перепланировкой и ремонтными работами, так и объектами, в которых перепланировка только
+                    планируется.
+                </p>
+                <p>
+                    Поскольку не в каждом случае уже проведенной перепланировки возможно ее узаконить, мы не сможем
+                    подписать соглашения со всеми желающими. В случае не подписания соглашения, вознаграждение партнеру
+                    не выплачивается.
+                </p>
+                <p class="accent">
+                    За каждого клиента, который заключил с нами соглашение, Вы получаете 10% от стоимости наших услуг.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- авторизация/регистрация -->
+    <div class="modal" id="auth-reg-modal">
+        <div class="modal-cell">
+            <button class="modal__close-row">закрыть</button>
+            <div class="modal__body modal-step active" id="modal-step--auth-step">
+                <div class="modal__header">
+                    <span class="modal__title h3">Вход</span>
+                </div>
+                <div class="modal__inner">
+                    <p>
+                        Мы предлагаем уникальные условия для физических и юридических лиц. Станьте нашим партнером и
+                        получите доступ к эксклюзивным бонусам и профессиональной поддержке от специалистов Lex Group
+                    </p>
+                    <form class="modal-form">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" name="login" class="form-elem__field" placeholder="E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required" autocomplete="username">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <div class="form-elem form-elem--password">
+                            <div class="form-elem__field-box">
+                                <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                    required="required" autocomplete="current-password">
+                                <button type="button" class="eye-btn">
+                                    <span class="closed-eye-icon"></span>
+                                    <span class="open-eye-icon"></span>
+                                </button>
+                            </div>
+                            <span class="form-elem__error">Ошибка</span>
+                            <a href="#" class="forgot-your-password">Забыли пароль?</a>
+                        </div>
+                        <div class="modal__footer">
+                            <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+
+                            <button type="button" class="btn btn--bg btn--thin-text"
+                                data-modal-step-id="modal-step--auth-reg">
+                                <span>Ещё нет аккаунта? <span class="color-blue">Зарегистрироваться</span></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__body modal-step" id="modal-step--auth-reg">
+                <div class="modal__header">
+                    <span class="modal__title h3">Регистрация</span>
+                </div>
+                <div class="modal__inner modal-tab">
+                    <div class="modal-tab-control">
+                        <button class="modal-tab-control__btn active">Физическое лицо</button>
+                        <button class="modal-tab-control__btn">Юридическое лицо</button>
+                    </div>
+                    <form class="modal-form modal-tab-display active">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="surname" class="form-elem__field" placeholder="Фамилия"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field" placeholder="Имя"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="patronymic" class="form-elem__field" placeholder="Отчество"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required" autocomplete="email">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field tel-mask"
+                                    placeholder="Номер телефона" required="required" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <div class="columns-box columns-box--two-col">
+                            <div class="form-elem form-elem--password">
+                                <div class="form-elem__field-box">
+                                    <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                        required="required" autocomplete="new-password">
+                                    <button type="button" class="eye-btn">
+                                        <span class="closed-eye-icon"></span>
+                                        <span class="open-eye-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--password">
+                                <div class="form-elem__field-box">
+                                    <input type="password" class="form-elem__field" name="password"
+                                        placeholder="Повторите пароль" required="required" autocomplete="new-password">
+                                    <button type="button" class="eye-btn">
+                                        <span class="closed-eye-icon"></span>
+                                        <span class="open-eye-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                        </div>
+
+                        <div class="modal__footer">
+                            <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+                            <button type="button" class="btn btn--bg btn--thin-text"
+                                data-modal-step-id="modal-step--auth-step">
+                                <span>Уже есть аккаунт? <span class="color-blue">Войти</span></span>
+                            </button>
+                        </div>
+                    </form>
+                    <form class="modal-form modal-tab-display ">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="surname" class="form-elem__field" placeholder="ИНН"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="surname" class="form-elem__field"
+                                    placeholder="Название конторы" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="surname" class="form-elem__field" placeholder="Фамилия"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field" placeholder="Имя"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="patronymic" class="form-elem__field" placeholder="Отчество"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required" autocomplete="email">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field mask-tel"
+                                    placeholder="Номер телефона" required="required" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <div class="columns-box columns-box--two-col">
+                            <div class="form-elem form-elem--password">
+                                <div class="form-elem__field-box">
+                                    <input type="password" class="form-elem__field" name="password" placeholder="Пароль"
+                                        required="required" autocomplete="new-password">
+                                    <button type="button" class="eye-btn">
+                                        <span class="closed-eye-icon"></span>
+                                        <span class="open-eye-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--password">
+                                <div class="form-elem__field-box">
+                                    <input type="password" class="form-elem__field" name="password"
+                                        placeholder="Повторите пароль" required="required" autocomplete="new-password">
+                                    <button type="button" class="eye-btn">
+                                        <span class="closed-eye-icon"></span>
+                                        <span class="open-eye-icon"></span>
+                                    </button>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                        </div>
+
+                        <div class="modal__footer">
+                            <button type="submit" class="btn btn--blue upp" disabled="disabled">Войти</button>
+                            <button type="button" class="btn btn--bg btn--thin-text"
+                                data-modal-step-id="modal-step--auth-step">
+                                <span>Уже есть аккаунт? <span class="color-blue">Войти</span></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Передать клиента -->
+    <div class="modal" id="transfer-the-client">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Передать клиента</span>
+            </div>
+            <div class="modal__inner">
+                <form class="modal-form modal-form--transfer-the-client">
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="text" name="user-name" class="form-elem__field" placeholder="ФИО клиента"
+                                required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                pattern="^\S+@\S+\.\S+$" required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input type="tel" name="tel" class="form-elem__field mask-tel" placeholder="Номер телефона"
+                                required="required" autocomplete="tel">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <select name="theme" class="form-elem__choices" data-placeholder="Тема вопроса">
+                                <option value="0" placeholder>Тема вопроса</option>
+                                <option>Перепланировка</option>
+                                <option>Затопление</option>
+                                <option>Перебои с элекртопитанием</option>
+                            </select>
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="file-funnel file-funnel--client-files">
+                        <div class="file-funnel__receiver-wr">
+                            <label class="file-funnel__text">
+                                <input type="file" name="file[]" class="file-funnel__file-input" multiple="multiple">
+                                <span class="file-funnel__decor-icon upload-icon"></span>
+                                <span type="button" class="file-funnel__caption">
+                                    Прикрепить файл(ы)
+                                </span>
+                            </label>
+                        </div>
+                        <div class="file-funnel__docs">
+                        </div>
+                    </div>
+                    <label class="form-elem">
+                        <span class="form-elem__field-box">
+                            <input name="client-code" type="text" class="form-elem__field form-elem__field--client-code"
+                                placeholder="Введите ваш код партнёра" required="required">
+                        </span>
+                        <span class="form-elem__error">Ошибка</span>
+                    </label>
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue upp" disabled="disabled">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Клиент успешно передан! -->
+    <div class="modal" id="transfer-the-client-complete">
+        <button class="modal__close-row">закрыть</button>
+        <div class="modal__body">
+            <div class="modal__header">
+                <span class="modal__title h3">Клиент успешно передан!</span>
+            </div>
+            <div class="modal__inner">
+                <div class="panel panel--grey">
+                    <div class="transfer-client-info">
+                        <div class="kv-item">
+                            <span class="lv-item__label">ФИО клиента</span>
+                            <span class="lv-item__value">
+                                Иванова Екатерина Васильевна
+                            </span>
+                        </div>
+                        <div class="kv-item">
+                            <span class="lv-item__label">E-mail</span>
+                            <span class="lv-item__value">
+                                Marry742@mail.ru
+                            </span>
+                        </div>
+                        <div class="kv-item">
+                            <span class="lv-item__label">Телефон</span>
+                            <span class="lv-item__value">
+                                +7 999 789 28 18
+                            </span>
+                        </div>
+                        <div class="kv-item">
+                            <span class="lv-item__label">Тема вопроса</span>
+                            <span class="lv-item__value">
+                                Взыскание компенсации за ремонт и неустойки по ДДУ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="kv-item">
+                        <span class="lv-item__label">Прикреплённые файлы</span>
+                        <div class="available-files-list">
+                            <div class="available-file">
+                                <a href="#" class="available-file__link">Документы по делу №526556 Ивановой Екатерины
+                                    Васильевны</a>
+                                <div class="available-file__info">
+                                    PDF 151kb
+                                </div>
+                            </div>
+                            <div class="available-file">
+                                <a href="#" class="available-file__link">Документы по делу №526556 Ивановой Екатерины
+                                    Васильевны</a>
+                                <div class="available-file__info">
+                                    PDF 151kb
+                                </div>
+                            </div>
+                            <div class="available-file">
+                                <a href="#" class="available-file__link">Документы по делу №526556 Ивановой Екатерины
+                                    Васильевны</a>
+                                <div class="available-file__info">
+                                    PDF 151kb
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Тут может быть дополнительный текст о том что за статусом передачи можно следить в ЛК или что-то
+                    подобное, так же ниже я вывела подробную информацию, и в случае если что-то не так - пользователь
+                    может <a href="#">обратиться в техподдержку</a>
+                </p>
+            </div>
+            <button class="btn btn--blue upp close-modal">В личный кабинет</button>
+        </div>
+    </div>
+    <!-- Калькулятор дефектов -->
+    <div class="modal modal--scroll" id="defect-calculator">
+        <div class="modal-cell">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <span class="modal__title h3">Калькулятор дефектов</span>
+                </div>
+                <div class="modal__inner">
+                    <form class="defect-calculator form-calculator">
+                        <div class="form-calculator__field-container">
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Вид договора:</span>
+                                <div class="form-elem__field-box form-elem__field-box--two-col">
+                                    <label class="radiobutton">
+                                        <input type="radio" name="c-type" checked>
+                                        <span class="radiobutton__caption">ДДУ</span>
+                                    </label>
+                                    <label class="radiobutton">
+                                        <input type="radio" name="c-type">
+                                        <span class="radiobutton__caption">ДКП</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Стоимость квартиры:</span>
+                                <div class="form-elem__field-box form-elem__field-box--with-measurement">
+                                    <input type="text" name="one" class="form-elem__field number-mask"
+                                        placeholder="Введите число" required="required">
+                                    <span class="form-elem__field-measurement">₽</span>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Площадь квартиры:</span>
+                                <div class="form-elem__field-box form-elem__field-box--with-measurement">
+                                    <input type="text" name="two" class="form-elem__field number-mask"
+                                        placeholder="Введите число" required="required">
+                                    <span class="form-elem__field-measurement">м<sup>2</sup></span>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Тип отделки:</span>
+                                <span class="form-elem__field-box">
+                                    <select class="form-elem__choices" data-placeholder="Не выбрано">
+                                        <option value="0" placeholder>Не выбрано</option>
+                                        <option>Перепланировка</option>
+                                        <option>Затопление</option>
+                                        <option>Перебои с элекртопитанием</option>
+                                    </select>
+                                </span>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Застройщик:</span>
+                                <span class="form-elem__field-box">
+                                    <select class="form-elem__choices" data-placeholder="Не выбрано">
+                                        <option value="0" placeholder>Не выбрано</option>
+                                        <option>Перепланировка</option>
+                                        <option>Затопление</option>
+                                        <option>Перебои с элекртопитанием</option>
+                                    </select>
+                                </span>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Регион:</span>
+                                <span class="form-elem__field-box">
+                                    <select class="form-elem__choices" data-placeholder="Не выбрано">
+                                        <option value="0" placeholder>Не выбрано</option>
+                                        <option>Перепланировка</option>
+                                        <option>Затопление</option>
+                                        <option>Перебои с элекртопитанием</option>
+                                    </select>
+                                </span>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+
+                        </div>
+                        <div class="form-calculator__btn-box">
+                            <button type="button" class="btn--border upp btn">Очистить</button>
+                            <button class="btn--gold upp btn">Рассчитать</button>
+                        </div>
+                        <div class="form-calculator-result-panel">
+                            <span class="form-calculator-result-panel__label">Результат</span>
+                            <span class="form-calculator-result-panel__caption">
+                                <span class="form-calculator-result-panel__caption-res">
+                                    0
+                                </span>
+                                ₽
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__footer modal__footer--blue">
+                <span class="h4 alCenter">
+                    Хотите получить услугу по взысканию компенсации за ремонт?
+                </span>
+                <button type="submit" class="btn btn--light upp">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Калькулятор неустойки -->
+    <div class="modal modal--scroll" id="penalty-calculator-modal">
+        <div class="modal-cell">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <span class="modal__title h3">Калькулятор неустойки</span>
+                </div>
+                <div class="modal__inner">
+                    <form class="defect-calculator form-calculator">
+                        <div class="form-calculator__field-container">
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Цена договора</span>
+                                <div class="form-elem__field-box form-elem__field-box--with-measurement">
+                                    <input type="text" name="one" class="form-elem__field number-mask"
+                                        placeholder="Введите число" required="required">
+                                    <span class="form-elem__field-measurement">₽</span>
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+                            <div class="form-elem form-elem--row">
+                                <span class="form-elem__caption">Период просрочки</span>
+                                <div class="form-elem__field-box form-elem__field-box--two-col">
+                                    <input type="date" name="start" class="flatpickr form-elem__field">
+                                    <input type="date" name="start" class="flatpickr form-elem__field">
+                                </div>
+                                <span class="form-elem__error">Ошибка</span>
+                            </div>
+
+                        </div>
+                        <div class="form-calculator__btn-box">
+                            <button type="button" class="btn--border upp btn">Очистить</button>
+                            <button class="btn--gold upp btn">Рассчитать</button>
+                        </div>
+                        <div class="form-calculator-result-panel">
+                            <span class="form-calculator-result-panel__label">Результат</span>
+                            <span class="form-calculator-result-panel__caption">
+                                <span class="form-calculator-result-panel__caption-res">
+                                    0
+                                </span>
+                                ₽
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__footer modal__footer--blue">
+                <span class="h4 alCenter">
+                    Хотите получить услугу по взысканию неустойки?
+                </span>
+                <button type="submit" class="btn btn--light upp">ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Заявка на получение услуги по взысканию компенсации за ремонт (ПРИМЕР МОДАЛКИ ДЛЯ ЗАЯВКИ) -->
+    <div class="modal" id="request-for-compensation-for-repairs-modal">
+        <div class="modal-cell">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <span class="modal__title h3">Заявка на получение услуги по взысканию компенсации за ремонт</span>
+                </div>
+
+                <div class="modal__inner modal__inner--text">
+                    <p>
+                        так можно вставить какой нибудь текст
+                    </p>
+                    <form class="modal-form">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field"
+                                    placeholder="Как к Вам обращаться" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field mask-tel"
+                                    placeholder="Ваш номер телефона" required="required" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" class="form-elem__field" placeholder="Ваш контактный E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <div class="modal__footer">
+                            <button type="submit" class="btn btn--blue upp" disabled="disabled">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Подбор индивидуального тарифа -->
+    <div class="modal" id="selection-of-an-individual-tariff">
+        <div class="questionnaire-wr">
+            <div class="modal__header">
+                <span class="modal__title h3">Подбор индивидуального тарифа</span>
+            </div>
+            <div class="questionnaire" >
+                <span class="questionnaire__counter">Вопрос 1/7</span>
+                <div class="question">
+                    <span class="question__caption">На какой стадии перепланировка?</span>
+                    <div class="answer-option-box">
+                        <label class="answer-option">
+                            <input type="radio" name="q-1" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Выполнена</span>
+                            </div>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="q-1" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Не выполнена</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn btn--blue upp">Продолжить</button>
+                    <button type="submit" class="btn btn--bg upp" disabled="disabled">Вернуться назад</button>
+                </div>
+            </div>
+            <div class="questionnaire" style="display: none;">
+                <span class="questionnaire__counter">Вопрос 2/7</span>
+                <div class="question">
+                    <span class="question__caption">Есть ли у вас технический паспорт на квартиру
+                        до перепланировки?</span>
+                    <div class="answer-option-box">
+                        <label class="answer-option">
+                            <input type="radio" name="q-2" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Да, есть</span>
+                            </div>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="q-2" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Не имею</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn btn--blue upp">Продолжить</button>
+                    <button type="submit" class="btn btn--bg upp">Вернуться назад</button>
+                </div>
+            </div>
+            <div class="questionnaire" style="display: none;">
+                <div class="question">
+                    <span class="question__caption">
+                        Спасибо за предоставленную информацию, это поможет нам лучше подобрать для вас тариф.
+                    </span>
+                    <span class="question__more-text">Оставьте свои контактные данные и мы свяжемся с вами</span>
+                    <div class="answer-option-box">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field" placeholder="Как вас зовут"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field mask-tel"
+                                    placeholder="+7 (___) ___-__-__" required="required" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn btn--blue upp">Отправить заявку</button>
+                </div>
+            </div>
+            <div class="questionnaire questionnaire--finish" style="display: none;">
+                <span class="question__caption">
+                    Ожидайте звонка или письма на почту. С уважением, команда Lex Group.
+                </span>
+                <div class="kv-item">
+                    <span class="lv-item__label">Звоните, если есть вопросы</span>
+                    <a href="tel:+74956040475" class="lv-item__value">
+                        +7 (495) 604 04 75
+                    </a>
+                </div>
+                <div class="kv-item">
+                    <span class="lv-item__label">E-mail</span>
+                    <a href="mailto:info@lex24.ru" class="lv-item__value">
+                        info@lex24.ru
+                    </a>
+                </div>
+                <div class="kv-item">
+                    <span class="lv-item__label">Адрес офиса</span>
+                    <span class="lv-item__value">
+                        Московская область, г. Пушкино, ул. 50 лет Комсомола, 34, БЦ "Деловой", оф.10
+                    </span>
+                </div>
+                <div class="kv-item">
+                    <span class="lv-item__label">Работаем по графику</span>
+                    <span class="lv-item__value">
+                        Пн-Пт: 9:00 - 18:00
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>  
 	<!-- ++++++++++JavaScript++++++++++-->
 	<!-- <script type="text/javascript" src="js/jquery-1.12.1.js"></script> -->
 	<!-- <script type="text/javascript" src="./local/templates/lka/js/script.min.js"></script> -->

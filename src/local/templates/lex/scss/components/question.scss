@@ -1,0 +1,31 @@
+.question {
+    .question__caption {
+        display: block;
+        font-size: 22px;
+        line-height: 1.6;
+        font-weight: 600;
+    }
+    .question__more-text{
+        display: block;
+        margin-top: 20px;
+    }
+    .answer-option-box {
+        margin-top: 40px;
+    }
+}
+
+// ==========================================
+@media screen and (max-width: 1470px) {
+    .question {
+        .question__caption { 
+            font-size: 18px; 
+        }
+        .question__more-text{ 
+            margin-top: 10px;
+        }
+        .answer-option-box {
+            margin-top: 30px;
+        }
+    }
+}
+ 

@@ -1342,7 +1342,7 @@
                                 <span class="form-elem__error">Ошибка</span>
                             </div>
                             <div class="form-elem form-elem--row">
-                                <span class="form-elem__caption">Цена договора</span>
+                                <span class="form-elem__caption">Период просрочки</span>
                                 <div class="form-elem__field-box form-elem__field-box--two-col">
                                     <input type="date" name="start" class="flatpickr form-elem__field">
                                     <input type="date" name="start" class="flatpickr form-elem__field">
@@ -1376,6 +1376,190 @@
         </div>
 
     </div>
+    <!-- Заявка на получение услуги по взысканию компенсации за ремонт (ПРИМЕР МОДАЛКИ ДЛЯ ЗАЯВКИ) -->
+    <div class="modal" id="request-for-compensation-for-repairs-modal">
+        <div class="modal-cell">
+            <div class="modal__body">
+                <div class="modal__header">
+                    <span class="modal__title h3">Заявка на получение услуги по взысканию компенсации за ремонт</span>
+                </div>
+
+                <div class="modal__inner modal__inner--text">
+                    <p>
+                        так можно вставить какой нибудь текст
+                    </p>
+                    <form class="modal-form">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field"
+                                    placeholder="Как к Вам обращаться" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field mask-tel"
+                                    placeholder="Ваш номер телефона" required="required" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" class="form-elem__field" placeholder="Ваш контактный E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <div class="modal__footer">
+                            <button type="submit" class="btn btn--blue upp" disabled="disabled">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Подбор индивидуального тарифа -->
+    <div class="modal" id="selection-of-an-individual-tariff">
+        <div class="questionnaire-wr">
+            <div class="modal__header">
+                <span class="modal__title h3">Подбор индивидуального тарифа</span>
+            </div>
+            <div class="questionnaire" >
+                <span class="questionnaire__counter">Вопрос 1/7</span>
+                <div class="question">
+                    <span class="question__caption">На какой стадии перепланировка?</span>
+                    <div class="answer-option-box">
+                        <label class="answer-option">
+                            <input type="radio" name="q-1" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Выполнена</span>
+                            </div>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="q-1" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Не выполнена</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn btn--blue upp">Продолжить</button>
+                    <button type="submit" class="btn btn--bg upp" disabled="disabled">Вернуться назад</button>
+                </div>
+            </div>
+            <div class="questionnaire" style="display: none;">
+                <span class="questionnaire__counter">Вопрос 2/7</span>
+                <div class="question">
+                    <span class="question__caption">Есть ли у вас технический паспорт на квартиру
+                        до перепланировки?</span>
+                    <div class="answer-option-box">
+                        <label class="answer-option">
+                            <input type="radio" name="q-2" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Да, есть</span>
+                            </div>
+                        </label>
+                        <label class="answer-option">
+                            <input type="radio" name="q-2" class="answer-option__input">
+                            <div class="answer-option__body">
+                                <span class="checked">
+                                    <div class="checked-icon"></div>
+                                </span>
+                                <span class="answer-option__caption">Не имею</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn btn--blue upp">Продолжить</button>
+                    <button type="submit" class="btn btn--bg upp">Вернуться назад</button>
+                </div>
+            </div>
+            <div class="questionnaire" style="display: none;">
+                <div class="question">
+                    <span class="question__caption">
+                        Спасибо за предоставленную информацию, это поможет нам лучше подобрать для вас тариф.
+                    </span>
+                    <span class="question__more-text">Оставьте свои контактные данные и мы свяжемся с вами</span>
+                    <div class="answer-option-box">
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="text" name="name" class="form-elem__field" placeholder="Как вас зовут"
+                                    required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="email" name="email" class="form-elem__field" placeholder="E-mail"
+                                    pattern="^\S+@\S+\.\S+$" required="required">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+                        <label class="form-elem">
+                            <span class="form-elem__field-box">
+                                <input type="tel" name="tel" class="form-elem__field mask-tel"
+                                    placeholder="+7 (___) ___-__-__" required="required" autocomplete="tel">
+                            </span>
+                            <span class="form-elem__error">Ошибка</span>
+                        </label>
+
+                    </div>
+                </div>
+                <div class="modal__footer">
+                    <button type="submit" class="btn btn--blue upp">Отправить заявку</button>
+                </div>
+            </div>
+            <div class="questionnaire questionnaire--finish" style="display: none;">
+                <span class="question__caption">
+                    Ожидайте звонка или письма на почту. С уважением, команда Lex Group.
+                </span>
+                <div class="kv-item">
+                    <span class="lv-item__label">Звоните, если есть вопросы</span>
+                    <a href="tel:+74956040475" class="lv-item__value">
+                        +7 (495) 604 04 75
+                    </a>
+                </div>
+                <div class="kv-item">
+                    <span class="lv-item__label">E-mail</span>
+                    <a href="mailto:info@lex24.ru" class="lv-item__value">
+                        info@lex24.ru
+                    </a>
+                </div>
+                <div class="kv-item">
+                    <span class="lv-item__label">Адрес офиса</span>
+                    <span class="lv-item__value">
+                        Московская область, г. Пушкино, ул. 50 лет Комсомола, 34, БЦ "Деловой", оф.10
+                    </span>
+                </div>
+                <div class="kv-item">
+                    <span class="lv-item__label">Работаем по графику</span>
+                    <span class="lv-item__value">
+                        Пн-Пт: 9:00 - 18:00
+                    </span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
 </div>
     <footer id="footer"> 
     <div class="inner footer__main-inner">
@@ -1467,10 +1651,8 @@
                     ниже приведен пример кода, который можно запустить при успешной отправке данных на сервер.
                     В коде первая функция закрывает все модалки, вторая открывает нужную модалку.
                 */
-                closeAllModal();
-                setTimeout(function(){
-                    openModal('transfer-the-client-complete');
-                }, 300)
+        
+                goToModal('transfer-the-client-complete');
                 
             })
         }
