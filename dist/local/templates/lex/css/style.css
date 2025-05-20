@@ -12425,6 +12425,9 @@ legend {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.questionnaire--finish .modal__header {
+  margin-bottom: 0;
+}
 .questionnaire--finish .kv-item {
   gap: 10px;
   -webkit-box-flex: 1;

@@ -698,10 +698,10 @@
     <!-- Подбор индивидуального тарифа -->
     <div class="modal" id="selection-of-an-individual-tariff">
         <div class="questionnaire-wr">
-            <div class="modal__header">
-                <span class="modal__title h3">Подбор индивидуального тарифа</span>
-            </div>
-            <div class="questionnaire" >
+            <div class="questionnaire" style="display: none;">
+                <div class="modal__header">
+                    <span class="modal__title h3">Подбор индивидуального тарифа</span>
+                </div>
                 <span class="questionnaire__counter">Вопрос 1/7</span>
                 <div class="question">
                     <span class="question__caption">На какой стадии перепланировка?</span>
@@ -732,6 +732,9 @@
                 </div>
             </div>
             <div class="questionnaire" style="display: none;">
+                <div class="modal__header">
+                    <span class="modal__title h3">Подбор индивидуального тарифа</span>
+                </div>
                 <span class="questionnaire__counter">Вопрос 2/7</span>
                 <div class="question">
                     <span class="question__caption">Есть ли у вас технический паспорт на квартиру
@@ -763,6 +766,9 @@
                 </div>
             </div>
             <div class="questionnaire" style="display: none;">
+                <div class="modal__header">
+                    <span class="modal__title h3">Подбор индивидуального тарифа</span>
+                </div>
                 <div class="question">
                     <span class="question__caption">
                         Спасибо за предоставленную информацию, это поможет нам лучше подобрать для вас тариф.
@@ -797,7 +803,10 @@
                     <button type="submit" class="btn btn--blue upp">Отправить заявку</button>
                 </div>
             </div>
-            <div class="questionnaire questionnaire--finish" style="display: none;">
+            <div class="questionnaire questionnaire--finish" >
+                <div class="modal__header">
+                    <span class="modal__title h3">Ваша заявка отправлена!</span>
+                </div> 
                 <span class="question__caption">
                     Ожидайте звонка или письма на почту. С уважением, команда Lex Group.
                 </span>
