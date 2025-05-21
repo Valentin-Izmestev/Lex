@@ -7077,11 +7077,6 @@ span.flatpickr-weekday {
     width: 28px;
     height: 28px;
   }
-  #footer .btn-enter {
-    margin: 0;
-    margin-top: 20px;
-    width: 100%;
-  }
   #footer .contact-bubble-box {
     margin-top: 20px;
     width: 100%;
@@ -7108,6 +7103,14 @@ span.flatpickr-weekday {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
+  }
+}
+@media screen and (max-width: 520px) {
+  #footer .btn-enter {
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 350px) {
