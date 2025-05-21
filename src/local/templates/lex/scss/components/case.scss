@@ -5,6 +5,8 @@
 }
 .case{
     position: relative;
+    display: flex;
+    flex-direction: column;
     border-radius: 30px;
     overflow: hidden;
     .case__header{
@@ -52,6 +54,7 @@
         flex-direction: column;
         padding: 40px;
         background-color: var(--light);
+        flex-grow: 1;
         box-sizing: border-box;
     }
     .case__description-box{
